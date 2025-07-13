@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="h2-slider-list sl-overlay"
-                    style="background-image: url(images/banner/education-PHW33SU.jpg)">
+                    style="background-image: url({{ asset('LandingPageOri/assets/images/banner/education-PHW33SU.jpg') }})">
                     <div class="container">
                         <div class="slide-contain">
                             <h4>START YOUR FAVOURITE COURSE</h4>
@@ -71,33 +71,29 @@
                             <div class="col-lg-3 col-md-6 p-0">
                                 <div class="service-ct-list bg-scblue mb-4">
                                     <i class="far fa-user"></i>
-                                    <h4 class="cl-white">SKILLED LECTURERS</h4>
-                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore</p>
+                                    <h4 class="cl-white">PROFILE DESA</h4>
+                                    <p class="m-0">Menyajikan sejarah desa, visi misi, dan struktur pemerintahan secara ringkas.</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 p-0">
                                 <div class="service-ct-list bg-scgreen mb-4">
-                                    <i class="fas fa-book-open"></i>
-                                    <h4 class="cl-white">BOOK LIBRARY</h4>
-                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore</p>
+                                    <i class="fas fa-globe-americas"></i>
+                                    <h4 class="cl-white">POTENSI DESA</h4>
+                                    <p class="m-0">Berisi informasi produk unggulan, wisata lokal, dan potensi sumber daya desa.</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 p-0">
                                 <div class="service-ct-list bg-sc-lblue mb-4">
-                                    <i class="fas fa-globe-americas"></i>
-                                    <h4 class="cl-white">ONLINE CLASSES</h4>
-                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore</p>
+                                    <i class="fas fa-book-open"></i>
+                                    <h4 class="cl-white">AGENDA & KEGIATAN</h4>
+                                    <p class="m-0">Menampilkan jadwal kegiatan warga, acara resmi desa, dan info musyawarah.</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 p-0">
                                 <div class="service-ct-list bg-sc-dblue mb-4">
                                     <i class="fas fa-book"></i>
-                                    <h4 class="cl-white">HOME PROJECTS</h4>
-                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore</p>
+                                    <h4 class="cl-white">TRANSPARASI DANA DESA</h4>
+                                    <p class="m-0">Laporan anggaran desa yang terbuka, akurat, dan mudah diakses masyarakat.</p>
                                 </div>
                             </div>
                         </div>
@@ -114,28 +110,29 @@
             <div class="row flex-row-reverse">
                 <div class="col-lg-5 wow fadeInLeftBig">
                     <div class="about-wrap-img">
-                        <img src="images/inner/education-students-people-knowledge-concept-2021-04-02-19-49-59-utc.jpg"
+                        <img src="{{ asset('LandingPageOri/assets/images/inner/education-students-people-knowledge-concept-2021-04-02-19-49-59-utc.jpg') }}"
                             alt="" />
                     </div>
                 </div>
                 <div class="col-lg-7 wow fadeInRightBig">
                     <div class="about-us-wrap">
                         <div class="about-title">
-                            <h4 class="top-title">ABOUT EPATHSALA</h4>
-                            <h2 class="mb-3 pb-3">LEARN SOMETHING NEW, AND GROW YOUR <span
-                                    class="cl-blue">SKILL</span></h2>
+                            {{-- <h4 class="top-title">ABOUT EPATHSALA</h4> --}}
+                            <h2 class="mb-3 pb-3">Sambutan Bapak Kepala Desa <span class="cl-blue">Pakukerto</span></h2>
                         </div>
                         <div class="about-content">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dignissimos, deleniti
-                                adipisci ut inventore commodi iure explicabo excepturi
-                                cumque laudantium quis praesentium id nesciunt! Soluta sunt obcaecati aspernatur nostrum
-                                ab.
+                                Assalamu’alaikum Warahmatullahi Wabarakatuh, <br>
+
+                                Puji syukur kita panjatkan ke hadirat Allah SWT, karena atas limpahan rahmat dan karunia-Nya, website resmi Desa Pakukerto ini dapat kami hadirkan sebagai sarana informasi dan komunikasi antara pemerintah desa dengan masyarakat. Website ini merupakan bagian dari komitmen kami dalam mewujudkan tata kelola pemerintahan desa yang transparan, terbuka, dan berbasis teknologi informasi.<br> <br>
+
+                                Melalui website ini, kami berupaya menyampaikan berbagai informasi penting terkait program kerja pemerintah desa, layanan administrasi, kegiatan sosial kemasyarakatan, serta potensi yang dimiliki Desa Pakukerto, baik dari sektor pertanian, UMKM, seni budaya, maupun pariwisata. Kami berharap media ini dapat menjadi penghubung yang aktif antara pemerintah dan warga, serta mendorong partisipasi masyarakat dalam pembangunan desa yang berkelanjutan.<br> <br>
+
                             </p>
                             <p class="mb-4">
-                                Using our single innovative platform you can remove all your communication dependencies
-                                and the messy rat’s nest of email, calls, texts,
-                                wikis, and apps you currently have.
+                                Kami mengucapkan terima kasih atas dukungan semua pihak yang telah membantu dalam pengembangan website ini. Semoga keberadaan website Desa Pakukerto dapat memberikan manfaat nyata bagi masyarakat, serta menjadi salah satu langkah menuju desa yang maju, mandiri, dan berdaya saing tinggi di era digital ini. <br>
+
+                                Wassalamu’alaikum Warahmatullahi Wabarakatuh.
                             </p>
                             <a href="about.html" class="btn">View Course</a>
                         </div>
@@ -154,19 +151,19 @@
                 <div class="content d-flex justify-content-between">
                     <div class="value-pin">
                         <span class="countfect value" data-num="233"></span>
-                        <h5>COURSES & VIDEOS</h5>
+                        <h5>Penduduk</h5>
                     </div>
                     <div class="value-pin">
                         <span class="countfect value" data-num="410"></span>
-                        <h5>EXPERT TEACHERS</h5>
+                        <h5>Dusun</h5>
                     </div>
                     <div class="value-pin">
                         <span class="countfect value" data-num="2299"></span>
-                        <h5>TOTAL STUDENTS</h5>
+                        <h5>RT</h5>
                     </div>
                     <div class="value-pin">
                         <span class="countfect value" data-num="368"></span>
-                        <h5>CLASSES COMPLETE</h5>
+                        <h5>RW</h5>
                     </div>
                 </div>
             </div>
@@ -180,40 +177,40 @@
             <div class="section-title sc-center justify-content-center text-center borderline">
                 <div class="title-top">
                     <div class="title-quote">
-                        <span>Browse Categories</span>
+                        <span>Layanan Publik</span>
                     </div>
-                    <h3>BROWSE ONLINE COURSE <span class="cl-blue">Categories</span></h3>
+                    <h3>Layanan Untuk Masyarakat <span class="cl-blue">Desa</span></h3>
                 </div>
             </div>
             <div class="d-flex align-items-center justify-content-between">
                 <div class="browse-list">
                     <a href="course-2.html">
-                        <i class="far fa-chart-bar"></i>
-                        <h4>BUSINESS & MANAGEMENT</h4>
+                        <i class="fa-solid fa-envelope"></i>
+                        <h4>Surat Online</h4>
                     </a>
                 </div>
                 <div class="browse-list">
                     <a href="course-2.html">
-                        <i class="fas fa-video"></i>
-                        <h4>MOVIE FILM MAKING</h4>
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <h4>Pengumuman</h4>
                     </a>
                 </div>
                 <div class="browse-list">
                     <a href="course-2.html">
-                        <i class="fas fa-tools"></i>
-                        <h4>SOFTWARE TRAINING</h4>
+                        <i class="fa-solid fa-file"></i>
+                        <h4>Aduan Warga</h4>
                     </a>
                 </div>
                 <div class="browse-list">
                     <a href="course-2.html">
-                        <i class="fas fa-brush"></i>
-                        <h4>GRAPHIC & WEB DESIGN</h4>
+                        <i class="fa-solid fa-truck-medical"></i>
+                        <h4>Siaga Ambulan</h4>
                     </a>
                 </div>
                 <div class="browse-list">
                     <a href="course-2.html">
-                        <i class="far fa-lightbulb"></i>
-                        <h4>LOGICAL THINKING</h4>
+                        <i class="fa-solid fa-house"></i>
+                        <h4>Kependudukan Online</h4>
                     </a>
                 </div>
             </div>
@@ -222,7 +219,7 @@
     <!-- Browse end -->
 
     <!-- Courses start -->
-    <section class="courses">
+    {{-- <section class="courses">
         <div class="container">
             <div class="section-title borderline">
                 <div class="title-top">
@@ -236,7 +233,8 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 customize-wrap mb-4 wow fadeInUp">
                         <div class="customize-item">
                             <div class="sv-image">
-                                <img src="images/courses/course-1.jpg" alt="" />
+                                <img src="{{ asset('LandingPageOri/assets/images/courses/course-1.jpg') }}"
+                                    alt="" />
                             </div>
                             <div class="customize-ct">
                                 <h4>
@@ -266,7 +264,8 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 customize-wrap mb-4 wow fadeInUp">
                         <div class="customize-item">
                             <div class="sv-image">
-                                <img src="images/courses/course-2.jpg" alt="" />
+                                <img src="{{ asset('LandingPageOri/assets/images/courses/course-2.jpg') }}"
+                                    alt="" />
                             </div>
                             <div class="customize-ct">
                                 <h4>
@@ -295,7 +294,8 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 customize-wrap mb-4 wow fadeInUp">
                         <div class="customize-item">
                             <div class="sv-image">
-                                <img src="images/courses/course-3.jpg" alt="" />
+                                <img src="{{ asset('LandingPageOri/assets/images/courses/course-3.jpg') }}"
+                                    alt="" />
                             </div>
                             <div class="customize-ct">
                                 <h4>
@@ -324,7 +324,8 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 customize-wrap wow fadeInUp">
                         <div class="customize-item">
                             <div class="sv-image">
-                                <img src="images/courses/course-4.jpg" alt="" />
+                                <img src="{{ asset('LandingPageOri/assets/images/courses/course-4.jpg') }}"
+                                    alt="" />
                             </div>
                             <div class="customize-ct">
                                 <h4>
@@ -353,7 +354,8 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 customize-wrap wow fadeInUp">
                         <div class="customize-item">
                             <div class="sv-image">
-                                <img src="images/courses/course-5.jpg" alt="" />
+                                <img src="{{ asset('LandingPageOri/assets/images/courses/course-5.jpg') }}"
+                                    alt="" />
                             </div>
                             <div class="customize-ct">
                                 <h4>
@@ -382,7 +384,8 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 customize-wrap wow fadeInUp">
                         <div class="customize-item">
                             <div class="sv-image">
-                                <img src="images/courses/course-6.jpg" alt="" />
+                                <img src="{{ asset('LandingPageOri/assets/images/courses/course-6.jpg') }}"
+                                    alt="" />
                             </div>
                             <div class="customize-ct">
                                 <h4>
@@ -411,42 +414,43 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- Courses ends -->
 
     <!-- Instructors start -->
+    <br> <br> <br>
     <section class="instructors p-0">
         <div class="container">
             <div class="section-title sc-center justify-content-center text-center borderline">
                 <div class="title-top">
                     <div class="title-quote">
-                        <span>Meet Our Instructors</span>
+                        <span>Struktur Organisasi</span>
                     </div>
-                    <h3>LEARN FROM EXPERT <span class="cl-blue">INSTRUCTORS</span></h3>
+                    <h5>Struktur Organisasi dan Tata Kerja Pemerintah Desa Pakukerto Kecamatan Sukorejo Kabupaten Pasuruan  <span class="cl-blue">Provinsi Jawa Timur</span></h5>
                 </div>
             </div>
             <div class="row instruct-main mb-3 wow fadeInLeft">
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="ins-main-list">
-                        <img src="images/team/team-1.jpg" alt="" />
+                        <img src="{{ asset('LandingPageOri/assets/images/team/team-1.jpg') }}" alt="" />
                         <div class="ins-names">
                             <h4>William Smith</h4>
-                            <span class="cl-orange">CEO / Founder</span>
+                            <span class="cl-orange">Kepala Desa</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="ins-main-list">
-                        <img src="images/team/team-2.jpg" alt="" />
+                        <img src="{{ asset('LandingPageOri/assets/images/team/team-2.jpg') }}" alt="" />
                         <div class="ins-names">
-                            <h4>Nicole Kiyl</h4>
-                            <span class="cl-orange">Project Manager</span>
+                            <h4>H. Surateman</h4>
+                            <span class="cl-orange">Sekertaris Desa</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="ins-main-list">
-                        <img src="images/team/team-3.jpg" alt="" />
+                        <img src="{{ asset('LandingPageOri/assets/images/team/team-3.jpg') }}" alt="" />
                         <div class="ins-names">
                             <h4>John Melton</h4>
                             <span class="cl-orange">Instructor</span>
@@ -455,7 +459,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="ins-main-list">
-                        <img src="images/team/team-4.jpg" alt="" />
+                        <img src="{{ asset('LandingPageOri/assets/images/team/team-4.jpg') }}" alt="" />
                         <div class="ins-names">
                             <h4>Ketti Helson</h4>
                             <span class="cl-orange">Business Analyst</span>
@@ -468,7 +472,7 @@
     <!-- Instructors ends -->
 
     <!-- Packages news start -->
-    <section class="home-2 packages">
+    {{-- <section class="home-2 packages">
         <div class="container">
             <div class="section-title sc-center justify-content-center text-center borderline">
                 <div class="title-top">
@@ -542,18 +546,19 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- Packages news end -->
 
     <!-- Testimonial feedback -->
+    <br> <br>
     <section class="home-2 testimonial p-0">
         <div class="container">
             <div class="section-title sc-center justify-content-center text-center borderline">
                 <div class="title-top">
                     <div class="title-quote">
-                        <span>Customers reviews</span>
+                        <span>Apa Kata Warga Desa</span>
                     </div>
-                    <h3>WHAT PEOPLE <span class="cl-blue">SAY</span></h3>
+                    <h4>Pendapat dan pengalaman warga tentang layanan serta informasi dari website resmi desa kami.</h4>
                 </div>
             </div>
             <div class="row review-slider feedback-main wow fadeInUp">
@@ -568,16 +573,14 @@
                                 <li><i class="fas fa-star-half-alt"></i></li>
                             </ul>
                             <p class="mb-0">
-                                I am slide content. Click edit button to change this text. Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit. Ut elit tellus, luctus nec
-                                ullamcorper mattis, pulvinar dapibus leo.
+                                "Website desa ini sangat membantu saya mendapatkan informasi terbaru dan pelayanan administrasi dengan mudah. Tampilan yang bersih dan ramah pengguna!"
                             </p>
                         </div>
                         <div class="consult-title d-flex justify-content-start">
-                            <img src="images/team/user-1.jpg" alt="" />
+                            <img src="{{ asset('LandingPageOri/assets/images/team/user-1.jpg') }}" alt="" />
                             <div class="ps-name">
-                                <h5 class="mb-0">Adam Cheis</h5>
-                                <span class="cl-orange">Graphic Designer</span>
+                                <h5 class="mb-0">Mukhamad Sofyan</h5>
+                                <span class="cl-orange">Warga Desa Pakukerto</span>
                             </div>
                         </div>
                     </div>
@@ -594,16 +597,14 @@
                                 <li><i class="fas fa-star-half-alt"></i></li>
                             </ul>
                             <p class="mb-0">
-                                I am slide content. Click edit button to change this text. Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit. Ut elit tellus, luctus nec
-                                ullamcorper mattis, pulvinar dapibus leo.
+                                "Kini saya tidak perlu ke kantor desa untuk cek pengumuman. Semua sudah tersedia secara online di website desa ini. Sangat praktis dan efisien!"
                             </p>
                         </div>
                         <div class="consult-title d-flex justify-content-start">
-                            <img src="images/team/user-2.jpg" alt="" />
+                            <img src="{{ asset('LandingPageOri/assets/images/team/user-2.jpg') }}" alt="" />
                             <div class="ps-name">
-                                <h5 class="mb-0">Amanda Lee</h5>
-                                <span class="cl-orange">CEO & Founder Crix</span>
+                                <h5 class="mb-0">Budi Santoso</h5>
+                                <span class="cl-orange">Ketua RT 03/RW 02</span>
                             </div>
                         </div>
                     </div>
@@ -620,16 +621,14 @@
                                 <li><i class="fas fa-star-half-alt"></i></li>
                             </ul>
                             <p class="mb-0">
-                                I am slide content. Click edit button to change this text. Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit. Ut elit tellus, luctus nec
-                                ullamcorper mattis, pulvinar dapibus leo.
+                                "Website desa ini sangat informatif, saya bisa tahu jadwal kegiatan desa dan pengumuman penting tanpa harus keluar rumah."
                             </p>
                         </div>
                         <div class="consult-title d-flex justify-content-start">
-                            <img src="images/team/user-1.jpg" alt="" />
+                            <img src="{{ asset('LandingPageOri/assets/images/team/user-1.jpg') }}" alt="" />
                             <div class="ps-name">
-                                <h5 class="mb-0">Adam Cheis</h5>
-                                <span class="cl-orange">Graphic Designer</span>
+                                <h5 class="mb-0">Lestari Widya</h5>
+                                <span class="cl-orange">Warga Desa Pakukerto</span>
                             </div>
                         </div>
                     </div>
@@ -646,16 +645,14 @@
                                 <li><i class="fas fa-star-half-alt"></i></li>
                             </ul>
                             <p class="mb-0">
-                                I am slide content. Click edit button to change this text. Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit. Ut elit tellus, luctus nec
-                                ullamcorper mattis, pulvinar dapibus leo.
+                                "Sebagai pelaku UMKM, saya merasa terbantu karena informasi pelatihan dan bantuan usaha selalu diperbarui di website desa."
                             </p>
                         </div>
                         <div class="consult-title d-flex justify-content-start">
-                            <img src="images/team/user-2.jpg" alt="" />
+                            <img src="{{ asset('LandingPageOri/assets/images/team/user-2.jpg') }}" alt="" />
                             <div class="ps-name">
-                                <h5 class="mb-0">Amanda Lee</h5>
-                                <span class="cl-orange">CEO & Founder Crix</span>
+                                <h5 class="mb-0">Yusuf Maulana</h5>
+                                <span class="cl-orange">Pelaku UMKM</span>
                             </div>
                         </div>
                     </div>
@@ -673,7 +670,7 @@
                     <div class="title-quote">
                         <span>Our Events</span>
                     </div>
-                    <h3>UPCOMING <span class="cl-blue">EVENTS</span> & <span class="cl-blue">COMPETITIONS</span></h3>
+                    <h3>Agenda <span class="cl-blue">Desa</span>  <span class="cl-blue">Pakukerto</span></h3>
                 </div>
             </div>
             <div class="wrap-customize">
@@ -681,18 +678,19 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 customize-wrap wow fadeInUp">
                         <div class="customize-item">
                             <div class="sv-image">
-                                <img src="images/courses/event-1.jpg" alt="" />
+                                <img src="{{ asset('LandingPageOri/assets/images/courses/event-1.jpg') }}"
+                                    alt="" />
                             </div>
                             <div class="customize-ct">
                                 <h4>
-                                    <a href="event-detail.html">TED TALKS AT UCF COLLEGE OF EDUCATION</a>
+                                    <a href="event-detail.html">Kerja Bakti Bersama Warga Dusun Kemiri</a>
                                 </h4>
                             </div>
                             <div class="customize-bottom">
                                 <ul class="d-flex justify-content-start">
-                                    <li class="mr-3"><i class="far fa-calendar-alt"></i> 30 July</li>
-                                    <li class="mr-3"><i class="far fa-clock"></i> 9AM</li>
-                                    <li><i class="fas fa-map-marker-alt"></i> Melbourne</li>
+                                    <li class="mr-3"><i class="far fa-calendar-alt"></i> 30 Juli</li>
+                                    <li class="mr-3"><i class="far fa-clock"></i> 09.00-selesai</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Depan SDN 2 Pakukerto</li>
                                 </ul>
                             </div>
                         </div>
@@ -700,18 +698,19 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 customize-wrap wow fadeInUp">
                         <div class="customize-item">
                             <div class="sv-image">
-                                <img src="images/courses/event-2.jpg" alt="" />
+                                <img src="{{ asset('LandingPageOri/assets/images/courses/event-2.jpg') }}"
+                                    alt="" />
                             </div>
                             <div class="customize-ct">
                                 <h4>
-                                    <a href="event-detail.html">IMPORTANCES OF RESEARCH SEMINAR 2021</a>
+                                    <a href="event-detail.html">Bazar Produk UMKM & Hasil Tani</a>
                                 </h4>
                             </div>
                             <div class="customize-bottom">
                                 <ul class="d-flex justify-content-start">
-                                    <li class="mr-3"><i class="far fa-calendar-alt"></i> 30 July</li>
-                                    <li class="mr-3"><i class="far fa-clock"></i> 9AM</li>
-                                    <li><i class="fas fa-map-marker-alt"></i> Melbourne</li>
+                                    <li class="mr-3"><i class="far fa-calendar-alt"></i> 20 Agustus</li>
+                                    <li class="mr-3"><i class="far fa-clock"></i> 10.00-15.00</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Pasar Desa Pakukerto</li>
                                 </ul>
                             </div>
                         </div>
@@ -719,18 +718,19 @@
                     <div class="col-lg-4 col-md-12 customize-wrap wow fadeInUp">
                         <div class="customize-item">
                             <div class="sv-image">
-                                <img src="images/courses/event-3.jpg" alt="" />
+                                <img src="{{ asset('LandingPageOri/assets/images/courses/event-3.jpg') }}"
+                                    alt="" />
                             </div>
                             <div class="customize-ct">
                                 <h4>
-                                    <a href="event-detail.html">NEWLY SUMMER COURSE STARTS FROM JUNE</a>
+                                    <a href="event-detail.html">Senam Pagi Sehat & Ceria Bersama Warga</a>
                                 </h4>
                             </div>
                             <div class="customize-bottom">
                                 <ul class="d-flex justify-content-start">
-                                    <li class="mr-3"><i class="far fa-calendar-alt"></i> 30 July</li>
-                                    <li class="mr-3"><i class="far fa-clock"></i> 9AM</li>
-                                    <li><i class="fas fa-map-marker-alt"></i> Melbourne</li>
+                                    <li class="mr-3"><i class="far fa-calendar-alt"></i> 20 Agustus</li>
+                                    <li class="mr-3"><i class="far fa-clock"></i> 07.00-Selesai </li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Lapangan Desa Pakukerto</li>
                                 </ul>
                             </div>
                         </div>
@@ -746,16 +746,16 @@
         <div class="container">
             <div class="call-wrap">
                 <div class="call-main">
-                    <h2 class="mb-4">JOIN THE COMMUNITY COURSE AND <span class="cl-blue"> UPGRADE YOUR SKILL</span>
+                    <h2 class="mb-4">Desa Hebat Dimulai dari Warganya...  <span class="cl-blue"> Ayo Bangun Desa Kita Lewat Aksi dan Kepedulian</span>
                     </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
-                        mattis, pulvinar dapibus leo.</p>
+                    <p>Sebuah desa yang maju dan sejahtera tidak tercipta hanya dari pembangunan fisik atau program pemerintah, tapi dari semangat dan kepedulian setiap warganya. Ketika warga saling bergandengan tangan—ikut menjaga lingkungan, aktif dalam kegiatan sosial, hingga menyuarakan aspirasinya—maka desa akan tumbuh menjadi tempat yang lebih baik untuk semua. Mari bersama-sama mewujudkan desa yang mandiri, bersih, ramah, dan membanggakan. Perubahan dimulai dari langkah kecil, dan langkah itu bisa dimulai dari kamu.</p>
                     <div class="mt-3">
                         <a href="contact.html" class="btn">Join Now</a>
                     </div>
                 </div>
                 <div class="call-image">
-                    <img src="images/shape/Education-13-Converted-01-1024x667.png" alt="" />
+                    <img src="{{ asset('LandingPageOri/assets/images/shape/Education-13-Converted-01-1024x667.png') }}"
+                        alt="" />
                 </div>
             </div>
         </div>
@@ -768,9 +768,9 @@
             <div class="section-title sc-center justify-content-center text-center borderline wow fadeInLeft">
                 <div class="title-top">
                     <div class="title-quote">
-                        <span>Our Blogs</span>
+                        <span>Berita DESA</span>
                     </div>
-                    <h3>LATEST <span class="cl-blue">BLOG</span> & <span class="cl-blue">EVENTS</span></h3>
+                    <h3>Berita <span class="cl-blue">Seputar</span> Desa <span class="cl-blue">Pakukerto</span></h3>
                 </div>
             </div>
             <div class="blog-wrap">
@@ -779,23 +779,25 @@
                         <div class="article-list">
                             <div class="at-thumbnail">
                                 <a href="blog-detail.html">
-                                    <img src="images/blog/blog-1.jpg" alt="" />
+                                    <img src="{{ asset('LandingPageOri/assets/images/blog/blog-1.jpg') }}"
+                                        alt="" />
                                 </a>
-                                <span class="blog-tag"> Education </span>
+                                <span class="blog-tag"> Gotong Royong </span>
                             </div>
                             <div class="article-content">
-                                <img src="images/team/user-4.jpg" alt="" class="article-avatar" />
+                                <img src="{{ asset('LandingPageOri/assets/images/team/user-4.jpg') }}" alt=""
+                                    class="article-avatar" />
                                 <div class="artl-detail">
                                     <a href="blog-detail.html">
-                                        <h4>NEW CHICAGO SCHOOL BUDGET RELIES ON PENSION</h4>
+                                        <h4>Warga Desa Pakukerto Gelar Kerja Bakti Bersihkan Lingkungan</h4>
                                     </a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                    <p>Dalam semangat gotong royong, warga Desa Pakukerto mengadakan kerja bakti massal membersihkan saluran air dan fasilitas umum pada Minggu pagi (30 Juli 2025). Kegiatan ini diikuti oleh seluruh RT dan didukung oleh Karang Taruna serta ibu-ibu PKK.</p>
                                     <a href="blog-detail.html" class="bl-link">Read More <i
                                             class="fas fa-angle-double-right"></i></a>
                                 </div>
                                 <div class="artl-bottom">
                                     <ul class="d-flex justify-content-start">
-                                        <li>June 12, 2021</li>
+                                        <li>1 Agustus 2025</li>
                                         <li><a href="#">2 Comments</a></li>
                                     </ul>
                                 </div>
@@ -806,23 +808,25 @@
                         <div class="article-list">
                             <div class="at-thumbnail">
                                 <a href="blog-detail.html">
-                                    <img src="images/blog/blog-2.jpg" alt="" />
+                                    <img src="{{ asset('LandingPageOri/assets/images/blog/blog-2.jpg') }}"
+                                        alt="" />
                                 </a>
-                                <span class="blog-tag"> Education </span>
+                                <span class="blog-tag"> Pengumuman </span>
                             </div>
                             <div class="article-content">
-                                <img src="images/team/user-5.jpg" alt="" class="article-avatar" />
+                                <img src="{{ asset('LandingPageOri/assets/images/team/user-5.jpg') }}" alt=""
+                                    class="article-avatar" />
                                 <div class="artl-detail">
                                     <a href="blog-detail.html">
-                                        <h4>NEW CHICAGO SCHOOL BUDGET RELIES ON PENSION</h4>
+                                        <h4>Desa Pakukerto Resmikan Layanan Aduan Online Melalui Website</h4>
                                     </a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                    <p>Untuk meningkatkan keterbukaan dan pelayanan publik, pemerintah Desa Pakukerto kini menyediakan fitur pengaduan online yang bisa diakses langsung melalui website resmi desa. Warga dapat menyampaikan keluhan, aspirasi, atau laporan dengan mudah.</p>
                                     <a href="blog-detail.html" class="bl-link">Read More <i
                                             class="fas fa-angle-double-right"></i></a>
                                 </div>
                                 <div class="artl-bottom">
                                     <ul class="d-flex justify-content-start">
-                                        <li>June 12, 2021</li>
+                                        <li>20 Agustus 2025</li>
                                         <li><a href="#">2 Comments</a></li>
                                     </ul>
                                 </div>
@@ -833,23 +837,25 @@
                         <div class="article-list">
                             <div class="at-thumbnail">
                                 <a href="blog-detail.html">
-                                    <img src="images/blog/blog-3.jpg" alt="" />
+                                    <img src="{{ asset('LandingPageOri/assets/images/blog/blog-3.jpg') }}"
+                                        alt="" />
                                 </a>
-                                <span class="blog-tag"> Education </span>
+                                <span class="blog-tag"> Berita Desa </span>
                             </div>
                             <div class="article-content">
-                                <img src="images/team/user-6.jpg" alt="" class="article-avatar" />
+                                <img src="{{ asset('LandingPageOri/assets/images/team/user-6.jpg') }}" alt=""
+                                    class="article-avatar" />
                                 <div class="artl-detail">
                                     <a href="blog-detail.html">
-                                        <h4>NEW CHICAGO SCHOOL BUDGET RELIES ON PENSION</h4>
+                                        <h4>Panen Raya Sukses, Petani Desa Sambut Harga Gabah Stabil</h4>
                                     </a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                    <p>Para petani di Desa Pakukerto bersyukur atas panen raya tahun ini yang berlangsung lancar dan menghasilkan hasil pertanian berkualitas. Pemerintah desa turut memfasilitasi distribusi dan penjualan hasil panen ke koperasi dan pasar lokal.</p>
                                     <a href="blog-detail.html" class="bl-link">Read More <i
                                             class="fas fa-angle-double-right"></i></a>
                                 </div>
                                 <div class="artl-bottom">
                                     <ul class="d-flex justify-content-start">
-                                        <li>June 12, 2021</li>
+                                        <li>22 Juli 2025</li>
                                         <li><a href="#">2 Comments</a></li>
                                     </ul>
                                 </div>
@@ -884,84 +890,7 @@
     <!--  Newsletter end -->
 
     <!-- Footer starts -->
-    <footer class="wow fadeInUp" id="footer">
-        <div class="footer-upper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="f-maincontent">
-                            <img src="images/f-4.png" alt="" />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
-                                ullamcorper mattis, pulvinar dapibus leo.</p>
-                            <ul>
-                                <li class="pr-2">
-                                    <a href="#" class="bg-linkedin"><i class="fab fa-linkedin-in"></i></a>
-                                </li>
-                                <li class="pr-2">
-                                    <a href="#" class="bg-twitter"><i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li class="pr-2">
-                                    <a href="#" class="bg-fb"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li class="pr-2">
-                                    <a href="#" class="bg-dribble"><i class="fab fa-dribbble"></i></a>
-                                </li>
-                                <li class="pr-2">
-                                    <a href="#" class="bg-youtube"><i class="fab fa-youtube"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="bg-pin"><i class="fab fa-pinterest-p"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4">
-                        <div class="ft-lists">
-                            <h4>COMPANY</h4>
-                            <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Features</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">Our Gallery</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4">
-                        <div class="ft-lists">
-                            <h4>CATEGORY</h4>
-                            <ul>
-                                <li><a href="#">All Courses</a></li>
-                                <li><a href="#">Design Courses</a></li>
-                                <li><a href="#">Branding Design</a></li>
-                                <li><a href="#">Business Analytics</a></li>
-                                <li><a href="#">Creative Writing</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4">
-                        <div class="ft-lists">
-                            <h4>QUICK LINKS</h4>
-                            <ul>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Disussion</a></li>
-                                <li><a href="#">Terms & Conditions</a></li>
-                                <li><a href="#">Customer Support</a></li>
-                                <li><a href="#">Course FAQ's</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright-main">
-                <div class="container">
-                    <div class="copyright-text d-flex justify-content-center">
-                        <p class="m-0">© 2021 ePathsala. All rights reserved</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+@include('LandingPage.Layout.footer')
     <!-- Footer ends -->
 
     <!-- Search form popup -->
