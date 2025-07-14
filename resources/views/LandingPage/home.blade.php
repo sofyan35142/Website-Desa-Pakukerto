@@ -19,7 +19,7 @@
     <!-- header ends -->
 
     <!-- banner starts -->
-    <section class="banner-main pb-0">
+    <section class="banner-main pb-0" style="padding-top: 83px !important;">
         <div class="banner-content">
             <div class="slider banner-slider">
                 <div class="h2-slider-list sl-overlay"
