@@ -44,10 +44,23 @@
                                 <li class="dropdown submenu {{ request()->is('/') ? 'active' : '' }}">
                                     <a href="/" aria-haspopup="true">Home</a>
                                 </li>
+                                <li class="dropdown submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-haspopup="true" aria-expanded="false">PROFILE <i
+                                            class="fas fa-chevron-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="gallery.html">Sejarah Desa</a></li>
+                                        <li><a href="instructors.html">Visi & Misi</a></li>
+                                        <li><a href="pricing.html">Kelembagaan</a></li>
+                                        <li><a href="testimonial.html">Letak Geografis</a></li>
+                                        <li><a href="faq.html">Data Demografi</a></li>
+                                        <li><a href="faq.html">Potensi Desa</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="about.html">About Us</a></li>
                                 <li class="dropdown submenu">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                        aria-haspopup="true" aria-expanded="false">Courses <i
+                                        aria-haspopup="true" aria-expanded="false">UMKM<i
                                             class="fas fa-chevron-down"></i></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="course-1.html">Course List 1</a></li>
@@ -64,31 +77,10 @@
                                         <li><a href="event-detail.html">Event Detail</a></li>
                                     </ul>
                                 </li>
-                                <li class="dropdown submenu">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                        aria-haspopup="true" aria-expanded="false">Pages <i
-                                            class="fas fa-chevron-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="gallery.html">Gallery</a></li>
-                                        <li><a href="instructors.html">Instructors</a></li>
-                                        <li><a href="pricing.html">Course Pricing</a></li>
-                                        <li><a href="testimonial.html">Testimonials</a></li>
-                                        <li><a href="faq.html">FAQ</a></li>
-                                        <li><a href="search.html">Search Result</a></li>
-                                        <li><a href="404.html">404 Error</a></li>
-                                        <li><a href="comming.html">Comming Soon</a></li>
-                                    </ul>
+                                <li class="{{ request()->is('blog') ? 'active' : '' }}">
+                                    <a href="/blog">Blog</a>
                                 </li>
-                                <li class="dropdown submenu">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                        aria-haspopup="true" aria-expanded="false">Blog <i
-                                            class="fas fa-chevron-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="/blog">Blog Listing</a></li>
-                                        <li><a href="/blogdetail">Blog Detail</a></li>
-                                    </ul>
-                                </li>
-                                <li class="{{ request()->is('contact') ? 'active' : '' }}"><a href="/contact">Contact Us</a></li>
+                                <li class="{{ request()->is('contact') ? 'active' : '' }}"><a href="/contact">HUBUNGI KAMI</a></li>
                             </ul>
                         </div>
                         <!-- /.navbar-collapse -->

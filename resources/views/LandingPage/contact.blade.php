@@ -75,7 +75,7 @@
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26069.26444533244!2d112.68584829536974!3d-7.722518030077664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d6d1cb7927af%3A0x2572fe71bc723997!2sPakukerto%2C%20Kec.%20Sukorejo%2C%20Pasuruan%2C%20Jawa%20Timur!5e1!3m2!1sid!2sid!4v1752473890035!5m2!1sid!2sid"
                     width="900" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
             </div>
-            <div class="contact-form">
+            {{-- <div class="contact-form">
                 <form class="m-auto text-center">
                     <!-- 2 column grid layout with text inputs for the first and last names -->
                     <div class="row mb-4">
@@ -103,30 +103,13 @@
                     <!-- Submit button -->
                     <button type="submit" class="btn">Send Message</button>
                 </form>
-            </div>
+            </div> --}}
         </div>
     </section>
     <!-- Contact end -->
 
     <!--  Newsletter start -->
-    <section class="newsletter">
-        <div class="container">
-            <div class="news-headding text-center">
-                <h2>SIGN UP TO OUR NEWSLETTER</h2>
-                <p>
-                    Subscribe to our newsletter and get many <br />
-                    interesting things every week
-                </p>
-                <form>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="Your Email" />
-                        <button class="btn"><i class="fas fa-envelope-open-text"></i> Subscribe</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
+
     <!--  Newsletter end -->
 
     <!-- Footer starts -->
