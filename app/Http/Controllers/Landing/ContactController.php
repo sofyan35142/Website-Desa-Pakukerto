@@ -5,10 +5,10 @@ namespace App\Http\Controllers\Landing;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class ContactController extends Controller
 {
-    public function home()
+    public function ViewContact()
     {
-        return view("LandingPage.home");
+        return view("LandingPage.contact");
     }
 }

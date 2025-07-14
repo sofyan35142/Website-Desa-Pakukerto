@@ -1,5 +1,5 @@
     <header class="main_header_area">
-        <div class="topbar-wrap">
+        {{-- <div class="topbar-wrap">
             <div class="container">
                 <div class="top-info d-flex justify-content-between align-items-center">
                     <ul class="t-address">
@@ -25,7 +25,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         <!-- Navigation Bar -->
         <div class="header_menu">
@@ -41,15 +41,8 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="navbar-collapse1 w-100" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav" id="responsive-menu">
-                                <li class="dropdown submenu active">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                        aria-haspopup="true" aria-expanded="false">Home <i
-                                            class="fas fa-chevron-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="index.html">Homepage 1</a></li>
-                                        <li><a href="index-2.html">Homepage 2</a></li>
-                                        <li><a href="index-3.html">Homepage 3</a></li>
-                                    </ul>
+                                <li class="dropdown submenu {{ request()->is('/') ? 'active' : '' }}">
+                                    <a href="/" aria-haspopup="true">Home</a>
                                 </li>
                                 <li><a href="about.html">About Us</a></li>
                                 <li class="dropdown submenu">
@@ -95,7 +88,7 @@
                                         <li><a href="blog-detail.html">Blog Detail</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li class="{{ request()->is('contact') ? 'active' : '' }}"><a href="/contact">Contact Us</a></li>
                             </ul>
                         </div>
                         <!-- /.navbar-collapse -->
