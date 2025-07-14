@@ -84,8 +84,8 @@
                                         aria-haspopup="true" aria-expanded="false">Blog <i
                                             class="fas fa-chevron-down"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="blog-list.html">Blog Listing</a></li>
-                                        <li><a href="blog-detail.html">Blog Detail</a></li>
+                                        <li><a href="/blog">Blog Listing</a></li>
+                                        <li><a href="/blogdetail">Blog Detail</a></li>
                                     </ul>
                                 </li>
                                 <li class="{{ request()->is('contact') ? 'active' : '' }}"><a href="/contact">Contact Us</a></li>
