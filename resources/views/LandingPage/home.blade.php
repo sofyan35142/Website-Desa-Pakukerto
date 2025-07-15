@@ -72,28 +72,32 @@
                                 <div class="service-ct-list bg-scblue mb-4">
                                     <i class="far fa-user"></i>
                                     <h4 class="cl-white">PROFILE DESA</h4>
-                                    <p class="m-0">Menyajikan sejarah desa, visi misi, dan struktur pemerintahan secara ringkas.</p>
+                                    <p class="m-0">Menyajikan sejarah desa, visi misi, dan struktur pemerintahan
+                                        secara ringkas.</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 p-0">
                                 <div class="service-ct-list bg-scgreen mb-4">
                                     <i class="fas fa-globe-americas"></i>
                                     <h4 class="cl-white">POTENSI DESA</h4>
-                                    <p class="m-0">Berisi informasi produk unggulan, wisata lokal, dan potensi sumber daya desa.</p>
+                                    <p class="m-0">Berisi informasi produk unggulan, wisata lokal, dan potensi sumber
+                                        daya desa.</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 p-0">
                                 <div class="service-ct-list bg-sc-lblue mb-4">
                                     <i class="fas fa-book-open"></i>
                                     <h4 class="cl-white">AGENDA & KEGIATAN</h4>
-                                    <p class="m-0">Menampilkan jadwal kegiatan warga, acara resmi desa, dan info musyawarah.</p>
+                                    <p class="m-0">Menampilkan jadwal kegiatan warga, acara resmi desa, dan info
+                                        musyawarah.</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 p-0">
                                 <div class="service-ct-list bg-sc-dblue mb-4">
                                     <i class="fas fa-book"></i>
                                     <h4 class="cl-white">TRANSPARASI DANA DESA</h4>
-                                    <p class="m-0">Laporan anggaran desa yang terbuka, akurat, dan mudah diakses masyarakat.</p>
+                                    <p class="m-0">Laporan anggaran desa yang terbuka, akurat, dan mudah diakses
+                                        masyarakat.</p>
                                 </div>
                             </div>
                         </div>
@@ -124,13 +128,25 @@
                             <p>
                                 Assalamu’alaikum Warahmatullahi Wabarakatuh, <br>
 
-                                Puji syukur kita panjatkan ke hadirat Allah SWT, karena atas limpahan rahmat dan karunia-Nya, website resmi Desa Pakukerto ini dapat kami hadirkan sebagai sarana informasi dan komunikasi antara pemerintah desa dengan masyarakat. Website ini merupakan bagian dari komitmen kami dalam mewujudkan tata kelola pemerintahan desa yang transparan, terbuka, dan berbasis teknologi informasi.<br> <br>
+                                Puji syukur kita panjatkan ke hadirat Allah SWT, karena atas limpahan rahmat dan
+                                karunia-Nya, website resmi Desa Pakukerto ini dapat kami hadirkan sebagai sarana
+                                informasi dan komunikasi antara pemerintah desa dengan masyarakat. Website ini merupakan
+                                bagian dari komitmen kami dalam mewujudkan tata kelola pemerintahan desa yang
+                                transparan, terbuka, dan berbasis teknologi informasi.<br> <br>
 
-                                Melalui website ini, kami berupaya menyampaikan berbagai informasi penting terkait program kerja pemerintah desa, layanan administrasi, kegiatan sosial kemasyarakatan, serta potensi yang dimiliki Desa Pakukerto, baik dari sektor pertanian, UMKM, seni budaya, maupun pariwisata. Kami berharap media ini dapat menjadi penghubung yang aktif antara pemerintah dan warga, serta mendorong partisipasi masyarakat dalam pembangunan desa yang berkelanjutan.<br> <br>
+                                Melalui website ini, kami berupaya menyampaikan berbagai informasi penting terkait
+                                program kerja pemerintah desa, layanan administrasi, kegiatan sosial kemasyarakatan,
+                                serta potensi yang dimiliki Desa Pakukerto, baik dari sektor pertanian, UMKM, seni
+                                budaya, maupun pariwisata. Kami berharap media ini dapat menjadi penghubung yang aktif
+                                antara pemerintah dan warga, serta mendorong partisipasi masyarakat dalam pembangunan
+                                desa yang berkelanjutan.<br> <br>
 
                             </p>
                             <p class="mb-4">
-                                Kami mengucapkan terima kasih atas dukungan semua pihak yang telah membantu dalam pengembangan website ini. Semoga keberadaan website Desa Pakukerto dapat memberikan manfaat nyata bagi masyarakat, serta menjadi salah satu langkah menuju desa yang maju, mandiri, dan berdaya saing tinggi di era digital ini. <br>
+                                Kami mengucapkan terima kasih atas dukungan semua pihak yang telah membantu dalam
+                                pengembangan website ini. Semoga keberadaan website Desa Pakukerto dapat memberikan
+                                manfaat nyata bagi masyarakat, serta menjadi salah satu langkah menuju desa yang maju,
+                                mandiri, dan berdaya saing tinggi di era digital ini. <br>
 
                                 Wassalamu’alaikum Warahmatullahi Wabarakatuh.
                             </p>
@@ -426,7 +442,8 @@
                     <div class="title-quote">
                         <span>Struktur Organisasi</span>
                     </div>
-                    <h5>Struktur Organisasi dan Tata Kerja Pemerintah Desa Pakukerto Kecamatan Sukorejo Kabupaten Pasuruan  <span class="cl-blue">Provinsi Jawa Timur</span></h5>
+                    <h5>Struktur Organisasi dan Tata Kerja Pemerintah Desa Pakukerto Kecamatan Sukorejo Kabupaten
+                        Pasuruan <span class="cl-blue">Provinsi Jawa Timur</span></h5>
                 </div>
             </div>
             <div class="row instruct-main mb-3 wow fadeInLeft">
@@ -549,119 +566,6 @@
     </section> --}}
     <!-- Packages news end -->
 
-    <!-- Testimonial feedback -->
-    <br> <br>
-    <section class="home-2 testimonial p-0">
-        <div class="container">
-            <div class="section-title sc-center justify-content-center text-center borderline">
-                <div class="title-top">
-                    <div class="title-quote">
-                        <span>Apa Kata Warga Desa</span>
-                    </div>
-                    <h4>Pendapat dan pengalaman warga tentang layanan serta informasi dari website resmi desa kami.</h4>
-                </div>
-            </div>
-            <div class="row review-slider feedback-main wow fadeInUp">
-                <div class="col-md-6">
-                    <div class="feedback-inner">
-                        <div class="consult-content">
-                            <ul class="mb-2">
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star-half-alt"></i></li>
-                            </ul>
-                            <p class="mb-0">
-                                "Website desa ini sangat membantu saya mendapatkan informasi terbaru dan pelayanan administrasi dengan mudah. Tampilan yang bersih dan ramah pengguna!"
-                            </p>
-                        </div>
-                        <div class="consult-title d-flex justify-content-start">
-                            <img src="{{ asset('LandingPageOri/assets/images/team/user-1.jpg') }}" alt="" />
-                            <div class="ps-name">
-                                <h5 class="mb-0">Mukhamad Sofyan</h5>
-                                <span class="cl-orange">Warga Desa Pakukerto</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="feedback-inner">
-                        <div class="consult-content">
-                            <ul class="mb-2">
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star-half-alt"></i></li>
-                            </ul>
-                            <p class="mb-0">
-                                "Kini saya tidak perlu ke kantor desa untuk cek pengumuman. Semua sudah tersedia secara online di website desa ini. Sangat praktis dan efisien!"
-                            </p>
-                        </div>
-                        <div class="consult-title d-flex justify-content-start">
-                            <img src="{{ asset('LandingPageOri/assets/images/team/user-2.jpg') }}" alt="" />
-                            <div class="ps-name">
-                                <h5 class="mb-0">Budi Santoso</h5>
-                                <span class="cl-orange">Ketua RT 03/RW 02</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="feedback-inner">
-                        <div class="consult-content">
-                            <ul class="mb-2">
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star-half-alt"></i></li>
-                            </ul>
-                            <p class="mb-0">
-                                "Website desa ini sangat informatif, saya bisa tahu jadwal kegiatan desa dan pengumuman penting tanpa harus keluar rumah."
-                            </p>
-                        </div>
-                        <div class="consult-title d-flex justify-content-start">
-                            <img src="{{ asset('LandingPageOri/assets/images/team/user-1.jpg') }}" alt="" />
-                            <div class="ps-name">
-                                <h5 class="mb-0">Lestari Widya</h5>
-                                <span class="cl-orange">Warga Desa Pakukerto</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="feedback-inner">
-                        <div class="consult-content">
-                            <ul class="mb-2">
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star-half-alt"></i></li>
-                            </ul>
-                            <p class="mb-0">
-                                "Sebagai pelaku UMKM, saya merasa terbantu karena informasi pelatihan dan bantuan usaha selalu diperbarui di website desa."
-                            </p>
-                        </div>
-                        <div class="consult-title d-flex justify-content-start">
-                            <img src="{{ asset('LandingPageOri/assets/images/team/user-2.jpg') }}" alt="" />
-                            <div class="ps-name">
-                                <h5 class="mb-0">Yusuf Maulana</h5>
-                                <span class="cl-orange">Pelaku UMKM</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Testimonial ends -->
-
     <!-- News/Events news start -->
     <section class="courses news-events">
         <div class="container">
@@ -670,7 +574,7 @@
                     <div class="title-quote">
                         <span>Our Events</span>
                     </div>
-                    <h3>Agenda <span class="cl-blue">Desa</span>  <span class="cl-blue">Pakukerto</span></h3>
+                    <h3>Agenda <span class="cl-blue">Desa</span> <span class="cl-blue">Pakukerto</span></h3>
                 </div>
             </div>
             <div class="wrap-customize">
@@ -746,9 +650,15 @@
         <div class="container">
             <div class="call-wrap">
                 <div class="call-main">
-                    <h2 class="mb-4">Desa Hebat Dimulai dari Warganya...  <span class="cl-blue"> Ayo Bangun Desa Kita Lewat Aksi dan Kepedulian</span>
+                    <h2 class="mb-4">Desa Hebat Dimulai dari Warganya... <span class="cl-blue"> Ayo Bangun Desa Kita
+                            Lewat Aksi dan Kepedulian</span>
                     </h2>
-                    <p>Sebuah desa yang maju dan sejahtera tidak tercipta hanya dari pembangunan fisik atau program pemerintah, tapi dari semangat dan kepedulian setiap warganya. Ketika warga saling bergandengan tangan—ikut menjaga lingkungan, aktif dalam kegiatan sosial, hingga menyuarakan aspirasinya—maka desa akan tumbuh menjadi tempat yang lebih baik untuk semua. Mari bersama-sama mewujudkan desa yang mandiri, bersih, ramah, dan membanggakan. Perubahan dimulai dari langkah kecil, dan langkah itu bisa dimulai dari kamu.</p>
+                    <p>Sebuah desa yang maju dan sejahtera tidak tercipta hanya dari pembangunan fisik atau program
+                        pemerintah, tapi dari semangat dan kepedulian setiap warganya. Ketika warga saling bergandengan
+                        tangan—ikut menjaga lingkungan, aktif dalam kegiatan sosial, hingga menyuarakan aspirasinya—maka
+                        desa akan tumbuh menjadi tempat yang lebih baik untuk semua. Mari bersama-sama mewujudkan desa
+                        yang mandiri, bersih, ramah, dan membanggakan. Perubahan dimulai dari langkah kecil, dan langkah
+                        itu bisa dimulai dari kamu.</p>
                     <div class="mt-3">
                         <a href="contact.html" class="btn">Join Now</a>
                     </div>
@@ -763,7 +673,7 @@
     <!--  Call to action end -->
 
     <!--  Blog to action start -->
-    <section class="home-2 blog-article">
+    <section class="home-2 blog-article p-0">
         <div class="container">
             <div class="section-title sc-center justify-content-center text-center borderline wow fadeInLeft">
                 <div class="title-top">
@@ -791,7 +701,10 @@
                                     <a href="blog-detail.html">
                                         <h4>Warga Desa Pakukerto Gelar Kerja Bakti Bersihkan Lingkungan</h4>
                                     </a>
-                                    <p>Dalam semangat gotong royong, warga Desa Pakukerto mengadakan kerja bakti massal membersihkan saluran air dan fasilitas umum pada Minggu pagi (30 Juli 2025). Kegiatan ini diikuti oleh seluruh RT dan didukung oleh Karang Taruna serta ibu-ibu PKK.</p>
+                                    <p>Dalam semangat gotong royong, warga Desa Pakukerto mengadakan kerja bakti massal
+                                        membersihkan saluran air dan fasilitas umum pada Minggu pagi (30 Juli 2025).
+                                        Kegiatan ini diikuti oleh seluruh RT dan didukung oleh Karang Taruna serta
+                                        ibu-ibu PKK.</p>
                                     <a href="blog-detail.html" class="bl-link">Read More <i
                                             class="fas fa-angle-double-right"></i></a>
                                 </div>
@@ -820,7 +733,10 @@
                                     <a href="blog-detail.html">
                                         <h4>Desa Pakukerto Resmikan Layanan Aduan Online Melalui Website</h4>
                                     </a>
-                                    <p>Untuk meningkatkan keterbukaan dan pelayanan publik, pemerintah Desa Pakukerto kini menyediakan fitur pengaduan online yang bisa diakses langsung melalui website resmi desa. Warga dapat menyampaikan keluhan, aspirasi, atau laporan dengan mudah.</p>
+                                    <p>Untuk meningkatkan keterbukaan dan pelayanan publik, pemerintah Desa Pakukerto
+                                        kini menyediakan fitur pengaduan online yang bisa diakses langsung melalui
+                                        website resmi desa. Warga dapat menyampaikan keluhan, aspirasi, atau laporan
+                                        dengan mudah.</p>
                                     <a href="blog-detail.html" class="bl-link">Read More <i
                                             class="fas fa-angle-double-right"></i></a>
                                 </div>
@@ -849,7 +765,10 @@
                                     <a href="blog-detail.html">
                                         <h4>Panen Raya Sukses, Petani Desa Sambut Harga Gabah Stabil</h4>
                                     </a>
-                                    <p>Para petani di Desa Pakukerto bersyukur atas panen raya tahun ini yang berlangsung lancar dan menghasilkan hasil pertanian berkualitas. Pemerintah desa turut memfasilitasi distribusi dan penjualan hasil panen ke koperasi dan pasar lokal.</p>
+                                    <p>Para petani di Desa Pakukerto bersyukur atas panen raya tahun ini yang
+                                        berlangsung lancar dan menghasilkan hasil pertanian berkualitas. Pemerintah desa
+                                        turut memfasilitasi distribusi dan penjualan hasil panen ke koperasi dan pasar
+                                        lokal.</p>
                                     <a href="blog-detail.html" class="bl-link">Read More <i
                                             class="fas fa-angle-double-right"></i></a>
                                 </div>
@@ -868,29 +787,129 @@
     </section>
     <!--  Blog to action end -->
 
-    <!--  Newsletter start -->
-    <section class="newsletter pt-0">
+    <!-- Testimonial feedback -->
+    <br> <br>
+    <section class="home-2 testimonial">
         <div class="container">
-            <div class="news-headding text-center">
-                <h2>SIGN UP TO OUR NEWSLETTER</h2>
-                <p>
-                    Subscribe to our newsletter and get many <br />
-                    interesting things every week
-                </p>
-                <form>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="Your Email" />
-                        <button class="btn"><i class="fas fa-envelope-open-text"></i> Subscribe</button>
+            <div class="section-title sc-center justify-content-center text-center borderline">
+                <div class="title-top">
+                    <div class="title-quote">
+                        <span>Apa Kata Warga Desa</span>
                     </div>
-                </form>
+                    <h4>Pendapat dan pengalaman warga tentang layanan serta informasi dari website resmi desa kami.</h4>
+                </div>
+            </div>
+            <div class="row review-slider feedback-main wow fadeInUp">
+                <div class="col-md-6">
+                    <div class="feedback-inner">
+                        <div class="consult-content">
+                            <ul class="mb-2">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star-half-alt"></i></li>
+                            </ul>
+                            <p class="mb-0">
+                                "Website desa ini sangat membantu saya mendapatkan informasi terbaru dan pelayanan
+                                administrasi dengan mudah. Tampilan yang bersih dan ramah pengguna!"
+                            </p>
+                        </div>
+                        <div class="consult-title d-flex justify-content-start">
+                            <img src="{{ asset('LandingPageOri/assets/images/team/user-1.jpg') }}" alt="" />
+                            <div class="ps-name">
+                                <h5 class="mb-0">Mukhamad Sofyan</h5>
+                                <span class="cl-orange">Warga Desa Pakukerto</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="feedback-inner">
+                        <div class="consult-content">
+                            <ul class="mb-2">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star-half-alt"></i></li>
+                            </ul>
+                            <p class="mb-0">
+                                "Kini saya tidak perlu ke kantor desa untuk cek pengumuman. Semua sudah tersedia secara
+                                online di website desa ini. Sangat praktis dan efisien!"
+                            </p>
+                        </div>
+                        <div class="consult-title d-flex justify-content-start">
+                            <img src="{{ asset('LandingPageOri/assets/images/team/user-2.jpg') }}" alt="" />
+                            <div class="ps-name">
+                                <h5 class="mb-0">Budi Santoso</h5>
+                                <span class="cl-orange">Ketua RT 03/RW 02</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="feedback-inner">
+                        <div class="consult-content">
+                            <ul class="mb-2">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star-half-alt"></i></li>
+                            </ul>
+                            <p class="mb-0">
+                                "Website desa ini sangat informatif, saya bisa tahu jadwal kegiatan desa dan pengumuman
+                                penting tanpa harus keluar rumah."
+                            </p>
+                        </div>
+                        <div class="consult-title d-flex justify-content-start">
+                            <img src="{{ asset('LandingPageOri/assets/images/team/user-1.jpg') }}" alt="" />
+                            <div class="ps-name">
+                                <h5 class="mb-0">Lestari Widya</h5>
+                                <span class="cl-orange">Warga Desa Pakukerto</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="feedback-inner">
+                        <div class="consult-content">
+                            <ul class="mb-2">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star-half-alt"></i></li>
+                            </ul>
+                            <p class="mb-0">
+                                "Sebagai pelaku UMKM, saya merasa terbantu karena informasi pelatihan dan bantuan usaha
+                                selalu diperbarui di website desa."
+                            </p>
+                        </div>
+                        <div class="consult-title d-flex justify-content-start">
+                            <img src="{{ asset('LandingPageOri/assets/images/team/user-2.jpg') }}" alt="" />
+                            <div class="ps-name">
+                                <h5 class="mb-0">Yusuf Maulana</h5>
+                                <span class="cl-orange">Pelaku UMKM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <!-- Testimonial ends -->
+
+    <!--  Newsletter start -->
+
     <!--  Newsletter end -->
 
     <!-- Footer starts -->
-@include('LandingPage.Layout.footer')
+    @include('LandingPage.Layout.footer')
     <!-- Footer ends -->
 
     <!-- Search form popup -->
