@@ -19,10 +19,10 @@
     <!-- header ends -->
 
     <!-- banner starts -->
-    <section class="banner-main pb-0" style="padding-top: 83px !important;">
+    <section class="banner-main pb-0" style="padding-top: 83px;">
         <div class="banner-content">
             <div class="slider banner-slider">
-                <div class="h2-slider-list sl-overlay"
+                {{-- <div class="h2-slider-list sl-overlay"
                     style="background-image: url({{ asset('LandingPageOri/assets/images/banner/education-2021-04-04-14-25-07-utc.jpg') }})">
                     <div class="container">
                         <div class="slide-contain">
@@ -38,7 +38,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 <div class="h2-slider-list sl-overlay"
                     style="background-image: url({{ asset('LandingPageOri/assets/images/banner/education-PHW33SU.jpg') }})">
                     <div class="container">
@@ -807,7 +807,7 @@
                                 <li><i class="fas fa-star"></i></li>
                                 <li><i class="fas fa-star"></i></li>
                                 <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i> </li>
                                 <li><i class="fas fa-star-half-alt"></i></li>
                             </ul>
                             <p class="mb-0">

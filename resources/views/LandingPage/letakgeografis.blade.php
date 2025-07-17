@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">
+
+@include('LandingPage.Layout.head')
+
+<body>
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+    @include('LandingPage.Layout.header')
+    <section class="breadcrumb-main">
+        <div class="container">
+            <div class="breadcrumb-inner">
+                <h2>LETAK GEOGRAFIS DESA KAMI</h2>
+            </div>
+        </div>
+        <div class="sl-overlay"></div>
+    </section>
+    <section class="home-2 packages"> {{-- Menggunakan kelas 'packages' untuk styling umum dan padding section --}}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mb-4 text-center">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26069.26444533244!2d112.68584829536974!3d-7.722518030077664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d6d1cb7927af%3A0x2572fe71bc723997!2sPakukerto%2C%20Kec.%20Sukorejo%2C%20Pasuruan%2C%20Jawa%20Timur!5e1!3m2!1sid!2sid!4v1752473890035!5m2!1sid!2sid"
+                        width="1000" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="pkg-container bg-white h-100 d-flex flex-column"> {{-- h-100 dan flexbox untuk keseragaman tinggi --}}
+                        <div class="pg-title text-center">
+                            <i class="fas fa-map-marker-alt"></i> {{-- Ikon yang relevan --}}
+                            <h3 class="cl-orange">Batas Wilayah Desa</h3>
+                        </div>
+                        <div class="pg-main flex-grow-1"> {{-- flex-grow-1 agar konten mengisi sisa ruang --}}
+                            <p style="font-size: 20px; padding-left: 0px;">Desa [Nama Desa Anda] merupakan bagian integral dari wilayah
+                                Indonesia, yang secara
+                                geografis memiliki batas-batas administratif sebagai berikut:</p>
+                            <ul>
+                                <li><i class="fas fa-compass"></i> Utara: Berbatasan langsung dengan [Nama
+                                    Desa/Kecamatan/Kabupaten di Utara].</li>
+                                <li><i class="fas fa-compass"></i> Selatan: Berbatasan dengan [Nama
+                                    Desa/Kecamatan/Kabupaten di Selatan].</li>
+                                <li><i class="fas fa-compass"></i> Barat: Berbatasan dengan [Nama
+                                    Desa/Kecamatan/Kabupaten di Barat].</li>
+                                <li><i class="fas fa-compass"></i> Timur: Berbatasan dengan [Nama
+                                    Desa/Kecamatan/Kabupaten di Timur].</li>
+                            </ul>
+                            <p style="font-size: 20px; padding-left: 0px;">Secara administratif, Desa [Nama Desa Anda] termasuk dalam
+                                wilayah Kecamatan [Nama
+                                Kecamatan], Kabupaten [Nama Kabupaten], Provinsi [Nama Provinsi].</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="pkg-container bg-white h-100 d-flex flex-column"> {{-- h-100 dan flexbox untuk keseragaman tinggi --}}
+                        <div class="pg-title text-center">
+                            <i class="fas fa-cloud-sun-rain"></i> {{-- Ikon yang relevan --}}
+                            <h3 class="cl-blue">Kondisi Geografis & Iklim</h3>
+                        </div>
+                        <div class="pg-main flex-grow-1"> {{-- flex-grow-1 agar konten mengisi sisa ruang --}}
+                            <p style="font-size: 20px; padding-left: 0px;">Desa [Nama Desa Anda] memiliki kondisi geografis dan iklim yang
+                                sangat mendukung
+                                kehidupan dan kegiatan pertanian. Berikut detailnya:</p>
+                            <ul>
+                                <li><i class="fas fa-chart-area"></i> Ketinggian: Ketinggian rata-rata desa berada
+                                    pada kisaran [Sebutkan rentang ketinggian, misal: 150 - 300] meter di atas
+                                    permukaan laut. Topografi desa didominasi oleh [Sebutkan, misal: dataran rendah
+                                    bergelombang, perbukitan ringan, dll.].</li>
+                                <li><i class="fas fa-thermometer-half"></i> Iklim: Desa kami memiliki iklim tropis
+                                    dengan dua musim utama, yaitu musim hujan dan musim kemarau. Suhu rata-rata harian
+                                    berkisar antara [Sebutkan rentang suhu, misal: 25°C - 32°C], dengan kelembaban
+                                    udara yang cukup tinggi.</li>
+                                <li><i class="fas fa-water"></i> Sumber Daya Air: Ketersediaan air bersih sangat
+                                    memadai berkat keberadaan [Sebutkan, misal: beberapa sungai kecil, mata air alami,
+                                    dan jaringan irigasi] yang mengalir di sekitar wilayah desa.</li>
+                                <li><i class="fas fa-leaf"></i> Pemanfaatan Lahan: Sebagian besar lahan di desa
+                                    dimanfaatkan untuk [Sebutkan, misal: pertanian sawah produktif, perkebunan (misal:
+                                    kelapa sawit/karet), permukiman penduduk, dan area hutan lindung].</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-lg-12">
+                    <div class="pkg-container bg-white text-center">
+                        <div class="pg-title">
+                            <i class="fas fa-images"></i>
+                            <h3>Galeri Visual Geografis Desa</h3>
+                        </div>
+                        <div class="pg-main">
+                            <p class="mb-4" style="font-size: 20px">Jelajahi keindahan lanskap dan fitur geografis desa kami melalui koleksi
+                                foto berikut ini. Gambar-gambar ini menunjukkan keunikan alam dan lingkungan di [Nama
+                                Desa Anda].</p>
+                            <div class="row justify-content-center">
+                                <div class="col-md-4 col-sm-6 mb-3">
+                                    <img src="https://via.placeholder.com/400x250?text=Pemandangan+Perbukitan"
+                                        alt="Pemandangan Perbukitan Desa" class="img-fluid rounded shadow-sm">
+                                    <p class="small text-muted mt-2" style="font-size: 20px">Pemandangan perbukitan di sisi [arah] desa.</p>
+                                </div>
+                                <div class="col-md-4 col-sm-6 mb-3">
+                                    <img src="https://via.placeholder.com/400x250?text=Aliran+Sungai+Desa"
+                                        alt="Aliran Sungai Desa" class="img-fluid rounded shadow-sm">
+                                    <p class="small text-muted mt-2" style="font-size: 20px">Salah satu aliran sungai yang melintasi desa.</p>
+                                </div>
+                                <div class="col-md-4 col-sm-6 mb-3">
+                                    <img src="https://via.placeholder.com/400x250?text=Hamparan+Sawah"
+                                        alt="Hamparan Sawah" class="img-fluid rounded shadow-sm">
+                                    <p class="small text-muted mt-2" style="font-size: 20px">Luasnya hamparan persawahan di musim tanam.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    @include('LandingPage.Layout.footer')
+    <form action="#" class="ct-searchForm">
+        <div class="inner">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                            <input id="cf-search-form" type="text" placeholder="Search ..." required
+                                class="form-control" />
+                            <button type="submit" class="ct-search-btn"><i class="fa fa-search"></i></button>
+                        </div>
+                        <div class="form-group">
+                            <a href="#" class="ct-searchForm-close">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div id="back-to-top">
+        <a href="#"></a>
+    </div>
+    @include('LandingPage.Layout.script')
+</body>
+
+</html>
