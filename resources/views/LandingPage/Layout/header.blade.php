@@ -35,7 +35,7 @@
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <a class="navbar-brand text-center" href="index.html">
-                                <img src="{{ asset('LandingPageOri/assets/images/logo.png') }}" alt="image" />
+                                <img src="{{ asset('LandingPageOri/assets/images/Logo/Pakukerto.png') }}" alt="image" />
                             </a>
                         </div>
                         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -81,6 +81,9 @@
                                     <a href="/blog">Blog</a>
                                 </li>
                                 <li class="{{ request()->is('contact') ? 'active' : '' }}"><a href="/contact">HUBUNGI KAMI</a></li>
+                                <li class="{{ request()->is('persuratan') ? 'active' : '' }}">
+                                    <a href="/persuratan">Administrasi Persuratan</a>
+                                </li>
                             </ul>
                         </div>
                         <!-- /.navbar-collapse -->
