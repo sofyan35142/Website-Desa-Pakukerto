@@ -4,7 +4,7 @@
 
     <title>Website Desa Pakukerto - Kecamatan Sukorejo</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('LandingPageOri/assets/images/cropped-epathsala_favicon-192x192.png') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('LandingPageOri/assets/images/Logo/logo_pasuruan.jpg') }}" />
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('LandingPageOri/assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
     <!--Custom CSS-->

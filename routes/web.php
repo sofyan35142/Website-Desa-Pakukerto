@@ -4,6 +4,7 @@ use App\Http\Controllers\Landing\BlogController;
 use App\Http\Controllers\Landing\ContactController;
 use App\Http\Controllers\Landing\HomeController;
 use App\Http\Controllers\Landing\ProfileDesa;
+use App\Http\Controllers\Landing\PersuratanController;
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/', function () {
@@ -19,3 +20,4 @@ Route::get('/profile/visimisi', [ProfileDesa::class,  'ViewVisiMisi'])->name('Vi
 Route::get('/profile/kelembagaan', [ProfileDesa::class,  'Kelembagaan'])->name('Kelembagaan');
 Route::get('/profile/letakgeografis', [ProfileDesa::class,  'LetakGeografis'])->name('letakgeografis');
 
+Route::get('/persuratan', [PersuratanController::class,  'viewpersuratan'])->name('persuratan');

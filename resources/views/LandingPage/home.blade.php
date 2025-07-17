@@ -22,8 +22,8 @@
     <section class="banner-main pb-0" style="padding-top: 83px;">
         <div class="banner-content">
             <div class="slider banner-slider">
-                {{-- <div class="h2-slider-list sl-overlay"
-                    style="background-image: url({{ asset('LandingPageOri/assets/images/banner/education-2021-04-04-14-25-07-utc.jpg') }})">
+                <div class="h2-slider-list sl-overlay"
+                    style="background-image: url({{ asset('LandingPageOri/assets/images/banner/slider1.png') }})">
                     <div class="container">
                         <div class="slide-contain">
                             <h4>LEARN ANYTHING, ANYTIME, ANYWHERE</h4>
@@ -38,7 +38,24 @@
                             </div>
                         </div>
                     </div>
-                </div> --}}
+                </div> 
+                <div class="h2-slider-list sl-overlay"
+                    style="background-image: url({{ asset('LandingPageOri/assets/images/banner/slider2.png') }});height:44pc" >
+                    {{-- <div class="container">
+                        <div class="slide-contain">
+                            <h4>START YOUR FAVOURITE COURSE</h4>
+                            <h1 class="cl-white mt-4 wow fadeInDown">START YOUR FAVOURITE COURSE BRIGHT FUTURE</h1>
+                            <p class="wow fadeInLeft">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua
+                            </p>
+                            <div class="slide-btn mt-4 wow fadeInLeft">
+                                <a href="course-1.html" class="btn btn-curve mr-2">View Course</a>
+                                <a href="contact.html" class="btn btn-curve">Get Started</a>
+                            </div>
+                        </div>
+                    </div> --}}
+                </div>
                 <div class="h2-slider-list sl-overlay"
                     style="background-image: url({{ asset('LandingPageOri/assets/images/banner/education-PHW33SU.jpg') }})">
                     <div class="container">
@@ -582,7 +599,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 customize-wrap wow fadeInUp">
                         <div class="customize-item">
                             <div class="sv-image">
-                                <img src="{{ asset('LandingPageOri/assets/images/courses/event-1.jpg') }}"
+                                <img src="{{ asset('LandingPageOri/assets/images/courses/Kerja-Bakti.png') }}"
                                     alt="" />
                             </div>
                             <div class="customize-ct">
@@ -602,7 +619,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 customize-wrap wow fadeInUp">
                         <div class="customize-item">
                             <div class="sv-image">
-                                <img src="{{ asset('LandingPageOri/assets/images/courses/event-2.jpg') }}"
+                                <img src="{{ asset('LandingPageOri/assets/images/courses/Bazar.png') }}"
                                     alt="" />
                             </div>
                             <div class="customize-ct">
@@ -622,17 +639,17 @@
                     <div class="col-lg-4 col-md-12 customize-wrap wow fadeInUp">
                         <div class="customize-item">
                             <div class="sv-image">
-                                <img src="{{ asset('LandingPageOri/assets/images/courses/event-3.jpg') }}"
+                                <img src="{{ asset('LandingPageOri/assets/images/courses/Gerak-Jalan.png') }}"
                                     alt="" />
                             </div>
                             <div class="customize-ct">
                                 <h4>
-                                    <a href="event-detail.html">Senam Pagi Sehat & Ceria Bersama Warga</a>
+                                    <a href="event-detail.html">Gerak Jalan Memperingati HUT RI 2025</a>
                                 </h4>
                             </div>
                             <div class="customize-bottom">
                                 <ul class="d-flex justify-content-start">
-                                    <li class="mr-3"><i class="far fa-calendar-alt"></i> 20 Agustus</li>
+                                    <li class="mr-3"><i class="far fa-calendar-alt"></i> 30 Agustus</li>
                                     <li class="mr-3"><i class="far fa-clock"></i> 07.00-Selesai </li>
                                     <li><i class="fas fa-map-marker-alt"></i> Lapangan Desa Pakukerto</li>
                                 </ul>
@@ -689,7 +706,7 @@
                         <div class="article-list">
                             <div class="at-thumbnail">
                                 <a href="blog-detail.html">
-                                    <img src="{{ asset('LandingPageOri/assets/images/blog/blog-1.jpg') }}"
+                                    <img src="{{ asset('LandingPageOri/assets/images/blog/Bakti.png') }}"
                                         alt="" />
                                 </a>
                                 <span class="blog-tag"> Gotong Royong </span>
@@ -721,7 +738,7 @@
                         <div class="article-list">
                             <div class="at-thumbnail">
                                 <a href="blog-detail.html">
-                                    <img src="{{ asset('LandingPageOri/assets/images/blog/blog-2.jpg') }}"
+                                    <img src="{{ asset('LandingPageOri/assets/images/blog/Peresmian.png') }}"
                                         alt="" />
                                 </a>
                                 <span class="blog-tag"> Pengumuman </span>
@@ -753,7 +770,7 @@
                         <div class="article-list">
                             <div class="at-thumbnail">
                                 <a href="blog-detail.html">
-                                    <img src="{{ asset('LandingPageOri/assets/images/blog/blog-3.jpg') }}"
+                                    <img src="{{ asset('LandingPageOri/assets/images/blog/Panen.png') }}"
                                         alt="" />
                                 </a>
                                 <span class="blog-tag"> Berita Desa </span>

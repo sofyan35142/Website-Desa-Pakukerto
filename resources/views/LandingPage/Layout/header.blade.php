@@ -35,7 +35,7 @@
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <a class="navbar-brand text-center" href="index.html">
-                                <img src="{{ asset('LandingPageOri/assets/images/logo.png') }}" alt="image" />
+                                <img src="{{ asset('LandingPageOri/assets/images/Logo/Pakukerto.png') }}" alt="image" />
                             </a>
                         </div>
                         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -49,10 +49,10 @@
                                         aria-haspopup="true" aria-expanded="false">PROFILE <i
                                             class="fas fa-chevron-down"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="gallery.html">Sejarah Desa</a></li>
-                                        <li><a href="instructors.html">Visi & Misi</a></li>
-                                        <li><a href="pricing.html">Kelembagaan</a></li>
-                                        <li><a href="testimonial.html">Letak Geografis</a></li>
+                                        <li><a href="/profile/sejarahdesa">Sejarah Desa</a></li>
+                                        <li><a href="/profile/visimisi">Visi & Misi</a></li>
+                                        <li><a href="/profile/kelembagaan">Kelembagaan</a></li>
+                                        <li><a href="/profile/letakgeografis">Letak Geografis</a></li>
                                         <li><a href="faq.html">Data Demografi</a></li>
                                         <li><a href="faq.html">Potensi Desa</a></li>
                                     </ul>
@@ -81,6 +81,9 @@
                                     <a href="/blog">Blog</a>
                                 </li>
                                 <li class="{{ request()->is('contact') ? 'active' : '' }}"><a href="/contact">HUBUNGI KAMI</a></li>
+                                <li class="{{ request()->is('persuratan') ? 'active' : '' }}">
+                                    <a href="/persuratan">Administrasi Persuratan</a>
+                                </li>
                             </ul>
                         </div>
                         <!-- /.navbar-collapse -->
