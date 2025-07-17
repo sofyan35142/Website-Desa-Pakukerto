@@ -23,7 +23,7 @@
         <div class="banner-content">
             <div class="slider banner-slider">
                 <div class="h2-slider-list sl-overlay"
-                    style="background-image: url({{ asset('LandingPageOri/assets/images/banner/education-2021-04-04-14-25-07-utc.jpg') }})">
+                    style="background-image: url({{ asset('LandingPageOri/assets/images/banner/slider1.png') }})">
                     <div class="container">
                         <div class="slide-contain">
                             <h4>LEARN ANYTHING, ANYTIME, ANYWHERE</h4>
@@ -35,6 +35,23 @@
                             <div class="slide-btn mt-4 wow fadeInLeft">
                                 <a href="course-1.html" class="btn btn-curve mr-2">View Course</a>
                                 <a href="contact.html" class="btn btn-curve btn-white">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h2-slider-list sl-overlay"
+                    style="background-image: url({{ asset('LandingPageOri/assets/images/banner/slider2.png') }})">
+                    <div class="container">
+                        <div class="slide-contain">
+                            <h4>START YOUR FAVOURITE COURSE</h4>
+                            <h1 class="cl-white mt-4 wow fadeInDown">START YOUR FAVOURITE COURSE BRIGHT FUTURE</h1>
+                            <p class="wow fadeInLeft">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua
+                            </p>
+                            <div class="slide-btn mt-4 wow fadeInLeft">
+                                <a href="course-1.html" class="btn btn-curve mr-2">View Course</a>
+                                <a href="contact.html" class="btn btn-curve">Get Started</a>
                             </div>
                         </div>
                     </div>
