@@ -71,8 +71,8 @@
                                         aria-haspopup="true" aria-expanded="false">Events <i
                                             class="fas fa-chevron-down"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="event.html">Event List</a></li>
-                                        <li><a href="event-detail.html">Event Detail</a></li>
+                                        <li><a href="/event/eventlist">Event List</a></li>
+                                        <li><a href="/event/eventdetail">Event Detail</a></li>
                                     </ul>
                                 </li>
                                 <li class="{{ request()->is('blog') ? 'active' : '' }}">

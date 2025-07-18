@@ -238,7 +238,7 @@
     <!-- Courses Detail end -->
 
     <!--  Newsletter start -->
-    <section class="newsletter">
+    {{-- <section class="newsletter">
         <div class="container">
             <div class="news-headding text-center">
                 <h2>SIGN UP TO OUR NEWSLETTER</h2>
@@ -255,7 +255,7 @@
                 </form>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--  Newsletter end -->
 
     <!-- Footer starts -->

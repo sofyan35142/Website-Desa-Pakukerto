@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Landing\BlogController;
 use App\Http\Controllers\Landing\ContactController;
+use App\Http\Controllers\Landing\EventController;
 use App\Http\Controllers\Landing\HomeController;
 use App\Http\Controllers\Landing\ProfileDesa;
 use App\Http\Controllers\Landing\PersuratanController;
@@ -32,3 +33,5 @@ Route::get('/tes', function () {
 });
 
 Route::get('/persuratan', [PersuratanController::class,  'viewpersuratan'])->name('persuratan');
+Route::get('/event/eventlist', [EventController::class,  'viewevent'])->name('event');
+Route::get('/event/eventdetail', [EventController::class,  'vieweventdetail'])->name('event');
