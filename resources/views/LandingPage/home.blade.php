@@ -19,7 +19,7 @@
     <!-- header ends -->
 
     <!-- banner starts -->
-    <section class="banner-main pb-0" style="padding-top: 83px !important;">
+    <section class="banner-main pb-0" style="padding-top: 83px;">
         <div class="banner-content">
             <div class="slider banner-slider">
                 <div class="h2-slider-list sl-overlay"
@@ -38,10 +38,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
                 <div class="h2-slider-list sl-overlay"
-                    style="background-image: url({{ asset('LandingPageOri/assets/images/banner/slider2.png') }})">
-                    <div class="container">
+                    style="background-image: url({{ asset('LandingPageOri/assets/images/banner/slider2.png') }});height:44pc" >
+                    {{-- <div class="container">
                         <div class="slide-contain">
                             <h4>START YOUR FAVOURITE COURSE</h4>
                             <h1 class="cl-white mt-4 wow fadeInDown">START YOUR FAVOURITE COURSE BRIGHT FUTURE</h1>
@@ -54,7 +54,7 @@
                                 <a href="contact.html" class="btn btn-curve">Get Started</a>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="h2-slider-list sl-overlay"
                     style="background-image: url({{ asset('LandingPageOri/assets/images/banner/education-PHW33SU.jpg') }})">
@@ -824,7 +824,7 @@
                                 <li><i class="fas fa-star"></i></li>
                                 <li><i class="fas fa-star"></i></li>
                                 <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i> </li>
                                 <li><i class="fas fa-star-half-alt"></i></li>
                             </ul>
                             <p class="mb-0">

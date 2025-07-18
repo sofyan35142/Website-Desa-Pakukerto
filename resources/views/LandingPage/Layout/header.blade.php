@@ -49,10 +49,10 @@
                                         aria-haspopup="true" aria-expanded="false">PROFILE <i
                                             class="fas fa-chevron-down"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="gallery.html">Sejarah Desa</a></li>
-                                        <li><a href="instructors.html">Visi & Misi</a></li>
-                                        <li><a href="pricing.html">Kelembagaan</a></li>
-                                        <li><a href="testimonial.html">Letak Geografis</a></li>
+                                        <li><a href="/profile/sejarahdesa">Sejarah Desa</a></li>
+                                        <li><a href="/profile/visimisi">Visi & Misi</a></li>
+                                        <li><a href="/profile/kelembagaan">Kelembagaan</a></li>
+                                        <li><a href="/profile/letakgeografis">Letak Geografis</a></li>
                                         <li><a href="faq.html">Data Demografi</a></li>
                                         <li><a href="faq.html">Potensi Desa</a></li>
                                     </ul>
