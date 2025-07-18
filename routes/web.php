@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Landing\BlogController;
 use App\Http\Controllers\Landing\ContactController;
+use App\Http\Controllers\Landing\EventController;
 use App\Http\Controllers\Landing\HomeController;
 use App\Http\Controllers\Landing\PersuratanController;
 use Illuminate\Support\Facades\Route;
@@ -16,3 +17,4 @@ Route::get('/blog', [BlogController::class,  'Blog'])->name('Blog');
 Route::get('/blogdetail', [BlogController::class,  'blogdetail'])->name('blogdetail');
 Route::get('/contact', [ContactController::class,  'ViewContact'])->name('contact');
 Route::get('/persuratan', [PersuratanController::class,  'viewpersuratan'])->name('persuratan');
+Route::get('/event', [EventController::class,  'viewevent'])->name('event');
