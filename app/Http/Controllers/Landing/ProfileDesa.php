@@ -31,5 +31,10 @@ class ProfileDesa extends Controller
         return view("LandingPage.demografi");
     }
 
+    public function ViewKelembagaanDetail()
+    {
+        return view("LandingPage.detailkelembagaan");
+    }
+
 
 }

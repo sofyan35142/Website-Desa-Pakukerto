@@ -4101,3 +4101,7 @@ footer .footer-upper .copyright-main .copyright-text {
 .h-full {
     height: 100%;
 }
+
+.h-90 {
+    height: 90% !important;
+}

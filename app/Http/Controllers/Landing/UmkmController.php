@@ -16,4 +16,9 @@ class UmkmController extends Controller
     {
         return view("LandingPage.umkmdetail");
     }
+
+    public function ViewPotensiDesa()
+    {
+        return view("LandingPage.potensidesa");
+    }
 }

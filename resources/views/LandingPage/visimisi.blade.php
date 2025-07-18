@@ -14,8 +14,8 @@
                 <div class="col-lg-6">
                     <div class="cs-detail-im">
                         {{-- Ganti gambar ini dengan gambar yang mencerminkan kemajuan, kebersamaan, atau masa depan desa --}}
-                        <img src="{{ asset('LandingPageOri/assets/images/banner/education-PHW33SU.jpg') }}"
-                            alt="Masyarakat Desa Pakukerto Bergotong Royong" />
+                        <img src="{{ asset('LandingPageOri/assets/images/inner/visimisi.png') }}"
+                            alt="Masyarakat Desa Pakukerto Bergotong Royong" height="380" width="570"/>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -133,8 +133,8 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="course-content-side text-center">
-                        <img src="{{ asset('LandingPageOri/assets/images/banner/education-2021-04-04-14-25-07-utc.jpg') }}"
-                            alt="Simbol Kebersamaan Warga Desa" /> {{-- Ganti dengan gambar relevan --}}
+                        <img src="{{ asset('LandingPageOri/assets/images/inner/prinsipdannilai.png') }}"
+                            alt="Simbol Kebersamaan Warga Desa" height="256px" width="383px"/> {{-- Ganti dengan gambar relevan --}}
                         <div class="img_sidebar_ct bg-darkblue p-3">
                             <h5 class="cl-white mb-0">Prinsip & Nilai Kami</h5> {{-- Judul sidebar baru --}}
                         </div>
