@@ -19,23 +19,19 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="cs-detail-info d-flex flex-column justify-content-center align-items-start h-100">
-                        <div class="review-ct mb-3 d-flex justify-content-start">
-                            {{-- Anda bisa mengganti ini dengan info relevan, misal jumlah pembaca atau tanggal update terakhir --}}
-                            <a href="#">Diperbarui: 17 Juli 2025</a>
-                            {{-- Bintang ini bisa dihilangkan atau diganti ikon lain jika tidak relevan --}}
+                        {{-- <div class="review-ct mb-3 d-flex justify-content-start">
+                            <a href="#">Diperbarui: 18 Juli 2025</a>
                             <ul class="ml-2">
-                                <li><i class="fas fa-eye"></i></li> {{-- Ikon mata untuk 'dilihat' --}}
-                                <li><i class="fas fa-heart"></i></li> {{-- Ikon hati untuk 'disukai' --}}
-                                <li><i class="fas fa-share-alt"></i></li> {{-- Ikon berbagi --}}
-                                {{-- <li><i class="fas fa-star"></i></li> --}}
-                                {{-- <li><i class="fas fa-star-half-alt"></i></li> --}}
+                                <li><i class="fas fa-eye"></i></li>
+                                <li><i class="fas fa-heart"></i></li>
+                                <li><i class="fas fa-share-alt"></i></li>
                             </ul>
-                        </div>
+                        </div> --}}
                         <h3>Sejarah Desa Pakukerto</h3>
                         <div class="customize-bottom">
                             <ul class="d-flex justify-content-start">
                                 <li class="mr-3"><i class="far fa-user"></i> Tim Redaksi Desa</li>
-                                <li><i class="far fa-calendar-alt"></i> 06 Juni 2021 (Pertama Diterbitkan)</li>
+                                {{-- <li><i class="far fa-calendar-alt"></i> 06 Juni 2021 (Pertama Diterbitkan)</li> --}}
                             </ul>
                         </div>
                     </div>
@@ -49,29 +45,16 @@
                         </div>
                         <div class="cs-contents">
                             <p>
-                                Desa Pakukerto, sebuah nama yang tak terpisahkan dari lembaran sejarah Kabupaten [Nama
-                                Kabupaten Anda], memiliki akar yang kuat dalam budaya dan perjuangan masa lalu. Konon,
-                                nama "Pakukerto" sendiri berasal dari gabungan kata "Paku" dan "Kerto". Kata "Paku"
-                                diyakini merujuk pada [jelaskan arti atau filosofi "Paku" dalam konteks desa, contoh:
-                                tanaman paku yang tumbuh subur di awal pembentukan desa, atau simbol kekuatan dan
-                                kemapanan]. Sementara itu, "Kerto" berasal dari kata "Kertha" yang dalam bahasa Jawa
-                                Kuno berarti kemakmuran, ketenteraman, atau keberkahan.
+                                Desa Pakukerto, sebuah nama yang tak terpisahkan dari lembaran sejarah Kabupaten Pasuruan, memiliki akar yang kuat dalam budaya dan perjuangan masa lalu. Konon, nama "Pakukerto" sendiri berasal dari gabungan kata "Paku" dan "Kerto". Kata "Paku" diyakini merujuk pada pohon paku (pakis) yang banyak tumbuh subur di wilayah ini pada masa awal pembentukan desa, melambangkan kesuburan dan kemapanan alam. Sementara itu, "Kerto" berasal dari kata "Kertha" yang dalam bahasa Jawa Kuno berarti kemakmuran, ketenteraman, atau keberkahan.
                             </p>
                             <p>
-                                Dengan demikian, Pakukerto dapat diartikan sebagai "desa yang makmur dan tenteram" atau
-                                "tempat yang diberkahi dengan kemakmuran." Sejarah mencatat bahwa sejak [perkiraan tahun
-                                berdiri atau awal pemukiman jika ada, contoh: abad ke-18 atau era Kerajaan Majapahit],
-                                para leluhur Desa Pakukerto telah membangun fondasi kehidupan yang harmonis, mengolah
-                                tanah subur, dan melestarikan nilai-nilai gotong royong yang masih kami pegang teguh
-                                hingga kini.
+                                Dengan demikian, Pakukerto dapat diartikan sebagai "desa yang makmur dan tenteram berkat kesuburan alamnya." Sejarah mencatat bahwa sejak sekitar tahun 1870, para leluhur Desa Pakukerto telah membangun fondasi kehidupan yang harmonis, mengolah tanah subur untuk pertanian, dan melestarikan nilai-nilai gotong royong yang masih kami pegang teguh hingga kini. Desa ini juga dikenal sebagai daerah yang resisten terhadap penjajahan, banyak menyimpan kisah perjuangan lokal.
                             </p>
                             <blockquote>
                                 <span>
-                                    "Sebuah desa bukan hanya tentang tanah, tetapi tentang kisah dan semangat yang terus
-                                    hidup di setiap generasi."
+                                    "Sebuah desa bukan hanya tentang tanah, tetapi tentang kisah dan semangat yang terus hidup di setiap generasi."
                                 </span>
                                 <p>Petuah Leluhur Pakukerto</p>
-                                {{-- Jika ada akun media sosial resmi desa, bisa tautkan di sini --}}
                                 <button class="btn btn-curve"><i class="fab fa-facebook"></i> Bagikan</button>
                             </blockquote>
                             <div class="cs-title">
@@ -84,21 +67,14 @@
                                     <div class="card-header" role="tab" id="headingDusun1">
                                         <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
                                             href="#collapseDusun1" aria-expanded="false" aria-controls="collapseDusun1">
-                                            <h5 class="mb-0">Dusun [Nama Dusun 1]: Jejak Awal dan Perkembangan <i
+                                            <h5 class="mb-0">Dusun Kemiri: Jejak Awal dan Kekuatan Pertanian <i
                                                     class="fas fa-plus"></i></h5>
                                         </a>
                                     </div>
                                     <div id="collapseDusun1" class="collapse" role="tabpanel"
                                         aria-labelledby="headingDusun1" data-parent="#accordionEx1">
                                         <div class="card-body">
-                                            Dusun [Nama Dusun 1] merupakan salah satu dusun tertua di Pakukerto, yang
-                                            konon didirikan oleh [sebutkan tokoh/kelompok awal jika ada, misal: Mbah
-                                            Kerto atau rombongan pendatang pertama]. Awalnya, dusun ini dikenal sebagai
-                                            [sebutkan nama lama jika ada, atau ciri khas geografis awal, misal: daerah
-                                            persawahan yang subur]. Perkembangan dusun ini tak lepas dari [jelaskan
-                                            faktor pendorong, misal: pembangunan irigasi, atau keberadaan pasar
-                                            tradisional]. Hingga kini, [sebutkan satu ciri khas/tradisi yang masih kuat
-                                            di dusun ini].
+                                            Dusun Kemiri merupakan salah satu dusun tertua di Pakukerto, yang konon didirikan oleh leluhur awal yang membuka lahan pertanian. Awalnya, dusun ini dikenal sebagai daerah dengan pohon kemiri yang tumbuh subur dan menjadi salah satu komoditas utama. Perkembangan dusun ini tak lepas dari tradisi gotong royong dalam mengelola sawah dan kebun. Hingga kini, Dusun Kemiri masih menjadi sentra pertanian padi dan palawija di Desa Pakukerto.
                                         </div>
                                     </div>
                                 </div>
@@ -106,7 +82,7 @@
                                     <div class="card-header" role="tab" id="headingDusun2">
                                         <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
                                             href="#collapseDusun2" aria-expanded="false" aria-controls="collapseDusun2">
-                                            <h5 class="mb-0">Dusun [Nama Dusun 2]: Kisah dan Potensi <i
+                                            <h5 class="mb-0">Dusun Gendol: Kisah Air dan Kesejahteraan Masyarakat <i
                                                     class="fas fa-plus"></i>
                                             </h5>
                                         </a>
@@ -114,12 +90,7 @@
                                     <div id="collapseDusun2" class="collapse" role="tabpanel"
                                         aria-labelledby="headingDusun2" data-parent="#accordionEx1">
                                         <div class="card-body">
-                                            Dusun [Nama Dusun 2] memiliki sejarah yang unik, sering dikaitkan dengan
-                                            [sebutkan legenda/peristiwa penting, misal: keberadaan mata air keramat,
-                                            atau tempat persinggahan para pejuang]. Masyarakat di dusun ini dikenal
-                                            dengan [sebutkan ciri khas masyarakat, misal: kerajinan tangan, atau
-                                            keahlian bertani buah]. Perkembangan dusun ini banyak dipengaruhi oleh
-                                            [sebutkan faktor, misal: pembangunan jalan, atau inisiatif komunitas].
+                                            Dusun Gendol memiliki sejarah yang unik, sering dikaitkan dengan keberadaan sumber mata air alami atau aliran sungai kecil (gendol) yang menjadi penopang kehidupan pertanian dan kebutuhan air masyarakat. Masyarakat di dusun ini dikenal dengan kemampuannya dalam mengelola sumber daya air dan mengembangkan sistem irigasi sederhana. Perkembangan dusun ini banyak dipengaruhi oleh peningkatan akses terhadap air bersih dan pertanian hortikultura.
                                         </div>
                                     </div>
                                 </div>
@@ -127,7 +98,7 @@
                                     <div class="card-header" role="tab" id="headingDusun3">
                                         <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
                                             href="#collapseDusun3" aria-expanded="false" aria-controls="collapseDusun3">
-                                            <h5 class="mb-0">Dusun [Nama Dusun 3]: Warisan dan Inovasi <i
+                                            <h5 class="mb-0">Dusun Janti: Warisan Spiritual dan Keterbukaan <i
                                                     class="fas fa-plus"></i>
                                             </h5>
                                         </a>
@@ -135,32 +106,38 @@
                                     <div id="collapseDusun3" class="collapse" role="tabpanel"
                                         aria-labelledby="headingDusun3" data-parent="#accordionEx1">
                                         <div class="card-body">
-                                            Sejarah Dusun [Nama Dusun 3] erat kaitannya dengan [sebutkan aspek sejarah,
-                                            misal: pusat keagamaan, atau daerah pertahanan]. Dusun ini juga menjadi
-                                            saksi [sebutkan peristiwa penting, misal: pembangunan sekolah pertama, atau
-                                            masuknya teknologi baru]. Meskipun menjaga warisan leluhur, dusun ini juga
-                                            aktif dalam [sebutkan inovasi/perkembangan modern, misal: pengembangan
-                                            pariwisata, atau pertanian modern].
+                                            Sejarah Dusun Janti erat kaitannya dengan tokoh spiritual atau punden (tempat keramat) yang diyakini sebagai cikal bakal pemukiman. Konon nama Janti berasal dari nama seorang pertapa bernama Mbah Janati. Dusun ini juga menjadi saksi perkembangan kerukunan antar umat beragama dan menjadi dusun dengan masyarakat yang terbuka terhadap perubahan positif. Meskipun menjaga warisan leluhur, dusun ini juga aktif dalam pengembangan potensi ekonomi lokal dan kegiatan sosial-keagamaan.
                                         </div>
                                     </div>
                                 </div>
-                                {{-- Tambahkan Accordion Card lainnya jika ada lebih banyak dusun --}}
-                                {{-- Contoh:
                                 <div class="card">
                                     <div class="card-header" role="tab" id="headingDusun4">
                                         <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
                                             href="#collapseDusun4" aria-expanded="false" aria-controls="collapseDusun4">
-                                            <h5 class="mb-0">Dusun [Nama Dusun 4]: [Judul Singkat] <i class="fas fa-plus"></i></h5>
+                                            <h5 class="mb-0">Dusun Mojolengko: Sentra Budaya dan Pertumbuhan Penduduk <i class="fas fa-plus"></i></h5>
                                         </a>
                                     </div>
                                     <div id="collapseDusun4" class="collapse" role="tabpanel"
                                         aria-labelledby="headingDusun4" data-parent="#accordionEx1">
                                         <div class="card-body">
-                                            [Isi sejarah Dusun 4]
+                                            Dusun Mojolengko memiliki sejarah yang dinamis, seringkali menjadi pusat kegiatan kebudayaan dan kesenian tradisional di Desa Pakukerto. Dusun ini juga mengalami pertumbuhan penduduk yang signifikan seiring dengan kemajuan desa. Banyak inisiatif pembangunan fasilitas umum, seperti sekolah dan puskesmas pembantu, pertama kali muncul di dusun ini, menunjukkan perannya sebagai motor penggerak perubahan di desa.
                                         </div>
                                     </div>
                                 </div>
-                                --}}
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingDusun5">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
+                                            href="#collapseDusun5" aria-expanded="false" aria-controls="collapseDusun5">
+                                            <h5 class="mb-0">Dusun Pakunden: Penjaga Tradisi dan Kearifan Lokal <i class="fas fa-plus"></i></h5>
+                                        </a>
+                                    </div>
+                                    <div id="collapseDusun5" class="collapse" role="tabpanel"
+                                        aria-labelledby="headingDusun5" data-parent="#accordionEx1">
+                                        <div class="card-body">
+                                            Nama Dusun Pakunden konon berasal dari kata "Pepunden" yang berarti makam leluhur atau tempat yang dikeramatkan. Sejarah dusun ini sangat erat kaitannya dengan penjagaan tradisi dan kearifan lokal yang diwariskan secara turun-temurun. Masyarakat di Dusun Pakunden dikenal sangat menjaga adat istiadat, sering menjadi tuan rumah berbagai upacara adat dan bersih desa yang masih lestari hingga kini.
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
                             <div class="prev-next-page d-flex justify-content-between align-items-center mt-5">
@@ -194,18 +171,16 @@
                             <h5 class="cl-white mb-0">Fakta Singkat Sejarah Desa Pakukerto</h5>
                         </div>
                         <ul class="d-flex flex-column">
-                            <li><i class="far fa-building"></i> Jumlah Dusun : <span>[Jumlah Dusun di Pakukerto]</span>
+                            <li><i class="far fa-building"></i> Jumlah Dusun : <span>5 Dusun</span>
                             </li>
-                            <li><i class="fas fa-book"></i> Sumber Sejarah : <span>[Cerita Rakyat / Catatan Lama /
-                                    Sesepuh]</span></li>
-                            <li><i class="fas fa-user-friends"></i> Tokoh Lokal : <span>[Nama Tokoh Penting dari
-                                    Dusun-Dusun, jika ada]</span></li>
-                            <li><i class="far fa-clock"></i> Ciri Khas Sejarah : <span>[Gotong Royong, Pertanian,
-                                    Kesenian]</span></li>
-                            <li><i class="fas fa-globe-europe"></i> Warisan Utama : <span>[Tradisi Adat / Bangunan
-                                    Bersejarah]</span></li>
+                            <li><i class="fas fa-book"></i> Sumber Sejarah : <span>Cerita Rakyat / Catatan Lama /
+                                        Sesepuh Desa</span></li>
+                            <li><i class="fas fa-user-friends"></i> Tokoh Lokal : <span>Mbah Janati (Dusun Janti), Sesepuh Pendiri Dusun</span></li>
+                            <li><i class="far fa-clock"></i> Ciri Khas Sejarah : <span>Gotong Royong, Pertanian Tradisional,
+                                        Kesenian Rakyat, Adat Bersih Desa</span></li>
+                            <li><i class="fas fa-globe-europe"></i> Warisan Utama : <span>Tradisi Adat Bersih Desa / Punden Keramat di Tiap Dusun</span></li>
                         </ul>
-                        <a href="galeri-sejarah.html" class="btn">Lihat Galeri Sejarah</a>
+                        {{-- <a href="galeri-sejarah.html" class="btn">Lihat Galeri Sejarah</a> --}}
                     </div>
                 </div>
             </div>

@@ -53,21 +53,19 @@
                                         <li><a href="/profile/visimisi">Visi & Misi</a></li>
                                         <li><a href="/profile/kelembagaan">Kelembagaan</a></li>
                                         <li><a href="/profile/letakgeografis">Letak Geografis</a></li>
-                                        <li><a href="faq.html">Data Demografi</a></li>
+                                        <li><a href="/profile/demografi">Data Demografi</a></li>
                                         <li><a href="faq.html">Potensi Desa</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li class="dropdown submenu">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                        aria-haspopup="true" aria-expanded="false">UMKM<i
-                                            class="fas fa-chevron-down"></i></a>
+                                <li><a href="/umkm">UMKM</a></li>
+                                {{-- <li class="dropdown submenu">
+                                    <a href="#">UMKM</i></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="course-1.html">Course List 1</a></li>
                                         <li><a href="course-2.html">Course List 2</a></li>
                                         <li><a href="course-detail.html">Course Detail</a></li>
                                     </ul>
-                                </li>
+                                </li> --}}
                                 <li class="dropdown submenu">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                         aria-haspopup="true" aria-expanded="false">Events <i
