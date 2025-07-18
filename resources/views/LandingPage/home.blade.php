@@ -23,8 +23,10 @@
         <div class="banner-content">
             <div class="slider banner-slider">
                 <div class="h2-slider-list sl-overlay"
-                    style="background-image: url({{ asset('LandingPageOri/assets/images/banner/slider1.png') }})">
-                    <div class="container">
+                    style="background-image: url({{ asset('LandingPageOri/assets/images/banner/slider1.png') }});height:44pc">
+                    {{-- <div class="container">
+                        <div class="slide-cont
+                    {{-- <div class="container">
                         <div class="slide-contain">
                             <h4>LEARN ANYTHING, ANYTIME, ANYWHERE</h4>
                             <h1 class="cl-white mt-4 wow fadeInDown">BEST ONLINE LEARNING FOR YOUR FUTURE</h1>
@@ -37,8 +39,8 @@
                                 <a href="contact.html" class="btn btn-curve btn-white">Get Started</a>
                             </div>
                         </div>
-                    </div>
-                </div> 
+                    </div> --}}
+                </div>
                 <div class="h2-slider-list sl-overlay"
                     style="background-image: url({{ asset('LandingPageOri/assets/images/banner/slider2.png') }});height:44pc" >
                     {{-- <div class="container">

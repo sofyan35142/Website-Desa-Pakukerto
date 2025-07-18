@@ -580,6 +580,12 @@ h4.top-title {
 .bg-linkedin {
     background: #0077b5;
 }
+.bg-whatsapp {
+    background: #25D366;
+}
+.bg-instagram {
+    background: #E1306C;
+}
 
 .form-btn {
     background: #707070;
@@ -736,7 +742,7 @@ h4.top-title {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #181d38;
+    background-color: #181d387d;
     background-repeat: repeat;
     content: "";
     z-index: -1;
@@ -1756,7 +1762,7 @@ nav.navbar.navbar-default.navbar-sticky-in .logo-black {
 }
 
 .counter .counter-wrap .content .value-pin .value::after {
-    content: "+";
+    /* content: "+"; */
     position: relative;
 }
 

@@ -17,14 +17,18 @@ class ProfileDesa extends Controller
         return view("LandingPage.VisiMisi");
     }
 
-    public function Kelembagaan()
+    public function ViewKelembagaan()
     {
         return view("LandingPage.Kelembagaan");
     }
 
-    public function LetakGeografis()
+    public function ViewLetakGeografis()
     {
         return view("LandingPage.LetakGeografis");
+    }
+    public function ViewDemografi()
+    {
+        return view("LandingPage.demografi");
     }
 
 
