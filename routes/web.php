@@ -22,4 +22,4 @@ Route::get('/profile/kelembagaan', [ProfileDesa::class,  'Kelembagaan'])->name('
 Route::get('/profile/letakgeografis', [ProfileDesa::class,  'LetakGeografis'])->name('letakgeografis');
 
 Route::get('/persuratan', [PersuratanController::class,  'viewpersuratan'])->name('persuratan');
-Route::get('/event', [EventController::class,  'viewevent'])->name('event');
+Route::get('/event/eventlist', [EventController::class,  'viewevent'])->name('event');

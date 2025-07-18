@@ -120,7 +120,7 @@
             <div class="col-lg-4 col-md-6 mb-4 customize-wrap wow fadeInUp">
               <div class="customize-item">
                 <div class="sv-image">
-                  <img src="images/courses/event-1.jpg" alt="" />
+                  <img src="{{ asset('LandingPageOri/assets/images/courses/event-1.jpg') }}" alt="" />
                 </div>
                 <div class="customize-ct">
                   <h4>
@@ -139,18 +139,18 @@
             <div class="col-lg-4 col-md-6 mb-4 customize-wrap wow fadeInUp">
               <div class="customize-item">
                 <div class="sv-image">
-                  <img src="images/courses/event-2.jpg" alt="" />
+                  <img src="{{ asset('LandingPageOri/assets/images/courses/Bazar.png') }}" alt="" />
                 </div>
                 <div class="customize-ct">
                   <h4>
-                    <a href="event-detail.html">IMPORTANCES OF RESEARCH SEMINAR 2021</a>
+                    <a href="event-detail.html">Bazar Produk UMKM & Hasil Tani</a>
                   </h4>
                 </div>
                 <div class="customize-bottom">
                   <ul class="d-flex justify-content-start">
-                    <li class="mr-3"><i class="far fa-calendar-alt"></i> 30 July</li>
-                    <li class="mr-3"><i class="far fa-clock"></i> 9AM</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Melbourne</li>
+                    <li class="mr-3"><i class="far fa-calendar-alt"></i> 20 Agustus 2025</li>
+                    <li class="mr-3"><i class="far fa-clock"></i> 10.00-15.00</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Pasar Desa Pakukerto</li>
                   </ul>
                 </div>
               </div>
@@ -158,18 +158,18 @@
             <div class="col-lg-4 col-md-6 mb-4 customize-wrap wow fadeInUp">
               <div class="customize-item">
                 <div class="sv-image">
-                  <img src="images/courses/event-3.jpg" alt="" />
+                  <img src="{{ asset('LandingPageOri/assets/images/courses/event-3.jpg') }}" alt="" />
                 </div>
                 <div class="customize-ct">
                   <h4>
-                    <a href="event-detail.html">NEWLY SUMMER COURSE STARTS FROM JUNE</a>
+                    <a href="event-detail.html">Upacara Memperingati HUT 80 RI</a>
                   </h4>
                 </div>
                 <div class="customize-bottom">
                   <ul class="d-flex justify-content-start">
-                    <li class="mr-3"><i class="far fa-calendar-alt"></i> 30 July</li>
-                    <li class="mr-3"><i class="far fa-clock"></i> 9AM</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Melbourne</li>
+                    <li class="mr-3"><i class="far fa-calendar-alt"></i> 17 Agustus 2025</li>
+                    <li class="mr-3"><i class="far fa-clock"></i> 10.15 - Selesai</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Pasar Desa Pakukerto</li>
                   </ul>
                 </div>
               </div>
@@ -177,18 +177,18 @@
             <div class="col-lg-4 col-md-6 customize-wrap wow fadeInUp">
               <div class="customize-item">
                 <div class="sv-image">
-                  <img src="images/courses/event-1.jpg" alt="" />
+                  <img src="{{ asset('LandingPageOri/assets/images/courses/event-1.jpg') }}" alt="" />
                 </div>
                 <div class="customize-ct">
                   <h4>
-                    <a href="event-detail.html">TED TALKS AT UCF COLLEGE OF EDUCATION</a>
+                    <a href="event-detail.html">Gerak Jalan Memperingati HUT RI 2025</a>
                   </h4>
                 </div>
                 <div class="customize-bottom">
                   <ul class="d-flex justify-content-start">
-                    <li class="mr-3"><i class="far fa-calendar-alt"></i> 30 July</li>
-                    <li class="mr-3"><i class="far fa-clock"></i> 9AM</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Melbourne</li>
+                    <li class="mr-3"><i class="far fa-calendar-alt"></i> 30 Agustus 2025</li>
+                    <li class="mr-3"><i class="far fa-clock"></i> 07.00 - selesai</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Lapangan Desa Pakukerto</li>
                   </ul>
                 </div>
               </div>
@@ -200,14 +200,14 @@
                 </div>
                 <div class="customize-ct">
                   <h4>
-                    <a href="event-detail.html">IMPORTANCES OF RESEARCH SEMINAR 2021</a>
+                    <a href="event-detail.html">Pelatihan Digital Marketing untuk UMKM</a>
                   </h4>
                 </div>
                 <div class="customize-bottom">
                   <ul class="d-flex justify-content-start">
-                    <li class="mr-3"><i class="far fa-calendar-alt"></i> 30 July</li>
-                    <li class="mr-3"><i class="far fa-clock"></i> 9AM</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Melbourne</li>
+                    <li class="mr-3"><i class="far fa-calendar-alt"></i> 25 Agustus 2025</li>
+                    <li class="mr-3"><i class="far fa-clock"></i> 08.00 - 12.00</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Balai Desa Pakukerto</li>
                   </ul>
                 </div>
               </div>
@@ -219,14 +219,14 @@
                 </div>
                 <div class="customize-ct">
                   <h4>
-                    <a href="event-detail.html">NEWLY SUMMER COURSE STARTS FROM JUNE</a>
+                    <a href="event-detail.html">Layanan Kesehatan Gratis untuk Warga</a>
                   </h4>
                 </div>
                 <div class="customize-bottom">
                   <ul class="d-flex justify-content-start">
-                    <li class="mr-3"><i class="far fa-calendar-alt"></i> 30 July</li>
-                    <li class="mr-3"><i class="far fa-clock"></i> 9AM</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Melbourne</li>
+                    <li class="mr-3"><i class="far fa-calendar-alt"></i> 21 Agustus 2025</li>
+                    <li class="mr-3"><i class="far fa-clock"></i> 08.00 - 13.00</li>
+                    <li><i class="fas fa-map-marker-alt"></i>  Balai Desa Pakukerto</li>
                   </ul>
                 </div>
               </div>
