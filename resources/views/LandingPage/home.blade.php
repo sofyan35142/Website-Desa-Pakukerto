@@ -23,13 +23,13 @@
         <div class="banner-content">
             <div class="slider banner-slider">
                 <div class="h2-slider-list sl-overlay"
-                    style="background-image: url({{ asset('LandingPageOri/assets/images/banner/slider1.png') }});height:44pc">
+                    style="background-image: url({{ asset('LandingPageOri/assets/images/banner/1.png') }});height:44pc">
                 </div>
                 <div class="h2-slider-list sl-overlay"
                     style="background-image: url({{ asset('LandingPageOri/assets/images/banner/slider2.png') }});height:44pc" >
                 </div>
                 <div class="h2-slider-list sl-overlay"
-                    style="background-image: url({{ asset('LandingPageOri/assets/images/banner/education-PHW33SU.jpg') }});height:44pc">
+                    style="background-image: url({{ asset('LandingPageOri/assets/images/banner/2.png') }});height:44pc">
                 </div>
             </div>
         </div>
@@ -436,7 +436,7 @@
                         <img src="{{ asset('LandingPageOri/assets/images/team/team-2.jpg') }}" alt="" />
                         <div class="ins-names">
                             <h4>H. Surateman</h4>
-                            <span class="cl-orange">Sekertaris Desa</span>
+                            <span class="cl-orange">Sekertaris Desa 1 </span>
                         </div>
                     </div>
                 </div>
@@ -445,7 +445,7 @@
                         <img src="{{ asset('LandingPageOri/assets/images/team/team-3.jpg') }}" alt="" />
                         <div class="ins-names">
                             <h4>John Melton</h4>
-                            <span class="cl-orange">Instructor</span>
+                            <span class="cl-orange">Sekertasris Desa 2</span>
                         </div>
                     </div>
                 </div>
@@ -454,7 +454,7 @@
                         <img src="{{ asset('LandingPageOri/assets/images/team/team-4.jpg') }}" alt="" />
                         <div class="ins-names">
                             <h4>Ketti Helson</h4>
-                            <span class="cl-orange">Business Analyst</span>
+                            <span class="cl-orange">Bendahara Desa</span>
                         </div>
                     </div>
                 </div>
@@ -547,7 +547,7 @@
             <div class="section-title sc-center justify-content-center text-center borderline">
                 <div class="title-top">
                     <div class="title-quote">
-                        <span>Our Events</span>
+                        <span>Event Desa</span>
                     </div>
                     <h3>Agenda <span class="cl-blue">Desa</span> <span class="cl-blue">Pakukerto</span></h3>
                 </div>
@@ -653,7 +653,7 @@
             <div class="section-title sc-center justify-content-center text-center borderline wow fadeInLeft">
                 <div class="title-top">
                     <div class="title-quote">
-                        <span>Berita DESA</span>
+                        <span>Pakukerto NEWS</span>
                     </div>
                     <h3>Berita <span class="cl-blue">Seputar</span> Desa <span class="cl-blue">Pakukerto</span></h3>
                 </div>

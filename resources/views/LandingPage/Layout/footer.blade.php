@@ -4,9 +4,8 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="f-maincontent">
-                            <img src="{{ asset('LandingPageOri/assets/images/Logo/Footer2.png') }}" alt="" />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
-                                ullamcorper mattis, pulvinar dapibus leo.</p>
+                            <img src="{{ asset('LandingPageOri/assets/images/Logo/Pakukerto_footer.png') }}" alt="" />
+                            <p>Website Resmi Desa Pakukerto, Kecamatan Sukorejo, Kabupaten Pasuruan, Provinsi Jawa Timur</p>
                             <ul>
                                 <li class="pr-2">
                                     <a href="#" class="bg-linkedin"><i class="fab fa-linkedin-in"></i></a>

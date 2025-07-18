@@ -28,3 +28,4 @@ Route::get('/potensidesa', [UmkmController::class,  'ViewPotensiDesa'])->name('V
 
 Route::get('/persuratan', [PersuratanController::class,  'viewpersuratan'])->name('persuratan');
 Route::get('/event/eventlist', [EventController::class,  'viewevent'])->name('event');
+Route::get('/event/eventdetail', [EventController::class,  'vieweventdetail'])->name('event');

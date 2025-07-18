@@ -11,4 +11,8 @@ class EventController extends Controller
     {
         return view('LandingPage.event');
     }
+    public function vieweventdetail()
+    {
+        return view('LandingPage.eventdetail');
+    }
 }
