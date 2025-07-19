@@ -23,7 +23,7 @@
         <div class="banner-content">
             <div class="slider banner-slider">
                 <div class="h2-slider-list sl-overlay"
-                    style="background-image: url({{ asset('LandingPageOri/assets/images/banner/1.png') }});height:44pc">
+                    style="background-image: url({{ asset('LandingPageOri/assets/images/banner/final.png') }});height:44pc">
                 </div>
                 <div class="h2-slider-list sl-overlay"
                     style="background-image: url({{ asset('LandingPageOri/assets/images/banner/slider2.png') }});height:44pc" >

@@ -18,8 +18,8 @@
     <!-- Blog title starts -->
     <section class="blog-top-title">
         <div class="bg_bar_title">
-            <h1 class="cl-white">FITTECH & KEY INVESTMENT CONFERENCE</h1>
-            <p class="cl-white">September 21, 2021</p>
+            <h1 class="cl-white">Remaja Desa Pakukerto Ikuti Pelatihan Keterampilan Digital</h1>
+            <p class="cl-white">September 21, 2025</p>
         </div>
         <div class="bg__bar_image">
             <img src="{{ asset('LandingPageOri/assets/images/inner/modern-education-business-startup-friendship-an-2021-07-27-05-12-15-utc-1.jpg') }}"
@@ -46,7 +46,7 @@
                                 <li>
                                     <a href="#"><i class="far fa-user-circle"></i> html_design</a>
                                 </li>
-                                <li><i class="far fa-calendar"></i> August 11, 2021</li>
+                                <li><i class="far fa-calendar"></i> August 11, 2025</li>
                                 <li><i class="far fa-clock"></i> 6:47 am</li>
                                 <li>
                                     <a href="#"><i class="fas fa-comment-dots"></i> No Comments</a>
@@ -55,34 +55,34 @@
                         </div>
                         <div class="bg__only_detail">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum.
+                                Dalam rangka meningkatkan kapasitas dan keterampilan generasi muda di era digital,
+                                Pemerintah Desa Pakukerto menyelenggarakan pelatihan keterampilan digital yang diikuti
+                                oleh para remaja dari berbagai dusun. Kegiatan ini berlangsung pada Sabtu, 13 Juli 2025,
+                                bertempat di Balai Desa Pakukerto dan menghadirkan narasumber dari komunitas teknologi
+                                lokal. <br>
+                                Pelatihan ini mencakup beberapa materi dasar seperti:
                             </p>
                             <ul class="">
-                                <li>Purus sequi accusamus? Nibh aut perspiciatis, lorem lorem perspiciatis.</li>
-                                <li>Dictum? Posuere cumque sed illum facilisis leo illum facilisis.</li>
-                                <li>Neque officiis feugiat praesentium qui, aliqua hic commodo praesentium.</li>
-                                <li>Asperiores irure class lobortis veritatis, alias sem lobortis veritatis.</li>
-                                <li>Ipsum eros quaerat deserunt proin porttitor, fugit ultrices.</li>
-                                <li>Volutpat, justo mollit ullamco sagittis duis enim labore, ullamcorper dicta.</li>
+                                <li>Pengantar desain grafis menggunakan Canva dan Photoshop</li>
+                                <li>Dasar pengelolaan media sosial secara produktif</li>
+                                <li>Pengenalan dunia digital marketing untuk UMKM</li>
+                                <li>Tips membuat konten kreatif dan menarik</li>
+                                {{-- <li>Ipsum eros quaerat deserunt proin porttitor, fugit ultrices.</li>
+                                <li>Volutpat, justo mollit ullamco sagittis duis enim labore, ullamcorper dicta.</li> --}}
                             </ul>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum.
+                                Antusiasme peserta sangat tinggi, terlihat dari jumlah peserta yang melebihi target
+                                awal. Para peserta aktif berdiskusi dan mempraktikkan langsung materi yang diberikan.
+                                Kegiatan ini juga menjadi ajang kolaborasi antar remaja lintas dusun, serta menjadi
+                                sarana membangun semangat berkarya di bidang digital. <br>
+
+                                Kepala Desa Pakukerto dalam sambutannya menyampaikan bahwa kegiatan ini bertujuan
+                                memberi bekal keterampilan yang bermanfaat, tidak hanya untuk pribadi peserta, tetapi
+                                juga untuk mendukung potensi ekonomi digital desa di masa depan.
                             </p>
 
                             <!--Accordion wrapper-->
-                            <div class="accordion md-accordion mt-3" id="accordionEx1" role="tablist"
+                            {{-- <div class="accordion md-accordion mt-3" id="accordionEx1" role="tablist"
                                 aria-multiselectable="true">
                                 <!-- Accordion card -->
                                 <div class="card">
@@ -122,7 +122,7 @@
                                     </div>
                                 </div>
                                 <!-- Accordion card -->
-                            </div>
+                            </div> --}}
                             <!-- Accordion wrapper -->
 
                             <blockquote>
@@ -134,7 +134,7 @@
                                 <button class="btn btn-curve"><i class="fab fa-twitter"></i> Tweet</button>
                             </blockquote>
                         </div>
-                        <div class="blg__ct_form">
+                        {{-- <div class="blg__ct_form">
                             <h3>Leave a Reply</h3>
                             <p>Your email address will not be published. Required fields are marked *</p>
                             <form class="mt-4">
@@ -174,7 +174,7 @@
                                 <!-- Submit button -->
                                 <button type="submit" class="btn">Post Comment</button>
                             </form>
-                        </div>
+                        </div> --}}
                         <div class="prev-next-page d-flex justify-content-between align-items-center mt-4">
                             <div class="prev-navlink-page">
                                 <a href="#">
@@ -212,7 +212,7 @@
                                 <h6 class="mb-0">
                                     <a href="blog-detail.html">EPATHSHALA’S ALUMNI HOT AIR BALLON TRIP IN TURKEY</a>
                                 </h6>
-                                <span class="cust-meta"> August 20, 2021</span>
+                                <span class="cust-meta"> August 20, 2025</span>
                             </div>
                         </div>
                         <div class="customize-item d-flex mb-3">
@@ -224,7 +224,7 @@
                                 <h6 class="mb-0">
                                     <a href="blog-detail.html">THE NEXT GENERATION OF BUSINESS LEADERS</a>
                                 </h6>
-                                <span class="cust-meta"> August 20, 2021</span>
+                                <span class="cust-meta"> August 20, 2025</span>
                             </div>
                         </div>
                         <div class="customize-item d-flex mb-3">
@@ -236,7 +236,7 @@
                                 <h6 class="mb-0">
                                     <a href="blog-detail.html">REUNION EVENT: EPATHSHALA’S ALUMNI GOLF TOUR</a>
                                 </h6>
-                                <span class="cust-meta"> August 20, 2021</span>
+                                <span class="cust-meta"> August 20, 2025</span>
                             </div>
                         </div>
                         <div class="customize-item d-flex">
@@ -248,7 +248,7 @@
                                 <h6 class="mb-0">
                                     <a href="blog-detail.html">EPATHSHALA’S ALUMNI HOT AIR BALLON TRIP IN TURKEY</a>
                                 </h6>
-                                <span class="cust-meta"> August 20, 2021</span>
+                                <span class="cust-meta"> August 20, 2025</span>
                             </div>
                         </div>
                     </div>
@@ -280,8 +280,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <img src="{{ asset('LandingPageOri/assets/images/inner/education-2021-04-09-20-17-44-utc.jpg') }}"
-                            alt="" />
+                        {{-- <img src="{{ asset('LandingPageOri/assets/images/inner/education-2025-04-09-20-17-44-utc.jpg') }}"
+                            alt="" /> --}}
                     </div>
                 </div>
             </div>

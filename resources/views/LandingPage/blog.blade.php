@@ -37,7 +37,7 @@
                                 <div class="article-list">
                                     <div class="at-thumbnail">
                                         <a href="/blog/blogdetail">
-                                            <img src="{{ asset('LandingPageOri/assets/images/blog/blog-1.jpg') }}"
+                                            <img src="{{ asset('LandingPageOri/assets/images/blog/Bakti.png') }}"
                                                 alt="" />
                                         </a>
                                         <span class="blog-tag"> Education </span>
@@ -47,16 +47,19 @@
                                             alt="" class="article-avatar" />
                                         <div class="artl-detail">
                                             <a href="/blog/blogdetail">
-                                                <h4>NEW CHICAGO SCHOOL BUDGET RELIES ON PENSION</h4>
+                                                <h4>Warga Desa Pakukerto Gelar Kerja Bakti Bersihkan Lingkungan</h4>
                                             </a>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                            <p>Dalam semangat gotong royong, warga Desa Pakukerto mengadakan kerja bakti massal
+                                        membersihkan saluran air dan fasilitas umum pada Minggu pagi (30 Juli 2025).
+                                        Kegiatan ini diikuti oleh seluruh RT dan didukung oleh Karang Taruna serta
+                                        ibu-ibu PKK.</p>
                                             <a href="/blog/blogdetail" class="bl-link">Read More <i
                                                     class="fas fa-angle-double-right"></i></a>
                                         </div>
                                         <div class="artl-bottom">
                                             <ul class="d-flex justify-content-start">
-                                                <li>June 12, 2021</li>
-                                                <li><a href="#">2 Comments</a></li>
+                                                <li>June 12, 2025</li>
+                                                {{-- <li><a href="#">2 Comments</a></li> --}}
                                             </ul>
                                         </div>
                                     </div>
@@ -66,7 +69,7 @@
                                 <div class="article-list">
                                     <div class="at-thumbnail">
                                         <a href="/blog/blogdetail">
-                                            <img src="{{ asset('LandingPageOri/assets/images/blog/blog-2.jpg') }}"
+                                            <img src="{{ asset('LandingPageOri/assets/images/blog/Bakti.png') }}"
                                                 alt="" />
                                         </a>
                                         <span class="blog-tag"> Education </span>
@@ -76,16 +79,19 @@
                                             alt="" class="article-avatar" />
                                         <div class="artl-detail">
                                             <a href="/blog/blogdetail">
-                                                <h4>NEW CHICAGO SCHOOL BUDGET RELIES ON PENSION</h4>
+                                                <h4>Warga Desa Pakukerto Gelar Kerja Bakti Bersihkan Lingkungan</h4>
                                             </a>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                            <p>Dalam semangat gotong royong, warga Desa Pakukerto mengadakan kerja bakti massal
+                                        membersihkan saluran air dan fasilitas umum pada Minggu pagi (30 Juli 2025).
+                                        Kegiatan ini diikuti oleh seluruh RT dan didukung oleh Karang Taruna serta
+                                        ibu-ibu PKK.</p>
                                             <a href="/blog/blogdetail" class="bl-link">Read More <i
                                                     class="fas fa-angle-double-right"></i></a>
                                         </div>
                                         <div class="artl-bottom">
                                             <ul class="d-flex justify-content-start">
-                                                <li>June 12, 2021</li>
-                                                <li><a href="#">2 Comments</a></li>
+                                                <li>June 12, 2025</li>
+                                                {{-- <li><a href="#">2 Comments</a></li> --}}
                                             </ul>
                                         </div>
                                     </div>
@@ -95,7 +101,7 @@
                                 <div class="article-list">
                                     <div class="at-thumbnail">
                                         <a href="/blog/blogdetail">
-                                            <img src="{{ asset('LandingPageOri/assets/images/blog/blog-3.jpg') }}"
+                                            <img src="{{ asset('LandingPageOri/assets/images/blog/Peresmian.png') }}"
                                                 alt="" />
                                         </a>
                                         <span class="blog-tag"> Education </span>
@@ -105,16 +111,19 @@
                                             alt="" class="article-avatar" />
                                         <div class="artl-detail">
                                             <a href="/blog/blogdetail">
-                                                <h4>NEW CHICAGO SCHOOL BUDGET RELIES ON PENSION</h4>
+                                                <h4>Desa Pakukerto Resmikan Layanan Aduan Online Melalui Website</h4>
                                             </a>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                            <p>Untuk meningkatkan keterbukaan dan pelayanan publik, pemerintah Desa Pakukerto
+                                        kini menyediakan fitur pengaduan online yang bisa diakses langsung melalui
+                                        website resmi desa. Warga dapat menyampaikan keluhan, aspirasi, atau laporan
+                                        dengan mudah.</p>
                                             <a href="/blog/blogdetail" class="bl-link">Read More <i
                                                     class="fas fa-angle-double-right"></i></a>
                                         </div>
                                         <div class="artl-bottom">
                                             <ul class="d-flex justify-content-start">
-                                                <li>June 12, 2021</li>
-                                                <li><a href="#">2 Comments</a></li>
+                                                <li>June 12, 2025</li>
+                                                {{-- <li><a href="#">2 Comments</a></li> --}}
                                             </ul>
                                         </div>
                                     </div>
@@ -134,16 +143,16 @@
                                             alt="" class="article-avatar" />
                                         <div class="artl-detail">
                                             <a href="/blog/blogdetail">
-                                                <h4>NEW CHICAGO SCHOOL BUDGET RELIES ON PENSION</h4>
+                                                <h4>Sosialisasi Pengelolaan Sampah Rumah Tangga</h4>
                                             </a>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                            <p>Untuk meningkatkan kesadaran warga terhadap pentingnya menjaga lingkungan, pemerintah Desa Pakukerto mengadakan sosialisasi pengelolaan sampah rumah tangga. Warga diajak memahami cara memilah sampah serta menerapkan prinsip 3R.</p>
                                             <a href="/blog/blogdetail" class="bl-link">Read More <i
                                                     class="fas fa-angle-double-right"></i></a>
                                         </div>
                                         <div class="artl-bottom">
                                             <ul class="d-flex justify-content-start">
-                                                <li>June 12, 2021</li>
-                                                <li><a href="#">2 Comments</a></li>
+                                                <li>June 12, 2025</li>
+                                                {{-- <li><a href="#">2 Comments</a></li> --}}
                                             </ul>
                                         </div>
                                     </div>
@@ -156,23 +165,23 @@
                                             <img src="{{ asset('LandingPageOri/assets/images/blog/blog-1.jpg') }}"
                                                 alt="" />
                                         </a>
-                                        <span class="blog-tag"> Education </span>
+                                        <span class="blog-tag"> Penanaman </span>
                                     </div>
                                     <div class="article-content">
                                         <img src="{{ asset('LandingPageOri/assets/images/team/user-4.jpg') }}"
                                             alt="" class="article-avatar" />
                                         <div class="artl-detail">
                                             <a href="/blog/blogdetail">
-                                                <h4>NEW CHICAGO SCHOOL BUDGET RELIES ON PENSION</h4>
+                                                <h4>Penanaman Seribu Pohon di Lahan Desa</h4>
                                             </a>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                            <p>Untuk mendukung pelestarian alam dan penghijauan desa, warga Desa Pakukerto bersama Karang Taruna melakukan penanaman seribu bibit pohon. Kegiatan ini dilaksanakan secara gotong royong dan terbuka bagi semua warga yang ingin berpartisipasi.</p>
                                             <a href="/blog/blogdetail" class="bl-link">Read More <i
                                                     class="fas fa-angle-double-right"></i></a>
                                         </div>
                                         <div class="artl-bottom">
                                             <ul class="d-flex justify-content-start">
-                                                <li>June 12, 2021</li>
-                                                <li><a href="#">2 Comments</a></li>
+                                                <li>June 12, 2025</li>
+                                                {{-- <li><a href="#">2 Comments</a></li> --}}
                                             </ul>
                                         </div>
                                     </div>
@@ -192,16 +201,16 @@
                                             alt="" class="article-avatar" />
                                         <div class="artl-detail">
                                             <a href="/blog/blogdetail">
-                                                <h4>NEW CHICAGO SCHOOL BUDGET RELIES ON PENSION</h4>
+                                                <h4>Pembersihan Saluran Air dan Fogging Massal</h4>
                                             </a>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                            <p>Untuk mendorong kreativitas dan pemberdayaan ibu rumah tangga, ibu-ibu PKK Desa Pakukerto mengikuti pelatihan pengolahan sampah. Pelatihan ini mengajarkan cara mengubah sampah plastik menjadi produk kerajinan yang memiliki nilai ekonomi.</p>
                                             <a href="/blog/blogdetail" class="bl-link">Read More <i
                                                     class="fas fa-angle-double-right"></i></a>
                                         </div>
                                         <div class="artl-bottom">
                                             <ul class="d-flex justify-content-start">
-                                                <li>June 12, 2021</li>
-                                                <li><a href="#">2 Comments</a></li>
+                                                <li>June 12, 2025</li>
+                                                {{-- <li><a href="#">2 Comments</a></li> --}}
                                             </ul>
                                         </div>
                                     </div>
@@ -221,16 +230,16 @@
                                             alt="" class="article-avatar" />
                                         <div class="artl-detail">
                                             <a href="/blog/blogdetail">
-                                                <h4>NEW CHICAGO SCHOOL BUDGET RELIES ON PENSION</h4>
+                                                <h4>Warga Desa Pakukerto Lakukan Fogging dan Bersihkan Got</h4>
                                             </a>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                            <p>Untuk mencegah penyebaran penyakit akibat nyamuk, warga Desa Pakukerto melaksanakan kegiatan fogging dan pembersihan saluran air. Kegiatan ini dilakukan secara serentak di beberapa RT dan mendapat dukungan dari petugas Puskesmas setempat.</p>
                                             <a href="/blog/blogdetail" class="bl-link">Read More <i
                                                     class="fas fa-angle-double-right"></i></a>
                                         </div>
                                         <div class="artl-bottom">
                                             <ul class="d-flex justify-content-start">
-                                                <li>June 12, 2021</li>
-                                                <li><a href="#">2 Comments</a></li>
+                                                <li>June 12, 2025</li>
+                                                {{-- <li><a href="#">2 Comments</a></li> --}}
                                             </ul>
                                         </div>
                                     </div>
@@ -250,16 +259,16 @@
                                             alt="" class="article-avatar" />
                                         <div class="artl-detail">
                                             <a href="/blog/blogdetail">
-                                                <h4>NEW CHICAGO SCHOOL BUDGET RELIES ON PENSION</h4>
+                                                <h4>Pemerintah Desa Pakukerto Gelar Pelayanan Kesehatan Gratis</h4>
                                             </a>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                            <p>Untuk meningkatkan kesehatan masyarakat, pemerintah Desa Pakukerto bekerja sama dengan Puskesmas setempat mengadakan pelayanan kesehatan gratis. Warga dapat memeriksakan kondisi kesehatan, konsultasi dokter, dan mendapat obat .</p>
                                             <a href="/blog/blogdetail" class="bl-link">Read More <i
                                                     class="fas fa-angle-double-right"></i></a>
                                         </div>
                                         <div class="artl-bottom">
                                             <ul class="d-flex justify-content-start">
-                                                <li>June 12, 2021</li>
-                                                <li><a href="#">2 Comments</a></li>
+                                                <li>June 12, 2025</li>
+                                                {{-- <li><a href="#">2 Comments</a></li> --}}
                                             </ul>
                                         </div>
                                     </div>
@@ -271,12 +280,12 @@
                 <div class="col-lg-4 col-md-12 aside-sidebar customize-wrap wow fadeInUp">
                     <div class="sidebar-profile mb-4">
                         <div class="sidebar-title">
-                            <h4>OUR DIRECTOR</h4>
+                            <h4>KEPALA DESA </h4>
                         </div>
                         <div class="ss__myprofile">
                             <img src="{{ asset('LandingPageOri/assets/images/team/user-1.jpg') }}" alt="" />
                             <h4>Keyan Spears</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor</p>
+                            <p>Bapak kepala desa pakukerto tahun 2020-2025</p>
                         </div>
                     </div>
 
@@ -291,9 +300,9 @@
                             </div>
                             <div class="customize-ct m-0">
                                 <h6 class="mb-0">
-                                    <a href="/blog/blogdetail">EPATHSHALA’S ALUMNI HOT AIR BALLON TRIP IN TURKEY</a>
+                                    <a href="/blog/blogdetail">Karang Taruna Desa Adakan Lomba 17 Agustus untuk WargaY</a>
                                 </h6>
-                                <span class="cust-meta"> August 20, 2021</span>
+                                <span class="cust-meta"> August 20, 2025</span>
                             </div>
                         </div>
                         <div class="customize-item d-flex mb-3">
@@ -303,9 +312,9 @@
                             </div>
                             <div class="customize-ct m-0">
                                 <h6 class="mb-0">
-                                    <a href="/blog/blogdetail">THE NEXT GENERATION OF BUSINESS LEADERS</a>
+                                    <a href="/blog/blogdetail">Remaja Desa Pakukerto Ikuti Pelatihan Keterampilan Digital</a>
                                 </h6>
-                                <span class="cust-meta"> August 20, 2021</span>
+                                <span class="cust-meta"> August 20, 2025</span>
                             </div>
                         </div>
                         <div class="customize-item d-flex mb-3">
@@ -315,9 +324,9 @@
                             </div>
                             <div class="customize-ct m-0">
                                 <h6 class="mb-0">
-                                    <a href="/blog/blogdetail">REUNION EVENT: EPATHSHALA’S ALUMNI GOLF TOUR</a>
+                                    <a href="/blog/blogdetail">Pemerintah Desa Gelar Musyawarah Rencana Pembangunan</a>
                                 </h6>
-                                <span class="cust-meta"> August 20, 2021</span>
+                                <span class="cust-meta"> August 20, 2025</span>
                             </div>
                         </div>
                         <div class="customize-item d-flex">
@@ -327,9 +336,9 @@
                             </div>
                             <div class="customize-ct m-0">
                                 <h6 class="mb-0">
-                                    <a href="/blog/blogdetail">EPATHSHALA’S ALUMNI HOT AIR BALLON TRIP IN TURKEY</a>
+                                    <a href="/blog/blogdetail">Pemuda Desa Pakukerto Gelar Bersih-Bersih Tempat Ibadah</a>
                                 </h6>
-                                <span class="cust-meta"> August 20, 2021</span>
+                                <span class="cust-meta"> August 20, 2025</span>
                             </div>
                         </div>
                     </div>
