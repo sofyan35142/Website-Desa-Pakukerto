@@ -580,9 +580,11 @@ h4.top-title {
 .bg-linkedin {
     background: #0077b5;
 }
+
 .bg-whatsapp {
     background: #25D366;
 }
+
 .bg-instagram {
     background: #E1306C;
 }
@@ -4104,4 +4106,18 @@ footer .footer-upper .copyright-main .copyright-text {
 
 .h-90 {
     height: 90% !important;
+}
+
+.form-shadow {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+}
+
+.btn-surat
+{
+    margin-top: 24px !important;
+    padding: 15px 30px !important;
 }

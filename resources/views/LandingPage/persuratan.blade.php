@@ -25,103 +25,226 @@
                             <div class="cs-title">
                                 <h3>Administrasi</h3>
                             </div>
-                            <!--Accordion wrapper-->
-                            <div class="accordion md-accordion" id="accordionEx1" role="tablist"
+                            <div class="accordion md-accordion" id="accordionAdministrasi" role="tablist"
                                 aria-multiselectable="true">
-                                <!-- Accordion card -->
                                 <div class="card">
-                                    <!-- Card header -->
-                                    <div class="card-header" role="tab" id="headingTwo1">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
-                                            href="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
-                                            <h5 class="mb-0">SURAT PENGANTAR IZIN KERAMAINAN <i class="fas fa-plus"></i></h5>
+                                    <div class="card-header" role="tab" id="headingAdm1">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionAdministrasi"
+                                            href="#collapseAdm1" aria-expanded="false" aria-controls="collapseAdm1">
+                                            <h5 class="mb-0">SURAT PENGANTAR IZIN KERAMAIAN <i
+                                                    class="fas fa-plus"></i>
+                                            </h5>
                                         </a>
                                     </div>
-
-                                    <!-- Card body -->
-                                    <div id="collapseTwo1" class="collapse" role="tabpanel"
-                                        aria-labelledby="headingTwo1" data-parent="#accordionEx1">
+                                    <div id="collapseAdm1" class="collapse" role="tabpanel"
+                                        aria-labelledby="headingAdm1" data-parent="#accordionAdministrasi">
                                         <div class="card-body">
-                                            Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing
-                                            elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                                            dapibus leo.
+                                            <form class="mt-4">
+                                                <div class="form-outline mb-4">
+                                                    <label for="formKeteranganAdm1">Keterangan</label>
+                                                    <textarea class="form-control form-shadow" id="formKeteranganAdm1" rows="4"></textarea>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formNamaAdm1">Nama Lengkap *</label>
+                                                            <input type="text" id="formNamaAdm1"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formEmailAdm1">Email *</label>
+                                                            <input type="email" id="formEmailAdm1"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formTeleponAdm1">No. Telepon/WhatsApp</label>
+                                                            <input type="text" id="formTeleponAdm1"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 text-center">
+                                                        <div class="form-outline">
+                                                            <button type="submit" class="btn btn-primary btn-surat mt-3 ">Ajukan
+                                                                Permohonan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Accordion card -->
-
-                                <!-- Accordion card -->
                                 <div class="card">
-                                    <!-- Card header -->
-                                    <div class="card-header" role="tab" id="headingTwo21">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
-                                            href="#collapseTwo21" aria-expanded="false" aria-controls="collapseTwo21">
+                                    <div class="card-header" role="tab" id="headingAdm2">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionAdministrasi"
+                                            href="#collapseAdm2" aria-expanded="false" aria-controls="collapseAdm2">
                                             <h5 class="mb-0">SURAT KETERANGAN KEMATIAN <i class="fas fa-plus"></i>
                                             </h5>
                                         </a>
                                     </div>
-
-                                    <!-- Card body -->
-                                    <div id="collapseTwo21" class="collapse" role="tabpanel"
-                                        aria-labelledby="headingTwo21" data-parent="#accordionEx1">
+                                    <div id="collapseAdm2" class="collapse" role="tabpanel"
+                                        aria-labelledby="headingAdm2" data-parent="#accordionAdministrasi">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-                                            luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                                            <form class="mt-4">
+                                                <div class="form-outline mb-4">
+                                                    <label for="formKeteranganAdm2">Keterangan</label>
+                                                    <textarea class="form-control form-shadow" id="formKeteranganAdm2" rows="4"></textarea>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formNamaAdm2">Nama Lengkap *</label>
+                                                            <input type="text" id="formNamaAdm2"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formEmailAdm2">Email *</label>
+                                                            <input type="email" id="formEmailAdm2"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formTeleponAdm2">No. Telepon/WhatsApp</label>
+                                                            <input type="text" id="formTeleponAdm2"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formTeleponAdm2">No. Telepon/WhatsApp</label>
+                                                            <input type="text" id="formTeleponAdm2"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 text-center">
+                                                        <div class="form-outline">
+                                                            <button type="submit" class="btn btn-primary btn-surat mt-3">Ajukan
+                                                                Permohonan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Accordion card -->
-
-                                <!-- Accordion card -->
                                 <div class="card">
-                                    <!-- Card header -->
-                                    <div class="card-header" role="tab" id="headingThree31">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
-                                            href="#collapseThree31" aria-expanded="false"
-                                            aria-controls="collapseThree31">
+                                    <div class="card-header" role="tab" id="headingAdm3">
+                                        <a class="collapsed" data-toggle="collapse"
+                                            data-parent="#accordionAdministrasi" href="#collapseAdm3"
+                                            aria-expanded="false" aria-controls="collapseAdm3">
                                             <h5 class="mb-0">SURAT KETERANGAN AHLI WARIS <i class="fas fa-plus"></i>
                                             </h5>
                                         </a>
                                     </div>
-
-                                    <!-- Card body -->
-                                    <div id="collapseThree31" class="collapse" role="tabpanel"
-                                        aria-labelledby="headingThree31" data-parent="#accordionEx1">
+                                    <div id="collapseAdm3" class="collapse" role="tabpanel"
+                                        aria-labelledby="headingAdm3" data-parent="#accordionAdministrasi">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-                                            luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                                            <form class="mt-4">
+                                                <div class="form-outline mb-4">
+                                                    <label for="formKeteranganAdm3">Keterangan</label>
+                                                    <textarea class="form-control form-shadow" id="formKeteranganAdm3" rows="4"></textarea>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formNamaAdm3">Nama Lengkap *</label>
+                                                            <input type="text" id="formNamaAdm3"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formEmailAdm3">Email *</label>
+                                                            <input type="email" id="formEmailAdm3"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formTeleponAdm3">No. Telepon/WhatsApp</label>
+                                                            <input type="text" id="formTeleponAdm3"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 text-center">
+                                                        <div class="form-outline">
+                                                            <button type="submit" class="btn btn-primary btn-surat mt-3">Ajukan
+                                                                Permohonan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Accordion card -->
-
-                                <!-- Accordion card -->
                                 <div class="card">
-                                    <!-- Card header -->
-                                    <div class="card-header" role="tab" id="headingThree41">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
-                                            href="#collapseThree41" aria-expanded="false"
-                                            aria-controls="collapseThree41">
-                                            <h5 class="mb-0">SURAT KETERANGAN PINDAH<i
-                                                    class="fas fa-plus"></i></h5>
+                                    <div class="card-header" role="tab" id="headingAdm4">
+                                        <a class="collapsed" data-toggle="collapse"
+                                            data-parent="#accordionAdministrasi" href="#collapseAdm4"
+                                            aria-expanded="false" aria-controls="collapseAdm4">
+                                            <h5 class="mb-0">SURAT KETERANGAN PINDAH <i class="fas fa-plus"></i>
+                                            </h5>
                                         </a>
                                     </div>
-
-                                    <!-- Card body -->
-                                    <div id="collapseThree41" class="collapse" role="tabpanel"
-                                        aria-labelledby="headingThree41" data-parent="#accordionEx1">
+                                    <div id="collapseAdm4" class="collapse" role="tabpanel"
+                                        aria-labelledby="headingAdm4" data-parent="#accordionAdministrasi">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-                                            luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                                            <form class="mt-4">
+                                                <div class="form-outline mb-4">
+                                                    <label for="formKeteranganAdm4">Keterangan</label>
+                                                    <textarea class="form-control form-shadow" id="formKeteranganAdm4" rows="4"></textarea>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formNamaAdm4">Nama Lengkap *</label>
+                                                            <input type="text" id="formNamaAdm4"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formEmailAdm4">Email *</label>
+                                                            <input type="email" id="formEmailAdm4"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formTeleponAdm4">No. Telepon/WhatsApp</label>
+                                                            <input type="text" id="formTeleponAdm4"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 text-center">
+                                                        <div class="form-outline">
+                                                            <button type="submit" class="btn btn-primary btn-surat mt-3">Ajukan
+                                                                Permohonan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Accordion card -->
-                            </div>
-                            <!-- Accordion wrapper -->
-
-                            <div class="prev-next-page d-flex justify-content-between align-items-center mt-5">
-
                             </div>
                         </div>
                     </div>
@@ -132,101 +255,223 @@
                             <div class="cs-title">
                                 <h3>Persuratan</h3>
                             </div>
-                            <!--Accordion wrapper-->
-                            <div class="accordion md-accordion" id="accordionEx1" role="tablist"
+                            <div class="accordion md-accordion" id="accordionPersuratan" role="tablist"
                                 aria-multiselectable="true">
-                                <!-- Accordion card -->
                                 <div class="card">
-                                    <!-- Card header -->
-                                    <div class="card-header" role="tab" id="headingTwo1">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
-                                            href="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
-                                            <h5 class="mb-0">SURAT PENGANTAR KK & KTP <i class="fas fa-plus"></i></h5>
-                                        </a>
-                                    </div>
-
-                                    <!-- Card body -->
-                                    <div id="collapseTwo1" class="collapse" role="tabpanel"
-                                        aria-labelledby="headingTwo1" data-parent="#accordionEx1">
-                                        <div class="card-body">
-                                            Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing
-                                            elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                                            dapibus leo.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Accordion card -->
-
-                                <!-- Accordion card -->
-                                <div class="card">
-                                    <!-- Card header -->
-                                    <div class="card-header" role="tab" id="headingTwo21">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
-                                            href="#collapseTwo21" aria-expanded="false"
-                                            aria-controls="collapseTwo21">
-                                            <h5 class="mb-0">SURAT KETERANGAN BEDA NAMA & NIK <i class="fas fa-plus"></i>
+                                    <div class="card-header" role="tab" id="headingPersurat1">
+                                        <a class="collapsed" data-toggle="collapse"
+                                            data-parent="#accordionPersuratan" href="#collapsePersurat1"
+                                            aria-expanded="false" aria-controls="collapsePersurat1">
+                                            <h5 class="mb-0">SURAT PENGANTAR KK & KTP <i class="fas fa-plus"></i>
                                             </h5>
                                         </a>
                                     </div>
-
-                                    <!-- Card body -->
-                                    <div id="collapseTwo21" class="collapse" role="tabpanel"
-                                        aria-labelledby="headingTwo21" data-parent="#accordionEx1">
+                                    <div id="collapsePersurat1" class="collapse" role="tabpanel"
+                                        aria-labelledby="headingPersurat1" data-parent="#accordionPersuratan">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-                                            luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                                            <form class="mt-4">
+                                                <div class="form-outline mb-4">
+                                                    <label for="formKeteranganPersurat1">Keterangan</label>
+                                                    <textarea class="form-control form-shadow" id="formKeteranganPersurat1" rows="4"></textarea>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formNamaPersurat1">Nama Lengkap *</label>
+                                                            <input type="text" id="formNamaPersurat1"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formEmailPersurat1">Email *</label>
+                                                            <input type="email" id="formEmailPersurat1"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formTeleponPersurat1">No.
+                                                                Telepon/WhatsApp</label>
+                                                            <input type="text" id="formTeleponPersurat1"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 text-center">
+                                                        <div class="form-outline">
+                                                            <button type="submit" class="btn btn-primary btn-surat mt-3">Ajukan
+                                                                Permohonan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Accordion card -->
-
-                                <!-- Accordion card -->
                                 <div class="card">
-                                    <!-- Card header -->
-                                    <div class="card-header" role="tab" id="headingThree31">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
-                                            href="#collapseThree31" aria-expanded="false"
-                                            aria-controls="collapseThree31">
+                                    <div class="card-header" role="tab" id="headingPersurat2">
+                                        <a class="collapsed" data-toggle="collapse"
+                                            data-parent="#accordionPersuratan" href="#collapsePersurat2"
+                                            aria-expanded="false" aria-controls="collapsePersurat2">
+                                            <h5 class="mb-0">SURAT KETERANGAN BEDA NAMA & NIK <i
+                                                    class="fas fa-plus"></i>
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <div id="collapsePersurat2" class="collapse" role="tabpanel"
+                                        aria-labelledby="headingPersurat2" data-parent="#accordionPersuratan">
+                                        <div class="card-body">
+                                            <form class="mt-4">
+                                                <div class="form-outline mb-4">
+                                                    <label for="formKeteranganPersurat2">Keterangan</label>
+                                                    <textarea class="form-control form-shadow" id="formKeteranganPersurat2" rows="4"></textarea>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formNamaPersurat2">Nama Lengkap *</label>
+                                                            <input type="text" id="formNamaPersurat2"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formEmailPersurat2">Email *</label>
+                                                            <input type="email" id="formEmailPersurat2"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formTeleponPersurat2">No.
+                                                                Telepon/WhatsApp</label>
+                                                            <input type="text" id="formTeleponPersurat2"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 text-center">
+                                                        <div class="form-outline">
+                                                            <button type="submit" class="btn btn-primary btn-surat mt-3">Ajukan
+                                                                Permohonan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingPersurat3">
+                                        <a class="collapsed" data-toggle="collapse"
+                                            data-parent="#accordionPersuratan" href="#collapsePersurat3"
+                                            aria-expanded="false" aria-controls="collapsePersurat3">
                                             <h5 class="mb-0">SURAT KETERANGAN DOMISILI <i class="fas fa-plus"></i>
                                             </h5>
                                         </a>
                                     </div>
-
-                                    <!-- Card body -->
-                                    <div id="collapseThree31" class="collapse" role="tabpanel"
-                                        aria-labelledby="headingThree31" data-parent="#accordionEx1">
+                                    <div id="collapsePersurat3" class="collapse" role="tabpanel"
+                                        aria-labelledby="headingPersurat3" data-parent="#accordionPersuratan">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-                                            luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                                            <form class="mt-4">
+                                                <div class="form-outline mb-4">
+                                                    <label for="formKeteranganPersurat3">Keterangan</label>
+                                                    <textarea class="form-control form-shadow" id="formKeteranganPersurat3" rows="4"></textarea>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formNamaPersurat3">Nama Lengkap *</label>
+                                                            <input type="text" id="formNamaPersurat3"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formEmailPersurat3">Email *</label>
+                                                            <input type="email" id="formEmailPersurat3"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formTeleponPersurat3">No.
+                                                                Telepon/WhatsApp</label>
+                                                            <input type="text" id="formTeleponPersurat3"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 text-center">
+                                                        <div class="form-outline">
+                                                            <button type="submit" class="btn btn-primary btn-surat mt-3">Ajukan
+                                                                Permohonan</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Accordion card -->
-
-                                <!-- Accordion card -->
                                 <div class="card">
-                                    <!-- Card header -->
-                                    <div class="card-header" role="tab" id="headingThree41">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
-                                            href="#collapseThree41" aria-expanded="false"
-                                            aria-controls="collapseThree41">
-                                            <h5 class="mb-0">SURAT KETERANGAN PINDAH <i
-                                                    class="fas fa-plus"></i></h5>
+                                    <div class="card-header" role="tab" id="headingPersurat4">
+                                        <a class="collapsed" data-toggle="collapse"
+                                            data-parent="#accordionPersuratan" href="#collapsePersurat4"
+                                            aria-expanded="false" aria-controls="collapsePersurat4">
+                                            <h5 class="mb-0">SURAT KETERANGAN PINDAH <i class="fas fa-plus"></i>
+                                            </h5>
                                         </a>
                                     </div>
-
-                                    <!-- Card body -->
-                                    <div id="collapseThree41" class="collapse" role="tabpanel"
-                                        aria-labelledby="headingThree41" data-parent="#accordionEx1">
+                                    <div id="collapsePersurat4" class="collapse" role="tabpanel"
+                                        aria-labelledby="headingPersurat4" data-parent="#accordionPersuratan">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-                                            luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                                            <form class="mt-4">
+                                                <div class="form-outline mb-4">
+                                                    <label for="formKeteranganPersurat4">Keterangan</label>
+                                                    <textarea class="form-control form-shadow" id="formKeteranganPersurat4" rows="4"></textarea>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formNamaPersurat4">Nama Lengkap *</label>
+                                                            <input type="text" id="formNamaPersurat4"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formEmailPersurat4">Email *</label>
+                                                            <input type="email" id="formEmailPersurat4"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-outline">
+                                                            <label for="formTeleponPersurat4">No.
+                                                                Telepon/WhatsApp</label>
+                                                            <input type="text" id="formTeleponPersurat4"
+                                                                class="form-control form-shadow">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 text-center">
+                                                        <button type="submit" class="btn btn-primary btn-surat mt-3">Ajukan
+                                                            Permohonan</button>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Accordion card -->
                             </div>
-                            <!-- Accordion wrapper -->
                         </div>
                     </div>
                 </div>
@@ -237,44 +482,16 @@
     </section>
     <!-- Courses Detail end -->
 
-    <!--  Newsletter start -->
-    {{-- <section class="newsletter">
-        <div class="container">
-            <div class="news-headding text-center">
-                <h2>SIGN UP TO OUR NEWSLETTER</h2>
-                <p>
-                    Subscribe to our newsletter and get many <br />
-                    interesting things every week
-                </p>
-                <form>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="Your Email" />
-                        <button class="btn"><i class="fas fa-envelope-open-text"></i> Subscribe</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section> --}}
-    <!--  Newsletter end -->
-
     <!-- Footer starts -->
-@include('LandingPage.Layout.footer')
+    @include('LandingPage.Layout.footer')
     <!-- Footer ends -->
-
-    <!-- Search form popup -->
-    <!-- Search form popup end -->
-
     <!-- Back to top start -->
     <div id="back-to-top">
         <a href="#"></a>
     </div>
     <!-- Back to top ends -->
-
     <!-- *Scripts* -->
     @include('LandingPage.Layout.script')
 </body>
-
-<!-- Mirrored from htmldesigntemplates.com/html/epathsala/course-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Jul 2025 15:38:28 GMT -->
 
 </html>
