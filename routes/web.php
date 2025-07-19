@@ -20,11 +20,17 @@ Route::get('/contact', [ContactController::class,  'ViewContact'])->name('contac
 Route::get('/profile/sejarahdesa', [ProfileDesa::class,  'ViewSejarahDesa'])->name('SejarahDesa');
 Route::get('/profile/visimisi', [ProfileDesa::class,  'ViewVisiMisi'])->name('ViewVisiMisi');
 Route::get('/profile/kelembagaan', [ProfileDesa::class,  'ViewKelembagaan'])->name('ViewKelembagaan');
+Route::get('/profile/kelembagaan/PemerintahDesa', [ProfileDesa::class,  'ViewKelembagaanDetail'])->name('ViewKelembagaanDetail');
 Route::get('/profile/letakgeografis', [ProfileDesa::class,  'ViewLetakGeografis'])->name('Viewletakgeografis');
 Route::get('/profile/demografi', [ProfileDesa::class,  'ViewDemografi'])->name('Viewdemografi');
 Route::get('/umkm', [UmkmController::class,  'ViewUmkm'])->name('Viewumkm');
 Route::get('/umkm/detail', [UmkmController::class,  'ViewDetailUmkm'])->name('ViewUmkm');
-Route::get('/potensidesa', [UmkmController::class,  'ViewPotensiDesa'])->name('ViewPotensiDesa');
+
+
+
+Route::get('/tes', function () {
+    return view('tesstruktur');
+});
 
 Route::get('/persuratan', [PersuratanController::class,  'viewpersuratan'])->name('persuratan');
 Route::get('/event', [EventController::class,  'viewevent'])->name('event');

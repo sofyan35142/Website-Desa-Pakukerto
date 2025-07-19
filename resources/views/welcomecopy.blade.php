@@ -1,199 +1,723 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">
-
+<!-- Start Head -->
 @include('LandingPage.Layout.head')
+<!-- End Head -->
+
 <body>
+    <!-- Preloader -->
     <div id="preloader">
         <div id="status"></div>
     </div>
+    <!-- Preloader Ends -->
+
+    <!-- header starts -->
     @include('LandingPage.Layout.header')
-    <section class="course-detail shape_big2">
+    <!-- header ends -->
+
+
+    <!-- content main start -->
+    <section class="services-main">
         <div class="container">
-            <div class="row pb-5">
-                <div class="col-lg-6">
-                    <div class="cs-detail-im">
-                        <img src="{{ asset('LandingPageOri/assets/images/banner/education-PHW33SU.jpg') }}"
-                            alt="Pemandangan Desa Pakukerto" />
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="cs-detail-info d-flex flex-column justify-content-center align-items-start h-100">
-                        <div class="review-ct mb-3 d-flex justify-content-start">
-                            <a href="#">Diperbarui: 17 Juli 2025</a>
-                            <ul class="ml-2">
-                                <li><i class="fas fa-eye"></i></li>
-                                <li><i class="fas fa-heart"></i></li>
-                                <li><i class="fas fa-share-alt"></i></li>
-                            </ul>
-                        </div>
-                        <h3>Sejarah Desa Pakukerto</h3>
-                        <div class="customize-bottom">
-                            <ul class="d-flex justify-content-start">
-                                <li class="mr-3"><i class="far fa-user"></i> Tim Redaksi Desa</li>
-                                <li><i class="far fa-calendar-alt"></i> 06 Juni 2021 (Pertama Diterbitkan)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="course-content">
-                        <div class="cs-title">
-                            <h3>Selayang Pandang Sejarah Desa</h3>
-                        </div>
-                        <div class="cs-contents">
-                            <p>
-                                **Desa Pakukerto**, sebuah nama yang tak terpisahkan dari lembaran sejarah **Kabupaten [Nama Kabupaten Anda]**, memiliki akar yang kuat dalam budaya dan perjuangan masa lalu. Konon, nama **"Pakukerto"** sendiri berasal dari gabungan kata **"Paku"** dan **"Kerto"**. Kata "Paku" diyakini merujuk pada **[jelaskan arti atau filosofi "Paku" dalam konteks desa, contoh: tanaman paku yang tumbuh subur di awal pembentukan desa, atau simbol kekuatan dan kemapanan]**. Sementara itu, "Kerto" berasal dari kata "Kertha" yang dalam bahasa Jawa Kuno berarti **kemakmuran**, **ketenteraman**, atau **keberkahan**.
-                            </p>
-                            <p>
-                                Dengan demikian, **Pakukerto** dapat diartikan sebagai "desa yang makmur dan tenteram" atau "tempat yang diberkahi dengan kemakmuran." Sejarah mencatat bahwa sejak **[perkiraan tahun berdiri atau awal pemukiman jika ada, contoh: abad ke-18 atau era Kerajaan Majapahit]**, para leluhur Desa Pakukerto telah membangun fondasi kehidupan yang harmonis, mengolah tanah subur, dan melestarikan nilai-nilai gotong royong yang masih kami pegang teguh hingga kini.
-                            </p>
-                            <blockquote>
-                                <span>
-                                    "Sebuah desa bukan hanya tentang tanah, tetapi tentang kisah dan semangat yang terus hidup di setiap generasi."
-                                </span>
-                                <p>Petuah Leluhur Pakukerto</p>
-                                <button class="btn btn-curve"><i class="fab fa-facebook"></i> Bagikan</button>
-                            </blockquote>
-                            <div class="cs-title">
-                                <h3>Mozaik Sejarah Dusun-Dusun Pakukerto</h3>
-                            </div>
-
-                            <div class="accordion md-accordion" id="accordionEx1" role="tablist"
-                                aria-multiselectable="true">
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="headingDusun1">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
-                                            href="#collapseDusun1" aria-expanded="false" aria-controls="collapseDusun1">
-                                            <h5 class="mb-0">Dusun [Nama Dusun 1]: Jejak Awal dan Perkembangan <i class="fas fa-plus"></i></h5>
-                                        </a>
-                                    </div>
-                                    <div id="collapseDusun1" class="collapse" role="tabpanel"
-                                        aria-labelledby="headingDusun1" data-parent="#accordionEx1">
-                                        <div class="card-body">
-                                            Dusun [Nama Dusun 1] merupakan salah satu dusun tertua di Pakukerto, yang konon didirikan oleh [sebutkan tokoh/kelompok awal jika ada, misal: Mbah Kerto atau rombongan pendatang pertama]. Awalnya, dusun ini dikenal sebagai [sebutkan nama lama jika ada, atau ciri khas geografis awal, misal: daerah persawahan yang subur]. Perkembangan dusun ini tak lepas dari [jelaskan faktor pendorong, misal: pembangunan irigasi, atau keberadaan pasar tradisional]. Hingga kini, [sebutkan satu ciri khas/tradisi yang masih kuat di dusun ini].
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="headingDusun2">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
-                                            href="#collapseDusun2" aria-expanded="false" aria-controls="collapseDusun2">
-                                            <h5 class="mb-0">Dusun [Nama Dusun 2]: Kisah dan Potensi <i class="fas fa-plus"></i>
-                                            </h5>
-                                        </a>
-                                    </div>
-                                    <div id="collapseDusun2" class="collapse" role="tabpanel"
-                                        aria-labelledby="headingDusun2" data-parent="#accordionEx1">
-                                        <div class="card-body">
-                                            Dusun [Nama Dusun 2] memiliki sejarah yang unik, sering dikaitkan dengan [sebutkan legenda/peristiwa penting, misal: keberadaan mata air keramat, atau tempat persinggahan para pejuang]. Masyarakat di dusun ini dikenal dengan [sebutkan ciri khas masyarakat, misal: kerajinan tangan, atau keahlian bertani buah]. Perkembangan dusun ini banyak dipengaruhi oleh [sebutkan faktor, misal: pembangunan jalan, atau inisiatif komunitas].
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="headingDusun3">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
-                                            href="#collapseDusun3" aria-expanded="false"
-                                            aria-controls="collapseDusun3">
-                                            <h5 class="mb-0">Dusun [Nama Dusun 3]: Warisan dan Inovasi <i class="fas fa-plus"></i>
-                                            </h5>
-                                        </a>
-                                    </div>
-                                    <div id="collapseDusun3" class="collapse" role="tabpanel"
-                                        aria-labelledby="headingDusun3" data-parent="#accordionEx1">
-                                        <div class="card-body">
-                                            Sejarah Dusun [Nama Dusun 3] erat kaitannya dengan [sebutkan aspek sejarah, misal: pusat keagamaan, atau daerah pertahanan]. Dusun ini juga menjadi saksi [sebutkan peristiwa penting, misal: pembangunan sekolah pertama, atau masuknya teknologi baru]. Meskipun menjaga warisan leluhur, dusun ini juga aktif dalam [sebutkan inovasi/perkembangan modern, misal: pengembangan pariwisata, atau pertanian modern].
-                                        </div>
-                                    </div>
-                                </div>
-                                {{-- Tambahkan Accordion Card lainnya jika ada lebih banyak dusun --}}
-                                {{-- Contoh:
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="headingDusun4">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
-                                            href="#collapseDusun4" aria-expanded="false" aria-controls="collapseDusun4">
-                                            <h5 class="mb-0">Dusun [Nama Dusun 4]: [Judul Singkat] <i class="fas fa-plus"></i></h5>
-                                        </a>
-                                    </div>
-                                    <div id="collapseDusun4" class="collapse" role="tabpanel"
-                                        aria-labelledby="headingDusun4" data-parent="#accordionEx1">
-                                        <div class="card-body">
-                                            [Isi sejarah Dusun 4]
-                                        </div>
-                                    </div>
-                                </div>
-                                --}}
-
-                            </div>
-                            <div class="prev-next-page d-flex justify-content-between align-items-center mt-5">
-                                <div class="prev-navlink-page">
-                                    <a href="#">
-                                        <i class="fas fa-angle-double-left"></i>
-                                        <div class="prevnext__nav">
-                                            <p>Kembali ke</p>
-                                            <h5>Profil Desa</h5>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="next-navlink-page">
-                                    <a href="#">
-                                        <i class="fas fa-angle-double-right"></i>
-                                        <div class="prevnext__nav">
-                                            <p>Selanjutnya</p>
-                                            <h5>Potensi Desa</h5>
-                                        </div>
-                                    </a>
-                                </div>
+            <div class="service-full wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="service-main d-flex align-items-center">
+                            <div class="service-inner">
+                                <h4 class="top-title mb-4">POTENSI DESA</h4>
+                                <h3 class="mb-3 pb-3">BERAGAM KEKAYAAN DESA PAKUKERTO</h3>
+                                <p class="mb-4">
+                                    Desa Pakukerto, Kecamatan Sukorejo, Kabupaten Pasuruan, memiliki potensi luar biasa
+                                    yang siap dikembangkan. Dari hasil pertanian melimpah hingga kekayaan budaya lokal,
+                                    kami berupaya mengelola dan memperkenalkan setiap aset desa untuk kesejahteraan
+                                    bersama.
+                                </p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="course-content-side text-center">
-                        <img src="{{ asset('LandingPageOri/assets/images/banner/education-2021-04-04-14-25-07-utc.jpg') }}"
-                            alt="Pemandangan Desa Pakukerto" />
-                        <div class="img_sidebar_ct bg-darkblue p-3">
-                            <h5 class="cl-white mb-0">Fakta Singkat Sejarah Desa Pakukerto</h5>
+                    <div class="col-lg-8 col-md-12">
+                        <div class="row service-list-wrap">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="service-ct-list mb-4">
+                                    <i class="fas fa-leaf"></i>
+                                    <h4>PERTANIAN UNGGULAN</h4>
+                                    <p class="m-0">Hasil bumi melimpah seperti padi, jagung, dan aneka sayuran segar.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="service-ct-list mb-4">
+                                    <i class="fas fa-store-alt"></i>
+                                    <h4>PRODUK UMKM LOKAL</h4>
+                                    <p class="m-0">Berbagai olahan makanan ringan dan kerajinan tangan khas desa.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="service-ct-list mb-4">
+                                    <i class="fas fa-mountain"></i>
+                                    <h4>POTENSI WISATA ALAM</h4>
+                                    <p class="m-0">Pemandangan indah dan udara sejuk pegunungan yang menenangkan.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="service-ct-list">
+                                    <i class="fas fa-handshake"></i>
+                                    <h4>SUMBER DAYA MANUSIA</h4>
+                                    <p class="m-0">Masyarakat yang ramah, kreatif, dan bergotong royong.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="service-ct-list">
+                                    <i class="fas fa-seedling"></i>
+                                    <h4>KELESTARIAN LINGKUNGAN</h4>
+                                    <p class="m-0">Program menjaga kebersihan dan kelestarian alam desa.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="service-ct-list">
+                                    <i class="fas fa-landmark"></i>
+                                    <h4>ADAT DAN BUDAYA</h4>
+                                    <p class="m-0">Tradisi dan kesenian lokal yang terus dilestarikan.</p>
+                                </div>
+                            </div>
                         </div>
-                        <ul class="d-flex flex-column">
-                            <li><i class="far fa-building"></i> Jumlah Dusun : <span>[Jumlah Dusun di Pakukerto]</span></li>
-                            <li><i class="fas fa-book"></i> Sumber Sejarah : <span>[Cerita Rakyat / Catatan Lama / Sesepuh]</span></li>
-                            <li><i class="fas fa-user-friends"></i> Tokoh Lokal : <span>[Nama Tokoh Penting dari Dusun-Dusun, jika ada]</span></li>
-                            <li><i class="far fa-clock"></i> Ciri Khas Sejarah : <span>[Gotong Royong, Pertanian, Kesenian]</span></li>
-                            <li><i class="fas fa-globe-europe"></i> Warisan Utama : <span>[Tradisi Adat / Bangunan Bersejarah]</span></li>
-                        </ul>
-                        <a href="galeri-sejarah.html" class="btn">Lihat Galeri Sejarah</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    @include('LandingPage.Layout.footer')
-    <form action="#" class="ct-searchForm">
-        <div class="inner">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-sm-8">
-                        <div class="form-group">
-                            <input id="cf-search-form" type="text" placeholder="Cari di website desa..." required
-                                class="form-control" />
-                            <button type="submit" class="ct-search-btn"><i class="fa fa-search"></i></button>
+    <!-- End content main -->
+
+    <!-- Counter main -->
+    <section class="counter">
+        <div class="container">
+            <div class="counter-wrap wow fadeInUp">
+                <div class="content d-flex justify-content-between">
+                    <div class="value-pin">
+                        <span class="countfect value" data-num="233"></span>
+                        <h5>COURSES & VIDEOS</h5>
+                    </div>
+                    <div class="value-pin">
+                        <span class="countfect value" data-num="410"></span>
+                        <h5>EXPERT TEACHERS</h5>
+                    </div>
+                    <div class="value-pin">
+                        <span class="countfect value" data-num="2299"></span>
+                        <h5>TOTAL STUDENTS</h5>
+                    </div>
+                    <div class="value-pin">
+                        <span class="countfect value" data-num="368"></span>
+                        <h5>CLASSES COMPLETE</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Counter main -->
+
+    <!-- Courses start -->
+    <section class="courses p-0">
+        <div class="container">
+            <div class="section-title borderline">
+                <div class="title-top">
+                    <h3>ALL COURSES OF EPATHSHALA</h3>
+                    <p>Online learning offers a new way to explore subjects you’re passionate about.</p>
+                </div>
+            </div>
+            <div class="wrap-customize">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 customize-wrap mb-4 wow fadeInUp">
+                        <div class="customize-item">
+                            <div class="sv-image">
+                                <img src="{{ asset('LandingPageOri/assets/images/courses/course-1.jpg') }}"
+                                    alt="" />
+                            </div>
+                            <div class="customize-ct">
+                                <h4>
+                                    <a href="course-detail.html">DIGITAL MARKETING | SOCIAL MEDIA MARKETING
+                                        BUSINESS</a>
+                                </h4>
+                                <div class="review-ct d-flex justify-content-start">
+                                    <a href="#">21 Reviews</a>
+                                    <ul class="ml-2">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star-half-alt"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="customize-bottom">
+                                <ul class="d-flex justify-content-between">
+                                    <li><i class="far fa-user"></i> 2k+ Students</li>
+                                    <li><i class="far fa-clock"></i> 2h 45mins</li>
+                                    <li><i class="far fa-star"></i> 4.5 Reviews</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <a href="#" class="ct-searchForm-close">
-                                <i class="fas fa-times"></i>
-                            </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 customize-wrap mb-4 wow fadeInUp">
+                        <div class="customize-item">
+                            <div class="sv-image">
+                                <img src="{{ asset('LandingPageOri/assets/images/courses/course-2.jpg') }}"
+                                    alt="" />
+                            </div>
+                            <div class="customize-ct">
+                                <h4>
+                                    <a href="course-detail.html">BUILD BRAND INTO MARKETING: TACKLING NEW MARKETING</a>
+                                </h4>
+                                <div class="review-ct d-flex justify-content-start">
+                                    <a href="#">21 Reviews</a>
+                                    <ul class="ml-2">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star-half-alt"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="customize-bottom">
+                                <ul class="d-flex justify-content-between">
+                                    <li><i class="far fa-user"></i> 2k+ Students</li>
+                                    <li><i class="far fa-clock"></i> 2h 45mins</li>
+                                    <li><i class="far fa-star"></i> 4.5 Reviews</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 customize-wrap mb-4 wow fadeInUp">
+                        <div class="customize-item">
+                            <div class="sv-image">
+                                <img src="{{ asset('LandingPageOri/assets/images/courses/course-3.jpg') }}"
+                                    alt="" />
+                            </div>
+                            <div class="customize-ct">
+                                <h4>
+                                    <a href="course-detail.html">CULTURE & STRATEGIES FOR A SUCCESSFUL BUSINESS</a>
+                                </h4>
+                                <div class="review-ct d-flex justify-content-start">
+                                    <a href="#">21 Reviews</a>
+                                    <ul class="ml-2">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star-half-alt"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="customize-bottom">
+                                <ul class="d-flex justify-content-between">
+                                    <li><i class="far fa-user"></i> 2k+ Students</li>
+                                    <li><i class="far fa-clock"></i> 2h 45mins</li>
+                                    <li><i class="far fa-star"></i> 4.5 Reviews</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 customize-wrap wow fadeInUp">
+                        <div class="customize-item">
+                            <div class="sv-image">
+                                <img src="{{ asset('LandingPageOri/assets/images/courses/course-4.jpg') }}"
+                                    alt="" />
+                            </div>
+                            <div class="customize-ct">
+                                <h4>
+                                    <a href="course-detail.html">GROW YOUR BUSINESS BY MASTERED IN SOME TECHNIQUE</a>
+                                </h4>
+                                <div class="review-ct d-flex justify-content-start">
+                                    <a href="#">21 Reviews</a>
+                                    <ul class="ml-2">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star-half-alt"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="customize-bottom">
+                                <ul class="d-flex justify-content-between">
+                                    <li><i class="far fa-user"></i> 2k+ Students</li>
+                                    <li><i class="far fa-clock"></i> 2h 45mins</li>
+                                    <li><i class="far fa-star"></i> 4.5 Reviews</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 customize-wrap wow fadeInUp">
+                        <div class="customize-item">
+                            <div class="sv-image">
+                                <img src="{{ asset('LandingPageOri/assets/images/courses/course-5.jpg') }}"
+                                    alt="" />
+                            </div>
+                            <div class="customize-ct">
+                                <h4>
+                                    <a href="course-detail.html">GROW UP AUDIENCE TO PROGRESS BUSINESS</a>
+                                </h4>
+                                <div class="review-ct d-flex justify-content-start">
+                                    <a href="#">21 Reviews</a>
+                                    <ul class="ml-2">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star-half-alt"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="customize-bottom">
+                                <ul class="d-flex justify-content-between">
+                                    <li><i class="far fa-user"></i> 2k+ Students</li>
+                                    <li><i class="far fa-clock"></i> 2h 45mins</li>
+                                    <li><i class="far fa-star"></i> 4.5 Reviews</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 customize-wrap wow fadeInUp">
+                        <div class="customize-item">
+                            <div class="sv-image">
+                                <img src="{{ asset('LandingPageOri/assets/images/courses/course-6.jpg') }}"
+                                    alt="" />
+                            </div>
+                            <div class="customize-ct">
+                                <h4>
+                                    <a href="course-detail.html">JAVA PROGRAMMING A-Z FULLY CLASSES WITH FULL TASK</a>
+                                </h4>
+                                <div class="review-ct d-flex justify-content-start">
+                                    <a href="#">21 Reviews</a>
+                                    <ul class="ml-2">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star-half-alt"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="customize-bottom">
+                                <ul class="d-flex justify-content-between">
+                                    <li><i class="far fa-user"></i> 2k+ Students</li>
+                                    <li><i class="far fa-clock"></i> 2h 45mins</li>
+                                    <li><i class="far fa-star"></i> 4.5 Reviews</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </form>
+    </section>
+    <!-- Courses ends -->
+
+    <!-- Instructors start -->
+    <section class="instructors">
+        <div class="container">
+            <div class="section-title sc-center justify-content-center text-center borderline">
+                <div class="title-top">
+                    <div class="title-quote">
+                        <span>Meet Our Instructors</span>
+                    </div>
+                    <h3>LEARN FROM EXPERT <span class="cl-blue">INSTRUCTORS</span></h3>
+                </div>
+            </div>
+            <div class="row instruct-main wow fadeInLeft">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="ins-main-list">
+                        <img src="{{ asset('LandingPageOri/assets/images/team/team-1.jpg') }}" alt="" />
+                        <div class="ins-names">
+                            <h4>William Smith</h4>
+                            <span class="cl-orange">CEO / Founder</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="ins-main-list">
+                        <img src="{{ asset('LandingPageOri/assets/images/team/team-2.jpg') }}" alt="" />
+                        <div class="ins-names">
+                            <h4>Nicole Kiyl</h4>
+                            <span class="cl-orange">Project Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="ins-main-list">
+                        <img src="{{ asset('LandingPageOri/assets/images/team/team-3.jpg') }}" alt="" />
+                        <div class="ins-names">
+                            <h4>John Melton</h4>
+                            <span class="cl-orange">Instructor</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="ins-main-list">
+                        <img src="{{ asset('LandingPageOri/assets/images/team/team-4.jpg') }}" alt="" />
+                        <div class="ins-names">
+                            <h4>Ketti Helson</h4>
+                            <span class="cl-orange">Business Analyst</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Instructors ends -->
+
+    <!-- Testimonial feedback -->
+    <section class="testimonial p-0">
+        <div class="container">
+            <div class="section-title sc-center justify-content-center text-center borderline">
+                <div class="title-top">
+                    <div class="title-quote">
+                        <span>Customers reviews</span>
+                    </div>
+                    <h3>WHAT PEOPLE <span class="cl-blue">SAY</span></h3>
+                </div>
+            </div>
+            <div class="row review-slider feedback-main wow fadeInUp">
+                <div class="col-md-6">
+                    <div class="feedback-inner">
+                        <div class="consult-content mb-4">
+                            <p class="mb-0">
+                                I am slide content. Click edit button to change this text. Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis, pulvinar dapibus leo.
+                            </p>
+                        </div>
+                        <div class="consult-title d-flex justify-content-start">
+                            <img src="{{ asset('LandingPageOri/assets/images/team/user-1.jpg') }}" alt="" />
+                            <div class="ps-name">
+                                <h5 class="mb-0">Adam Cheis</h5>
+                                <span class="cl-orange">Graphic Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="feedback-inner">
+                        <div class="consult-content mb-4">
+                            <p class="mb-0">
+                                I am slide content. Click edit button to change this text. Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis, pulvinar dapibus leo.
+                            </p>
+                        </div>
+                        <div class="consult-title d-flex justify-content-start">
+                            <img src="{{ asset('LandingPageOri/assets/images/team/user-2.jpg') }}" alt="" />
+                            <div class="ps-name">
+                                <h5 class="mb-0">Amanda Lee</h5>
+                                <span class="cl-orange">CEO & Founder Crix</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="feedback-inner">
+                        <div class="consult-content mb-4">
+                            <p class="mb-0">
+                                I am slide content. Click edit button to change this text. Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis, pulvinar dapibus leo.
+                            </p>
+                        </div>
+                        <div class="consult-title d-flex justify-content-start">
+                            <img src="{{ asset('LandingPageOri/assets/images/team/user-1.jpg') }}" alt="" />
+                            <div class="ps-name">
+                                <h5 class="mb-0">Adam Cheis</h5>
+                                <span class="cl-orange">Graphic Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="feedback-inner">
+                        <div class="consult-content mb-4">
+                            <p class="mb-0">
+                                I am slide content. Click edit button to change this text. Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis, pulvinar dapibus leo.
+                            </p>
+                        </div>
+                        <div class="consult-title d-flex justify-content-start">
+                            <img src="{{ asset('LandingPageOri/assets/images/team/user-2.jpg') }}" alt="" />
+                            <div class="ps-name">
+                                <h5 class="mb-0">Amanda Lee</h5>
+                                <span class="cl-orange">CEO & Founder Crix</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial ends -->
+
+    <!-- Packages news start -->
+    <section class="packages">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center h-100">
+                        <div class="service-inner">
+                            <span class="top-title cl-blue">AWESOME PACKAGES</span>
+                            <h3 class="mb-3 pb-3">WE OFFER GREAT PRICES, PREMIUM ABD QUALITY PRODUCTS FOR YOUR
+                                BUSINESS.</h3>
+                            <p class="mb-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum impedit itaque dolorem.
+                                Adipisci deleniti nostrum tempore aspernatur,
+                                veritatis, reiciendis voluptatibus dolore expedita saepe enim similique vero beatae
+                                ducimus autem cum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="pkg-container bg-white">
+                        <div class="pg-title">
+                            <i class="fas fa-server"></i>
+                            <h3 class="cl-orange">RECOMMENDED</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium perspiciatis</p>
+                        </div>
+                        <div class="pg-main">
+                            <p class="cl-orange"><i class="fas fa-dollar-sign"></i> 5.99<span>/Month</span></p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Create and host custom content</li>
+                                <li><i class="fas fa-check"></i> Create custom learning paths</li>
+                                <li><i class="fas fa-check"></i> Custom Categories</li>
+                                <li><i class="fas fa-check"></i> Native courses in English</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="pkg-container">
+                        <div class="pg-title">
+                            <i class="fas fa-cog"></i>
+                            <h3 class="cl-blue">STANDARD</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium perspiciatis</p>
+                        </div>
+                        <div class="pg-main">
+                            <p class="cl-blue"><i class="fas fa-dollar-sign"></i> 25.99<span>/Month</span></p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Create and host custom content</li>
+                                <li><i class="fas fa-check"></i> Create custom learning paths</li>
+                                <li><i class="fas fa-check"></i> Custom Categories</li>
+                                <li><i class="fas fa-check"></i> Native courses in all Langauges</li>
+                                <li><i class="fas fa-check"></i> 24/7 customer support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Packages news end -->
+
+    <!-- News/Events news start -->
+    <section class="courses news-events p-0">
+        <div class="container">
+            <div class="section-title sc-center justify-content-center borderline text-center">
+                <div class="title-top">
+                    <div class="title-quote">
+                        <span>Our Events</span>
+                    </div>
+                    <h3>UPCOMING <span class="cl-blue">EVENTS</span> & <span class="cl-blue">COMPETITIONS</span></h3>
+                </div>
+            </div>
+            <div class="wrap-customize">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 customize-wrap wow fadeInUp">
+                        <div class="customize-item">
+                            <div class="sv-image">
+                                <img src="{{ asset('LandingPageOri/assets/images/courses/event-1.jpg') }}"
+                                    alt="" />
+                                <span>28 June</span>
+                            </div>
+                            <div class="customize-ct">
+                                <h4>
+                                    <a href="event-detail.html">TED TALKS AT UCF COLLEGE OF EDUCATION</a>
+                                </h4>
+                                <div class="review-ct d-flex justify-content-start">
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                            <div class="customize-bottom">
+                                <ul class="d-flex justify-content-start">
+                                    <li class="mr-3"><i class="far fa-clock"></i> 9AM</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Melbourne</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 customize-wrap wow fadeInUp">
+                        <div class="customize-item">
+                            <div class="sv-image">
+                                <img src="{{ asset('LandingPageOri/assets/images/courses/event-2.jpg') }}"
+                                    alt="" />
+                                <span>5 Aug</span>
+                            </div>
+                            <div class="customize-ct">
+                                <h4>
+                                    <a href="event-detail.html">IMPORTANCES OF RESEARCH SEMINAR 2021</a>
+                                </h4>
+                                <div class="review-ct d-flex justify-content-start">
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                            <div class="customize-bottom">
+                                <ul class="d-flex justify-content-start">
+                                    <li class="mr-3"><i class="far fa-clock"></i> 9AM</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Melbourne</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 customize-wrap wow fadeInUp">
+                        <div class="customize-item">
+                            <div class="sv-image">
+                                <img src="{{ asset('LandingPageOri/assets/images/courses/event-3.jpg') }}"
+                                    alt="" />
+                                <span>17 Sep</span>
+                            </div>
+                            <div class="customize-ct">
+                                <h4>
+                                    <a href="event-detail.html">NEWLY SUMMER COURSE STARTS FROM JUNE</a>
+                                </h4>
+                                <div class="review-ct d-flex justify-content-start">
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                            <div class="customize-bottom">
+                                <ul class="d-flex justify-content-start">
+                                    <li class="mr-3"><i class="far fa-clock"></i> 9AM</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Melbourne</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- News/Events news start -->
+
+    <!--  Blog to action start -->
+    <section class="blog-article">
+        <div class="container">
+            <div class="section-title sc-center justify-content-center text-center borderline wow fadeInLeft">
+                <div class="title-top">
+                    <div class="title-quote">
+                        <span>Our Blogs</span>
+                    </div>
+                    <h3>LATEST <span class="cl-blue">BLOG</span> & <span class="cl-blue">EVENTS</span></h3>
+                </div>
+            </div>
+            <div class="blog-wrap">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInRight">
+                        <div class="article-list">
+                            <div class="at-thumbnail">
+                                <a href="blog-detail.html">
+                                    <img src="{{ asset('LandingPageOri/assets/images/blog/blog-1.jpg') }}"
+                                        alt="" />
+                                </a>
+                                <span class="blog-tag"> Education </span>
+                            </div>
+                            <div class="article-content">
+                                <img src="{{ asset('LandingPageOri/assets/images/team/user-4.jpg') }}" alt=""
+                                    class="article-avatar" />
+                                <div class="artl-detail text-center">
+                                    <a href="blog-detail.html">
+                                        <h4>NEW CHICAGO SCHOOL BUDGET RELIES ON PENSION</h4>
+                                    </a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                </div>
+                                <div class="artl-bottom">
+                                    <ul class="d-flex justify-content-center">
+                                        <li>June 12, 2021</li>
+                                        <li><a href="#">2 Comments</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInRight">
+                        <div class="article-list">
+                            <div class="at-thumbnail">
+                                <a href="blog-detail.html">
+                                    <img src="{{ asset('LandingPageOri/assets/images/blog/blog-2.jpg') }}"
+                                        alt="" />
+                                </a>
+                                <span class="blog-tag"> Education </span>
+                            </div>
+                            <div class="article-content">
+                                <img src="{{ asset('LandingPageOri/assets/images/team/user-5.jpg') }}" alt=""
+                                    class="article-avatar" />
+                                <div class="artl-detail text-center">
+                                    <a href="blog-detail.html">
+                                        <h4>NEW CHICAGO SCHOOL BUDGET RELIES ON PENSION</h4>
+                                    </a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                </div>
+                                <div class="artl-bottom">
+                                    <ul class="d-flex justify-content-center">
+                                        <li>June 12, 2021</li>
+                                        <li><a href="#">2 Comments</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInRight">
+                        <div class="article-list">
+                            <div class="at-thumbnail">
+                                <a href="blog-detail.html">
+                                    <img src="{{ asset('LandingPageOri/assets/images/blog/blog-3.jpg') }}"
+                                        alt="" />
+                                </a>
+                                <span class="blog-tag"> Education </span>
+                            </div>
+                            <div class="article-content">
+                                <img src="{{ asset('LandingPageOri/assets/images/team/user-6.jpg') }}" alt=""
+                                    class="article-avatar" />
+                                <div class="artl-detail text-center">
+                                    <a href="blog-detail.html">
+                                        <h4>NEW CHICAGO SCHOOL BUDGET RELIES ON PENSION</h4>
+                                    </a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                </div>
+                                <div class="artl-bottom">
+                                    <ul class="d-flex justify-content-center">
+                                        <li>June 12, 2021</li>
+                                        <li><a href="#">2 Comments</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  Blog to action end -->
+
+    <!-- Footer starts -->
+    @include('LandingPage.Layout.footer')
+    <!-- Footer ends -->
+    <!-- Back to top start -->
     <div id="back-to-top">
         <a href="#"></a>
     </div>
+    <!-- Back to top ends -->
+    <!-- *Scripts* -->
     @include('LandingPage.Layout.script')
-    </body>
+</body>
 
 </html>
