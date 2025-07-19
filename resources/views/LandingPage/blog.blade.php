@@ -36,7 +36,7 @@
                             <div class="col-lg-6 col-md-6 mb-4 wow fadeInRight">
                                 <div class="article-list">
                                     <div class="at-thumbnail">
-                                        <a href="blog-detail.html">
+                                        <a href="/blog/blogdetail">
                                             <img src="{{ asset('LandingPageOri/assets/images/blog/blog-1.jpg') }}"
                                                 alt="" />
                                         </a>
@@ -46,11 +46,11 @@
                                         <img src="{{ asset('LandingPageOri/assets/images/team/user-4.jpg') }}"
                                             alt="" class="article-avatar" />
                                         <div class="artl-detail">
-                                            <a href="blog-detail.html">
+                                            <a href="/blog/blogdetail">
                                                 <h4>NEW CHICAGO SCHOOL BUDGET RELIES ON PENSION</h4>
                                             </a>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                                            <a href="blog-detail.html" class="bl-link">Read More <i
+                                            <a href="/blog/blogdetail" class="bl-link">Read More <i
                                                     class="fas fa-angle-double-right"></i></a>
                                         </div>
                                         <div class="artl-bottom">
@@ -65,7 +65,7 @@
                             <div class="col-lg-6 col-md-6 mb-4 wow fadeInRight">
                                 <div class="article-list">
                                     <div class="at-thumbnail">
-                                        <a href="blog-detail.html">
+                                        <a href="/blog/blogdetail">
                                             <img src="{{ asset('LandingPageOri/assets/images/blog/blog-2.jpg') }}"
                                                 alt="" />
                                         </a>
@@ -75,11 +75,11 @@
                                         <img src="{{ asset('LandingPageOri/assets/images/team/user-5.jpg') }}"
                                             alt="" class="article-avatar" />
                                         <div class="artl-detail">
-                                            <a href="blog-detail.html">
+                                            <a href="/blog/blogdetail">
                                                 <h4>NEW CHICAGO SCHOOL BUDGET RELIES ON PENSION</h4>
                                             </a>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                                            <a href="blog-detail.html" class="bl-link">Read More <i
+                                            <a href="/blog/blogdetail" class="bl-link">Read More <i
                                                     class="fas fa-angle-double-right"></i></a>
                                         </div>
                                         <div class="artl-bottom">
@@ -94,7 +94,7 @@
                             <div class="col-lg-6 col-md-6 mb-4 wow fadeInRight">
                                 <div class="article-list">
                                     <div class="at-thumbnail">
-                                        <a href="blog-detail.html">
+                                        <a href="/blog/blogdetail">
                                             <img src="{{ asset('LandingPageOri/assets/images/blog/blog-3.jpg') }}"
                                                 alt="" />
                                         </a>
@@ -104,11 +104,11 @@
                                         <img src="{{ asset('LandingPageOri/assets/images/team/user-6.jpg') }}"
                                             alt="" class="article-avatar" />
                                         <div class="artl-detail">
-                                            <a href="blog-detail.html">
+                                            <a href="/blog/blogdetail">
                                                 <h4>NEW CHICAGO SCHOOL BUDGET RELIES ON PENSION</h4>
                                             </a>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                                            <a href="blog-detail.html" class="bl-link">Read More <i
+                                            <a href="/blog/blogdetail" class="bl-link">Read More <i
                                                     class="fas fa-angle-double-right"></i></a>
                                         </div>
                                         <div class="artl-bottom">
@@ -123,7 +123,7 @@
                             <div class="col-lg-6 col-md-6 mb-4 wow fadeInRight">
                                 <div class="article-list">
                                     <div class="at-thumbnail">
-                                        <a href="blog-detail.html">
+                                        <a href="/blog/blogdetail">
                                             <img src="{{ asset('LandingPageOri/assets/images/blog/blog-1.jpg') }}"
                                                 alt="" />
                                         </a>
@@ -133,11 +133,11 @@
                                         <img src="{{ asset('LandingPageOri/assets/images/team/user-4.jpg') }}"
                                             alt="" class="article-avatar" />
                                         <div class="artl-detail">
-                                            <a href="blog-detail.html">
+                                            <a href="/blog/blogdetail">
                                                 <h4>NEW CHICAGO SCHOOL BUDGET RELIES ON PENSION</h4>
                                             </a>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                                            <a href="blog-detail.html" class="bl-link">Read More <i
+                                            <a href="/blog/blogdetail" class="bl-link">Read More <i
                                                     class="fas fa-angle-double-right"></i></a>
                                         </div>
                                         <div class="artl-bottom">
@@ -152,7 +152,7 @@
                             <div class="col-lg-6 col-md-6 mb-4 wow fadeInRight">
                                 <div class="article-list">
                                     <div class="at-thumbnail">
-                                        <a href="blog-detail.html">
+                                        <a href="/blog/blogdetail">
                                             <img src="{{ asset('LandingPageOri/assets/images/blog/blog-1.jpg') }}"
                                                 alt="" />
                                         </a>
@@ -162,11 +162,11 @@
                                         <img src="{{ asset('LandingPageOri/assets/images/team/user-4.jpg') }}"
                                             alt="" class="article-avatar" />
                                         <div class="artl-detail">
-                                            <a href="blog-detail.html">
+                                            <a href="/blog/blogdetail">
                                                 <h4>NEW CHICAGO SCHOOL BUDGET RELIES ON PENSION</h4>
                                             </a>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                                            <a href="blog-detail.html" class="bl-link">Read More <i
+                                            <a href="/blog/blogdetail" class="bl-link">Read More <i
                                                     class="fas fa-angle-double-right"></i></a>
                                         </div>
                                         <div class="artl-bottom">
@@ -181,7 +181,7 @@
                             <div class="col-lg-6 col-md-6 mb-4 wow fadeInRight">
                                 <div class="article-list">
                                     <div class="at-thumbnail">
-                                        <a href="blog-detail.html">
+                                        <a href="/blog/blogdetail">
                                             <img src="{{ asset('LandingPageOri/assets/images/blog/blog-2.jpg') }}"
                                                 alt="" />
                                         </a>
@@ -191,11 +191,11 @@
                                         <img src="{{ asset('LandingPageOri/assets/images/team/user-5.jpg') }}"
                                             alt="" class="article-avatar" />
                                         <div class="artl-detail">
-                                            <a href="blog-detail.html">
+                                            <a href="/blog/blogdetail">
                                                 <h4>NEW CHICAGO SCHOOL BUDGET RELIES ON PENSION</h4>
                                             </a>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                                            <a href="blog-detail.html" class="bl-link">Read More <i
+                                            <a href="/blog/blogdetail" class="bl-link">Read More <i
                                                     class="fas fa-angle-double-right"></i></a>
                                         </div>
                                         <div class="artl-bottom">
@@ -210,7 +210,7 @@
                             <div class="col-lg-6 col-md-6 wow fadeInRight">
                                 <div class="article-list">
                                     <div class="at-thumbnail">
-                                        <a href="blog-detail.html">
+                                        <a href="/blog/blogdetail">
                                             <img src="{{ asset('LandingPageOri/assets/images/blog/blog-2.jpg') }}"
                                                 alt="" />
                                         </a>
@@ -220,11 +220,11 @@
                                         <img src="{{ asset('LandingPageOri/assets/images/team/user-5.jpg') }}"
                                             alt="" class="article-avatar" />
                                         <div class="artl-detail">
-                                            <a href="blog-detail.html">
+                                            <a href="/blog/blogdetail">
                                                 <h4>NEW CHICAGO SCHOOL BUDGET RELIES ON PENSION</h4>
                                             </a>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                                            <a href="blog-detail.html" class="bl-link">Read More <i
+                                            <a href="/blog/blogdetail" class="bl-link">Read More <i
                                                     class="fas fa-angle-double-right"></i></a>
                                         </div>
                                         <div class="artl-bottom">
@@ -239,7 +239,7 @@
                             <div class="col-lg-6 col-md-6 wow fadeInRight">
                                 <div class="article-list">
                                     <div class="at-thumbnail">
-                                        <a href="blog-detail.html">
+                                        <a href="/blog/blogdetail">
                                             <img src="{{ asset('LandingPageOri/assets/images/blog/blog-3.jpg') }}"
                                                 alt="" />
                                         </a>
@@ -249,11 +249,11 @@
                                         <img src="{{ asset('LandingPageOri/assets/images/team/user-6.jpg') }}"
                                             alt="" class="article-avatar" />
                                         <div class="artl-detail">
-                                            <a href="blog-detail.html">
+                                            <a href="/blog/blogdetail">
                                                 <h4>NEW CHICAGO SCHOOL BUDGET RELIES ON PENSION</h4>
                                             </a>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                                            <a href="blog-detail.html" class="bl-link">Read More <i
+                                            <a href="/blog/blogdetail" class="bl-link">Read More <i
                                                     class="fas fa-angle-double-right"></i></a>
                                         </div>
                                         <div class="artl-bottom">
@@ -291,7 +291,7 @@
                             </div>
                             <div class="customize-ct m-0">
                                 <h6 class="mb-0">
-                                    <a href="blog-detail.html">EPATHSHALA’S ALUMNI HOT AIR BALLON TRIP IN TURKEY</a>
+                                    <a href="/blog/blogdetail">EPATHSHALA’S ALUMNI HOT AIR BALLON TRIP IN TURKEY</a>
                                 </h6>
                                 <span class="cust-meta"> August 20, 2021</span>
                             </div>
@@ -303,7 +303,7 @@
                             </div>
                             <div class="customize-ct m-0">
                                 <h6 class="mb-0">
-                                    <a href="blog-detail.html">THE NEXT GENERATION OF BUSINESS LEADERS</a>
+                                    <a href="/blog/blogdetail">THE NEXT GENERATION OF BUSINESS LEADERS</a>
                                 </h6>
                                 <span class="cust-meta"> August 20, 2021</span>
                             </div>
@@ -315,7 +315,7 @@
                             </div>
                             <div class="customize-ct m-0">
                                 <h6 class="mb-0">
-                                    <a href="blog-detail.html">REUNION EVENT: EPATHSHALA’S ALUMNI GOLF TOUR</a>
+                                    <a href="/blog/blogdetail">REUNION EVENT: EPATHSHALA’S ALUMNI GOLF TOUR</a>
                                 </h6>
                                 <span class="cust-meta"> August 20, 2021</span>
                             </div>
@@ -327,7 +327,7 @@
                             </div>
                             <div class="customize-ct m-0">
                                 <h6 class="mb-0">
-                                    <a href="blog-detail.html">EPATHSHALA’S ALUMNI HOT AIR BALLON TRIP IN TURKEY</a>
+                                    <a href="/blog/blogdetail">EPATHSHALA’S ALUMNI HOT AIR BALLON TRIP IN TURKEY</a>
                                 </h6>
                                 <span class="cust-meta"> August 20, 2021</span>
                             </div>

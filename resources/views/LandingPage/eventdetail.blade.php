@@ -26,7 +26,7 @@
     </section>
     <!-- Breadcrumb end -->
 
-    <section class="event-detail-cn">
+    <section class="event-detail-cn pb-0">
       <div class="container">
         <div class="ev-detail-info d-flex flex-column justify-content-center align-items-center text-center h-100">
           <h3>Kerja Bakti Bersama Warga Dusun Kemiri</h3>
@@ -104,7 +104,7 @@
     </section>
 
     <!-- News/Events news start -->
-    <section class="courses news-events p-0">
+    <section class="courses news-events">
       <div class="container">
         <div class="section-title sc-center justify-content-center text-center borderline">
           <div class="title-top">

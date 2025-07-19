@@ -663,7 +663,7 @@
                     <div class="col-lg-4 col-md-6 wow fadeInRight">
                         <div class="article-list">
                             <div class="at-thumbnail">
-                                <a href="blog-detail.html">
+                                <a href="/blog/blogdetail">
                                     <img src="{{ asset('LandingPageOri/assets/images/blog/Bakti.png') }}"
                                         alt="" />
                                 </a>
@@ -673,14 +673,14 @@
                                 <img src="{{ asset('LandingPageOri/assets/images/team/user-4.jpg') }}" alt=""
                                     class="article-avatar" />
                                 <div class="artl-detail">
-                                    <a href="blog-detail.html">
+                                    <a href="/blog/blogdetail">
                                         <h4>Warga Desa Pakukerto Gelar Kerja Bakti Bersihkan Lingkungan</h4>
                                     </a>
                                     <p>Dalam semangat gotong royong, warga Desa Pakukerto mengadakan kerja bakti massal
                                         membersihkan saluran air dan fasilitas umum pada Minggu pagi (30 Juli 2025).
                                         Kegiatan ini diikuti oleh seluruh RT dan didukung oleh Karang Taruna serta
                                         ibu-ibu PKK.</p>
-                                    <a href="blog-detail.html" class="bl-link">Read More <i
+                                    <a href="/blog/blogdetail" class="bl-link">Read More <i
                                             class="fas fa-angle-double-right"></i></a>
                                 </div>
                                 <div class="artl-bottom">
@@ -695,7 +695,7 @@
                     <div class="col-lg-4 col-md-6 wow fadeInRight">
                         <div class="article-list">
                             <div class="at-thumbnail">
-                                <a href="blog-detail.html">
+                                <a href="/blog/blogdetail">
                                     <img src="{{ asset('LandingPageOri/assets/images/blog/Peresmian.png') }}"
                                         alt="" />
                                 </a>
@@ -705,14 +705,14 @@
                                 <img src="{{ asset('LandingPageOri/assets/images/team/user-5.jpg') }}" alt=""
                                     class="article-avatar" />
                                 <div class="artl-detail">
-                                    <a href="blog-detail.html">
+                                    <a href="/blog/blogdetail">
                                         <h4>Desa Pakukerto Resmikan Layanan Aduan Online Melalui Website</h4>
                                     </a>
                                     <p>Untuk meningkatkan keterbukaan dan pelayanan publik, pemerintah Desa Pakukerto
                                         kini menyediakan fitur pengaduan online yang bisa diakses langsung melalui
                                         website resmi desa. Warga dapat menyampaikan keluhan, aspirasi, atau laporan
                                         dengan mudah.</p>
-                                    <a href="blog-detail.html" class="bl-link">Read More <i
+                                    <a href="/blog/blogdetail" class="bl-link">Read More <i
                                             class="fas fa-angle-double-right"></i></a>
                                 </div>
                                 <div class="artl-bottom">
@@ -727,7 +727,7 @@
                     <div class="col-lg-4 col-md-6 wow fadeInRight">
                         <div class="article-list">
                             <div class="at-thumbnail">
-                                <a href="blog-detail.html">
+                                <a href="/blog/blogdetail">
                                     <img src="{{ asset('LandingPageOri/assets/images/blog/Panen.png') }}"
                                         alt="" />
                                 </a>
@@ -737,14 +737,14 @@
                                 <img src="{{ asset('LandingPageOri/assets/images/team/user-6.jpg') }}" alt=""
                                     class="article-avatar" />
                                 <div class="artl-detail">
-                                    <a href="blog-detail.html">
+                                    <a href="/blog/blogdetail">
                                         <h4>Panen Raya Sukses, Petani Desa Sambut Harga Gabah Stabil</h4>
                                     </a>
                                     <p>Para petani di Desa Pakukerto bersyukur atas panen raya tahun ini yang
                                         berlangsung lancar dan menghasilkan hasil pertanian berkualitas. Pemerintah desa
                                         turut memfasilitasi distribusi dan penjualan hasil panen ke koperasi dan pasar
                                         lokal.</p>
-                                    <a href="blog-detail.html" class="bl-link">Read More <i
+                                    <a href="/blog/blogdetail" class="bl-link">Read More <i
                                             class="fas fa-angle-double-right"></i></a>
                                 </div>
                                 <div class="artl-bottom">
