@@ -66,7 +66,7 @@
                                         <li><a href="course-detail.html">Course Detail</a></li>
                                     </ul>
                                 </li> --}}
-                                <li class="dropdown submenu">
+                                {{-- <li class="dropdown submenu">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                         aria-haspopup="true" aria-expanded="false">Events <i
                                             class="fas fa-chevron-down"></i></a>
@@ -74,6 +74,9 @@
                                         <li><a href="/event/eventlist">Event List</a></li>
                                         <li><a href="/event/eventdetail">Event Detail</a></li>
                                     </ul>
+                                </li> --}}
+                                <li class="{{ request()->is('event') ? 'active' : '' }}">
+                                    <a href="/event">event</a>
                                 </li>
                                 <li class="{{ request()->is('blog') ? 'active' : '' }}">
                                     <a href="/blog">Blog</a>

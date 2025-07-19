@@ -27,5 +27,5 @@ Route::get('/umkm/detail', [UmkmController::class,  'ViewDetailUmkm'])->name('Vi
 Route::get('/potensidesa', [UmkmController::class,  'ViewPotensiDesa'])->name('ViewPotensiDesa');
 
 Route::get('/persuratan', [PersuratanController::class,  'viewpersuratan'])->name('persuratan');
-Route::get('/event/eventlist', [EventController::class,  'viewevent'])->name('event');
+Route::get('/event', [EventController::class,  'viewevent'])->name('event');
 Route::get('/event/eventdetail', [EventController::class,  'vieweventdetail'])->name('event');
