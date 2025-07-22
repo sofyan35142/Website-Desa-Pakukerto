@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\Home;
 use App\Http\Controllers\Landing\BlogController;
 use App\Http\Controllers\Landing\ContactController;
 use App\Http\Controllers\Landing\EventController;
@@ -12,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+
+Route::get('/admin', [Home::class,  'homeAdmin'])->name('homeAdmin');
 
 Route::get('/', [HomeController::class,  'home'])->name('home');
 Route::get('/blog', [BlogController::class,  'Blog'])->name('Blog');
