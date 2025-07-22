@@ -36,5 +36,10 @@ class ProfileDesa extends Controller
         return view("LandingPage.detailkelembagaan");
     }
 
+    public function ViewPotensiDesa()
+    {
+        return view("LandingPage.potensidesa");
+    }
+
 
 }

@@ -54,7 +54,7 @@
                                         <li><a href="/profile/kelembagaan">Kelembagaan</a></li>
                                         <li><a href="/profile/letakgeografis">Letak Geografis</a></li>
                                         <li><a href="/profile/demografi">Data Demografi</a></li>
-                                        <li><a href="/potensidesa">Potensi Desa</a></li>
+                                        <li><a href="/profile/potensidesa">Potensi Desa</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="/umkm">UMKM</a></li>

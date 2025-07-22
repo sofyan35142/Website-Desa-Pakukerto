@@ -23,13 +23,14 @@ Route::get('/profile/kelembagaan', [ProfileDesa::class,  'ViewKelembagaan'])->na
 Route::get('/profile/kelembagaan/PemerintahDesa', [ProfileDesa::class,  'ViewKelembagaanDetail'])->name('ViewKelembagaanDetail');
 Route::get('/profile/letakgeografis', [ProfileDesa::class,  'ViewLetakGeografis'])->name('Viewletakgeografis');
 Route::get('/profile/demografi', [ProfileDesa::class,  'ViewDemografi'])->name('Viewdemografi');
+Route::get('/profile/potensidesa', [ProfileDesa::class,  'ViewPotensiDesa'])->name('ViewPotensiDesa');
 Route::get('/umkm', [UmkmController::class,  'ViewUmkm'])->name('Viewumkm');
 Route::get('/umkm/detail', [UmkmController::class,  'ViewDetailUmkm'])->name('ViewUmkm');
 
 
 
 Route::get('/tes', function () {
-    return view('tesstruktur');
+    return view('LandingPage.potensidesa');
 });
 
 Route::get('/persuratan', [PersuratanController::class,  'viewpersuratan'])->name('persuratan');
