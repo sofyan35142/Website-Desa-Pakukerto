@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AgendaDesa;
 use App\Http\Controllers\Admin\BlogController as AdminBlogController;
 use App\Http\Controllers\Admin\Home;
 use App\Http\Controllers\Landing\BlogController;
@@ -41,3 +42,19 @@ Route::post('/blogpost', [AdminBlogController::class,  'store'])->name('admin.bl
 Route::get('/blogs/{blog}/edit', [AdminBlogController::class, 'edit'])->name('admin.blogs.edit');
 Route::put('/blogs/{blog}', [AdminBlogController::class, 'update'])->name('admin.blogs.update');
 Route::delete('/blogs/{blog}', [AdminBlogController::class, 'destroy'])->name('admin.blogs.destroy');
+
+
+////////////////adminHOME/////////////////////////////////////////////
+
+////Sambutan Kades//////////////////////////
+Route::get('/sambutanKades', [Home::class,  'sambutanKades'])->name('viewsambutanKades');
+Route::get('/editsambutan/{id}', [Home::class,  'editsambutan'])->name('editsambutan');
+Route::post('/updatesambutan/{id}', [Home::class,  'updatesambutan']);
+
+/////////////Agenda//////////////////////////
+Route::get('/Agenda', [AgendaDesa::class,  'AgendaDesa'])->name('viewAgendaDesa');
+Route::get('/tambahagendadesa', [AgendaDesa::class,  'tambahagendadesa'])->name('viewtambahagendadesa');
+Route::post('/insertkegiatan', [AgendaDesa::class,  'insertkegiatan']);
+Route::get('/editagenda/{id}', [AgendaDesa::class,  'editagenda'])->name('editagenda');
+Route::post('/updateagenda/{id}', [AgendaDesa::class,  'updateagenda']);
+Route::get('/deleteagenda/{id}', [AgendaDesa::class, 'delete'])->name('agenda.delete');

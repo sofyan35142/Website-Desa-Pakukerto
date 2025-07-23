@@ -1,18 +1,28 @@
 <!doctype html>
 <html lang="en">
 
-@include('Admin.LayoutAdmin.head')
 
+<!-- Mirrored from themesbrand.com/minible/layouts/form-elements.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Jun 2025 07:29:48 GMT -->
+
+@include('Admin.LayoutAdmin.head')
 
 <body>
 
+    <!-- <body data-layout="horizontal" data-topbar="colored"> -->
+
+    <!-- Begin page -->
     <div id="layout-wrapper">
 
 
         @include('Admin.LayoutAdmin.header')
+        <!-- ========== Left Sidebar Start ========== -->
         @include('Admin.LayoutAdmin.sidebar')
+        <!-- Left Sidebar End -->
 
 
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
         <div class="main-content">
 
             <div class="page-content">
@@ -21,103 +31,95 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-flex align-items-center justify-content-between">
-                                <h4 class="mb-0">Manajemen Blog</h4>
+                                <h4 class="mb-0">Form Tambah Data Kegiatan</h4>
 
-                                <div class="page-title-right d-flex align-items-center"> {{-- Tambahkan d-flex dan align-items-center di sini --}}
+                                <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Konten</a></li>
-                                        <li class="breadcrumb-item active">Blog</li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Blog</a></li>
+                                        <li class="breadcrumb-item active">Tambah Data</li>
                                     </ol>
-                                    {{-- Tombol Tambah Data --}}
-                                    <a href="{{ route('admin.blogs.form') }}" class="btn btn-primary btn-sm ms-3">
-                                        <i class="fas fa-plus me-1"></i> Tambah Data
-                                    </a>
                                 </div>
 
                             </div>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title">DATA BLOG PAKUKERTO</h4>
-                                    <p class="card-title-desc">Kelola semua postingan blog yang ada di website Anda.</p>
 
-                                    @if (session('success'))
-                                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                            {{ session('success') }}
-                                            <button type="button" class="btn-close" data-bs-dismiss="alert"
-                                                aria-label="Close"></button>
-                                        </div>
-                                    @endif
+                                    <h4 class="card-title">Input Data Kegiatan Baru</h4> <br>
+                                    {{-- <p class="card-title-desc">Isi semua kolom di bawah untuk menambahkan entri blog
+                                        baru.</p> --}}
 
-                                    {{-- Pesan jika tidak ada data, ditampilkan di luar tabel --}}
-                                    @if ($blogs->isEmpty())
-                                        <div class="alert alert-info text-center" role="alert">
-                                            Belum ada data blog yang tersedia.
+                                    <form method="post" action="/insertkegiatan" enctype="multipart/form-data">
+                                        @csrf
+                                        <div class="mb-3 row">
+                                            <label for="blog-title-input" class="col-md-2 col-form-label">Judul
+                                                Kegiatan</label>
+                                            <div class="col-md-10">
+                                                <input class="form-control" type="text" id="blog-title-input"
+                                                    placeholder="Masukkan judul Kegiatan" name="nama_agenda">
+                                            </div>
                                         </div>
-                                    @else
-                                        <table id="datatable" class="table table-bordered dt-responsive nowrap"
-                                            style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                            <thead>
-                                                <tr>
-                                                    <th>No.</th>
-                                                    <th>Nama Blog</th>
-                                                    <th>Penulis</th>
-                                                    <th>Deskripsi</th> {{-- Kolom Deskripsi --}}
-                                                    <th>Kategori</th> {{-- Kolom Kategori --}}
-                                                    <th>Gambar</th>
-                                                    <th>Tanggal Publikasi</th>
-                                                    <th>Aksi</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                @foreach ($blogs as $key => $blog)
-                                                    <tr>
-                                                        <td>{{ $key + 1 }}</td>
-                                                        <td>{{ $blog->nama_blog }}</td>
-                                                        <td>{{ $blog->penulis }}</td>
-                                                        <td>{{ Str::limit($blog->deskripsi, 50) }}</td>
-                                                        {{-- Tampilkan deskripsi, batasi 50 karakter --}}
-                                                        <td>{{ $blog->kategori }}</td> {{-- Tampilkan kategori --}}
-                                                        <td>
-                                                            @if ($blog->gambar)
-                                                                <img src="{{ asset($blog->gambar) }}"
-                                                                    alt="{{ $blog->nama_blog }}" class="img-thumbnail"
-                                                                    style="width: 80px; height: auto; object-fit: cover;">
-                                                            @else
-                                                                Tidak ada gambar
-                                                            @endif
-                                                        </td>
-                                                        <td>{{ $blog->created_at->format('d M Y H:i') }}</td>
-                                                        <td>
-                                                            <a href="{{ route('admin.blogs.edit', $blog->id) }}"
-                                                                class="btn btn-info btn-sm">Edit</a>
-                                                            <form
-                                                                action="{{ route('admin.blogs.destroy', $blog->id) }}"
-                                                                method="POST" style="display:inline;"
-                                                                onsubmit="return confirm('Apakah Anda yakin ingin menghapus blog ini?');">
-                                                                @csrf
-                                                                @method('DELETE')
-                                                                <button type="submit"
-                                                                    class="btn btn-danger btn-sm">Hapus</button>
-                                                            </form>
-                                                        </td>
-                                                    </tr>
-                                                @endforeach
-                                            </tbody>
-                                        </table>
-                                    @endif {{-- End if ($blogs->isEmpty()) --}}
+                                        <div class="mb-3 row">
+                                            <label for="blog-title-input" class="col-md-2 col-form-label">Tanggal
+                                                Kegiatan</label>
+                                            <div class="col-md-10">
+                                                <input class="form-control" type="date" id="blog-title-input"
+                                                    placeholder="Masukkan judul Kegiatan" name="tanggal_agenda">
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 row">
+                                            <label for="example-time-input" class="col-md-2 col-form-label">Waktu Kegiatan</label>
+                                            <div class="col-md-10">
+                                                <input class="form-control" type="time" placeholder="Masukkan Jam kegiatan" name="waktu_agenda" id="example-time-input">
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 row">
+                                            <label for="blog-title-input" class="col-md-2 col-form-label">Lokasi
+                                                Kegiatan</label>
+                                            <div class="col-md-10">
+                                                <input class="form-control" type="text" id="blog-title-input"
+                                                    placeholder="Masukkan Lokasi Kegiatan" name="lokasi_agenda">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="blog-content-input" class="col-md-2 col-form-label">Deskripsi Kegiatan</label>
+                                            <div class="col-md-10">
+                                                <textarea class="form-control" id="blog-content-input" rows="8" placeholder="Tulis deskripsi kegiatan di sini..." name="deskripsi_agenda"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 row">
+                                            <label for="blog-image-input" class="col-md-2 col-form-label">Poster
+                                                Kegiatan</label>
+                                            <div class="col-md-10">
+                                                <input class="form-control" type="file" id="blog-image-input"
+                                                    accept="image/*" name="poster_agenda">
+                                                <div class="form-text"> Unggah gambar poster kegiatan</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-wrap gap-3 mt-3">
+                                            <button type="submit"
+                                                class="btn btn-primary waves-effect waves-light w-md">Simpan
+                                                Blog</button>
+                                            <button type="reset"
+                                                class="btn btn-outline-secondary waves-effect waves-light w-md">Reset
+                                                Form</button>
+                                        </div>
+                                    </form>
 
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
+            <!-- End Page-content -->
 
 
             <footer class="footer">
@@ -138,10 +140,14 @@
                 </div>
             </footer>
         </div>
+        <!-- end main content-->
 
     </div>
+    <!-- END layout-wrapper -->
 
 
+
+    <!-- Right Sidebar -->
     <div class="right-bar">
         <div data-simplebar class="h-100">
             <div class="rightbar-title d-flex align-items-center p-3">
@@ -153,12 +159,14 @@
                 </a>
             </div>
 
+            <!-- Settings -->
             <hr class="m-0" />
 
             <div class="p-4">
                 <h6 class="mb-3">Layout</h6>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout" id="layout-vertical" value="vertical">
+                    <input class="form-check-input" type="radio" name="layout" id="layout-vertical"
+                        value="vertical">
                     <label class="form-check-label" for="layout-vertical">Vertical</label>
                 </div>
                 <div class="form-check form-check-inline">
@@ -257,11 +265,14 @@
 
             </div>
 
-        </div>
+        </div> <!-- end slimscroll-menu-->
     </div>
+    <!-- /Right-bar -->
 
+    <!-- Right bar overlay-->
     <div class="rightbar-overlay"></div>
 
+    <!-- JAVASCRIPT -->
     @include('Admin.LayoutAdmin.scripts')
 
 </body>

@@ -11,13 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('blogs', function (Blueprint $table) {
+        Schema::create('sambutankades', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_blog');
-            $table->string('penulis')->default('Admin Desa');
-            $table->string('gambar');
-            $table->string('kategori');
-            $table->text('deskripsi'); // Menambahkan kolom deskripsi
+            $table->string('nama');
+            $table->text('sambutan');
+            $table->string('foto');
             $table->timestamps();
         });
     }
@@ -27,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('blogs');
+        //
     }
 };

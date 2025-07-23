@@ -11,13 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('blogs', function (Blueprint $table) {
+        Schema::create('agendas', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_blog');
-            $table->string('penulis')->default('Admin Desa');
-            $table->string('gambar');
-            $table->string('kategori');
-            $table->text('deskripsi'); // Menambahkan kolom deskripsi
+            $table->string('nama_agenda');
+            $table->string('tanggal_agenda');
+            $table->string('waktu_agenda');
+            $table->string('lokasi_agenda');
+            $table->text('deskripsi_agenda');
+            $table->string('poster_agenda');
             $table->timestamps();
         });
     }
@@ -27,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('blogs');
+        //
     }
 };

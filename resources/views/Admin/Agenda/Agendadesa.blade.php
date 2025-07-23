@@ -6,118 +6,107 @@
 
 <body>
 
+    <!-- <body data-layout="horizontal" data-topbar="colored"> -->
+
+    <!-- Begin page -->
     <div id="layout-wrapper">
 
 
         @include('Admin.LayoutAdmin.header')
+        <!-- ========== Left Sidebar Start ========== -->
         @include('Admin.LayoutAdmin.sidebar')
+        <!-- Left Sidebar End -->
 
 
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
         <div class="main-content">
 
             <div class="page-content">
                 <div class="container-fluid">
 
+                    <!-- start page title -->
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-flex align-items-center justify-content-between">
-                                <h4 class="mb-0">Manajemen Blog</h4>
+                                <h4 class="mb-0">Datatables</h4>
 
-                                <div class="page-title-right d-flex align-items-center"> {{-- Tambahkan d-flex dan align-items-center di sini --}}
+                                <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Konten</a></li>
-                                        <li class="breadcrumb-item active">Blog</li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Tables</a></li>
+                                        <li class="breadcrumb-item active">Datatables</li>
                                     </ol>
-                                    {{-- Tombol Tambah Data --}}
-                                    <a href="{{ route('admin.blogs.form') }}" class="btn btn-primary btn-sm ms-3">
-                                        <i class="fas fa-plus me-1"></i> Tambah Data
-                                    </a>
                                 </div>
 
                             </div>
                         </div>
                     </div>
+                    <!-- end page title -->
 
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title">DATA BLOG PAKUKERTO</h4>
-                                    <p class="card-title-desc">Kelola semua postingan blog yang ada di website Anda.</p>
+                                    <h4 class="card-title">DATA SAMBUTAN KEPALA DESA</h4>
+                                    <a href="/tambahagendadesa"><button class="btn btn-primary"> Tambah Data Kegiatan</button></a>
+                                    {{-- <p class="card-title-desc">DataTables has most features enabled by
+                                        default, so all you need to do to use it with your own tables is to call
+                                        the construction function: <code>$().DataTable();</code>. --}}
+                                    </p>
+                                    <table id="datatable" class="table table-bordered dt-responsive nowrap"
+                                        style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                        <thead>
+                                            <tr>
+                                                <th>NO</th>
+                                                <th>Nama Agenda</th>
+                                                <th>Tanggal Agenda</th>
+                                                <th>Jam Agenda</th>
+                                                <th>Lokasi</th>
+                                                <th>Deskripsi Kegiatan</th>
+                                                <th>Aksi</th>
+                                            </tr>
+                                        </thead>
+                                        <?php $no = 1; ?>
+                                        @foreach ($data as $agenda)
+                                            <tr>
+                                                <td>{{ $no }}</td>
+                                                <td>{{ $agenda->nama_agenda }}</td>
+                                                <td>{{ $agenda->tanggal_agenda }}</td>
+                                                <td>{{ $agenda->lokasi_agenda }}</td>
+                                                <td>{{ $agenda->deskripsi_agenda }}</td>
+                                                {{-- <td style="word-break: break-all;">{!! $agenda->agenda !!}</td> --}}
+                                                <td>
+                                                    <img src="{{ asset('AgendaDesa/' . $agenda->poster_agenda) }}" alt=""
+                                                        style="width: 80px; height:80px;">
+                                                </td>
 
-                                    @if (session('success'))
-                                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                            {{ session('success') }}
-                                            <button type="button" class="btn-close" data-bs-dismiss="alert"
-                                                aria-label="Close"></button>
-                                        </div>
-                                    @endif
 
-                                    {{-- Pesan jika tidak ada data, ditampilkan di luar tabel --}}
-                                    @if ($blogs->isEmpty())
-                                        <div class="alert alert-info text-center" role="alert">
-                                            Belum ada data blog yang tersedia.
-                                        </div>
-                                    @else
-                                        <table id="datatable" class="table table-bordered dt-responsive nowrap"
-                                            style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                            <thead>
-                                                <tr>
-                                                    <th>No.</th>
-                                                    <th>Nama Blog</th>
-                                                    <th>Penulis</th>
-                                                    <th>Deskripsi</th> {{-- Kolom Deskripsi --}}
-                                                    <th>Kategori</th> {{-- Kolom Kategori --}}
-                                                    <th>Gambar</th>
-                                                    <th>Tanggal Publikasi</th>
-                                                    <th>Aksi</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                @foreach ($blogs as $key => $blog)
-                                                    <tr>
-                                                        <td>{{ $key + 1 }}</td>
-                                                        <td>{{ $blog->nama_blog }}</td>
-                                                        <td>{{ $blog->penulis }}</td>
-                                                        <td>{{ Str::limit($blog->deskripsi, 50) }}</td>
-                                                        {{-- Tampilkan deskripsi, batasi 50 karakter --}}
-                                                        <td>{{ $blog->kategori }}</td> {{-- Tampilkan kategori --}}
-                                                        <td>
-                                                            @if ($blog->gambar)
-                                                                <img src="{{ asset($blog->gambar) }}"
-                                                                    alt="{{ $blog->nama_blog }}" class="img-thumbnail"
-                                                                    style="width: 80px; height: auto; object-fit: cover;">
-                                                            @else
-                                                                Tidak ada gambar
-                                                            @endif
-                                                        </td>
-                                                        <td>{{ $blog->created_at->format('d M Y H:i') }}</td>
-                                                        <td>
-                                                            <a href="{{ route('admin.blogs.edit', $blog->id) }}"
-                                                                class="btn btn-info btn-sm">Edit</a>
-                                                            <form
-                                                                action="{{ route('admin.blogs.destroy', $blog->id) }}"
-                                                                method="POST" style="display:inline;"
-                                                                onsubmit="return confirm('Apakah Anda yakin ingin menghapus blog ini?');">
-                                                                @csrf
-                                                                @method('DELETE')
-                                                                <button type="submit"
-                                                                    class="btn btn-danger btn-sm">Hapus</button>
-                                                            </form>
-                                                        </td>
-                                                    </tr>
-                                                @endforeach
+                                                <td>
+                                                    <a href="/editagenda/{{ $agenda->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger btn-delete" data-id="{{ $agenda->id }}" ><i class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+
+
                                             </tbody>
-                                        </table>
-                                    @endif {{-- End if ($blogs->isEmpty()) --}}
+                                            <?php $no++; ?>
+                                        @endforeach
+                                    </table>
 
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
 
-                </div>
+
+
+                </div> <!-- container-fluid -->
             </div>
+            <!-- End Page-content -->
 
 
             <footer class="footer">
@@ -138,10 +127,14 @@
                 </div>
             </footer>
         </div>
+        <!-- end main content-->
 
     </div>
+    <!-- END layout-wrapper -->
 
 
+
+    <!-- Right Sidebar -->
     <div class="right-bar">
         <div data-simplebar class="h-100">
             <div class="rightbar-title d-flex align-items-center p-3">
@@ -153,6 +146,7 @@
                 </a>
             </div>
 
+            <!-- Settings -->
             <hr class="m-0" />
 
             <div class="p-4">
@@ -257,12 +251,54 @@
 
             </div>
 
-        </div>
+        </div> <!-- end slimscroll-menu-->
     </div>
+    <!-- /Right-bar -->
 
+    <!-- Right bar overlay-->
     <div class="rightbar-overlay"></div>
 
-    @include('Admin.LayoutAdmin.scripts')
+    <!-- JAVASCRIPT -->
+@include('Admin.LayoutAdmin.scripts')
+
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const swalWithBootstrapButtons = Swal.mixin({
+    customClass: {
+      confirmButton: "btn btn-success",
+      cancelButton: "btn btn-danger"
+    },
+    buttonsStyling: false
+  });
+
+  document.querySelectorAll('.btn-delete').forEach(function (button) {
+    button.addEventListener('click', function () {
+      const id = this.getAttribute('data-id');
+
+      swalWithBootstrapButtons.fire({
+        title: "Yakin mau hapus?",
+        text: "Data yang dihapus tidak bisa dikembalikan!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Ya, hapus!",
+        cancelButtonText: "Batal",
+        reverseButtons: true
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Lakukan penghapusan, misalnya redirect ke route destroy
+          window.location.href = "/deleteagenda/" + id;
+        } else if (result.dismiss === Swal.DismissReason.cancel) {
+          swalWithBootstrapButtons.fire(
+            "Dibatalkan",
+            "Data tidak jadi dihapus :)",
+            "error"
+          );
+        }
+      });
+    });
+  });
+});
+</script>
 
 </body>
 

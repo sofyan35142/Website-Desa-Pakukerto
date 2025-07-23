@@ -52,36 +52,53 @@
                                     <p class="card-title-desc">Isi semua kolom di bawah untuk menambahkan entri blog
                                         baru.</p>
 
-                                    <form>
+                                    <form action="{{ route('admin.blogs.store') }}" method="POST"
+                                        enctype="multipart/form-data">
+                                        @csrf
+
                                         <div class="mb-3 row">
                                             <label for="blog-title-input" class="col-md-2 col-form-label">Judul
                                                 Blog</label>
                                             <div class="col-md-10">
-                                                <input class="form-control" type="text" id="blog-title-input"
-                                                    placeholder="Masukkan judul blog">
+                                                <input class="form-control @error('nama_blog') is-invalid @enderror"
+                                                    type="text" id="blog-title-input" name="nama_blog"
+                                                    placeholder="Masukkan judul blog" value="{{ old('nama_blog') }}"
+                                                    required>
+                                                @error('nama_blog')
+                                                    <div class="invalid-feedback">
+                                                        {{ $message }}
+                                                    </div>
+                                                @enderror
                                             </div>
                                         </div>
 
                                         <div class="mb-3 row">
-                                            <label for="blog-category-select"
+                                            <label for="blog-category-input"
                                                 class="col-md-2 col-form-label">Kategori</label>
                                             <div class="col-md-10">
-                                                <select class="form-select" id="blog-category-select">
-                                                    <option value="">Pilih Kategori</option>
-                                                    <option value="teknologi">Teknologi</option>
-                                                    <option value="gaya-hidup">Gaya Hidup</option>
-                                                    <option value="kuliner">Kuliner</option>
-                                                    <option value="travel">Travel</option>
-                                                    <option value="lain-lain">Lain-lain</option>
-                                                </select>
+                                                <input class="form-control @error('kategori') is-invalid @enderror"
+                                                    type="text" id="blog-category-input" name="kategori"
+                                                    placeholder="Contoh: Teknologi, Gaya Hidup, Kuliner"
+                                                    value="{{ old('kategori') }}">
+                                                @error('kategori')
+                                                    <div class="invalid-feedback">
+                                                        {{ $message }}
+                                                    </div>
+                                                @enderror
                                             </div>
                                         </div>
 
                                         <div class="mb-3 row">
-                                            <label for="blog-content-input" class="col-md-2 col-form-label">Konten
-                                                Blog</label>
+                                            <label for="blog-description-input"
+                                                class="col-md-2 col-form-label">Deskripsi Blog</label>
                                             <div class="col-md-10">
-                                                <textarea class="form-control" id="blog-content-input" rows="8" placeholder="Tulis konten blog Anda di sini..."></textarea>
+                                                <textarea class="form-control @error('deskripsi') is-invalid @enderror" id="blog-description-input" name="deskripsi"
+                                                    rows="8" placeholder="Tulis deskripsi blog Anda di sini...">{{ old('deskripsi') }}</textarea>
+                                                @error('deskripsi')
+                                                    <div class="invalid-feedback">
+                                                        {{ $message }}
+                                                    </div>
+                                                @enderror
                                             </div>
                                         </div>
 
@@ -89,9 +106,15 @@
                                             <label for="blog-image-input" class="col-md-2 col-form-label">Gambar
                                                 Utama</label>
                                             <div class="col-md-10">
-                                                <input class="form-control" type="file" id="blog-image-input"
+                                                <input class="form-control @error('gambar') is-invalid @enderror"
+                                                    type="file" id="blog-image-input" name="gambar"
                                                     accept="image/*">
                                                 <div class="form-text">Unggah gambar utama untuk blog Anda.</div>
+                                                @error('gambar')
+                                                    <div class="invalid-feedback">
+                                                        {{ $message }}
+                                                    </div>
+                                                @enderror
                                             </div>
                                         </div>
 
@@ -99,8 +122,15 @@
                                             <label for="blog-author-input" class="col-md-2 col-form-label">Nama
                                                 Penulis</label>
                                             <div class="col-md-10">
-                                                <input class="form-control" type="text" id="blog-author-input"
-                                                    placeholder="Nama penulis blog">
+                                                <input class="form-control @error('penulis') is-invalid @enderror"
+                                                    type="text" id="blog-author-input" name="penulis"
+                                                    placeholder="Nama penulis blog (kosongkan untuk 'Admin Desa')"
+                                                    value="{{ old('penulis') }}">
+                                                @error('penulis')
+                                                    <div class="invalid-feedback">
+                                                        {{ $message }}
+                                                    </div>
+                                                @enderror
                                             </div>
                                         </div>
 
@@ -113,7 +143,6 @@
                                                 Form</button>
                                         </div>
                                     </form>
-
                                 </div>
                             </div>
                         </div>
@@ -166,7 +195,8 @@
             <div class="p-4">
                 <h6 class="mb-3">Layout</h6>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout" id="layout-vertical" value="vertical">
+                    <input class="form-check-input" type="radio" name="layout" id="layout-vertical"
+                        value="vertical">
                     <label class="form-check-label" for="layout-vertical">Vertical</label>
                 </div>
                 <div class="form-check form-check-inline">

@@ -13,5 +13,7 @@ class Blog extends Model
         'nama_blog',
         'penulis',
         'gambar',
+        'kategori',
+        'deskripsi'
     ];
 }
