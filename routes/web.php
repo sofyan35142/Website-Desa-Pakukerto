@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AgendaDesa;
 use App\Http\Controllers\Admin\BlogController as AdminBlogController;
 use App\Http\Controllers\Admin\Home;
 use App\Http\Controllers\Landing\BlogController;
@@ -37,3 +38,13 @@ Route::get('/event/eventdetail', [EventController::class,  'vieweventdetail'])->
 //admin
 Route::get('/blogviewadmin', [AdminBlogController::class,  'BlogView'])->name('blogviewadmin');
 Route::get('/blogform', [AdminBlogController::class,  'BlogForm'])->name('BlogForm');
+
+////////////////adminHOME/////////////////////////////////////////////
+
+////Sambutan Kades//////////////////////////
+Route::get('/sambutanKades', [Home::class,  'sambutanKades'])->name('viewsambutanKades');
+Route::get('/editsambutan/{id}', [Home::class,  'editsambutan'])->name('editsambutan');
+Route::post('/updatesambutan/{id}', [Home::class,  'updatesambutan']);
+
+/////////////Agenda//////////////////////////
+Route::get('/AgendaDesa', [AgendaDesa::class,  'AgendaDesa'])->name('viewAgendaDesa');
