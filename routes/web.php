@@ -35,7 +35,7 @@ Route::get('/event', [EventController::class,  'viewevent'])->name('event');
 Route::get('/event/eventdetail', [EventController::class,  'vieweventdetail'])->name('event');
 
 
-//admin
+//Blog Admin///////////////////////////////////////////
 Route::get('/blogviewadmin', [AdminBlogController::class,  'BlogView'])->name('blogviewadmin');
 Route::get('/blogform', [AdminBlogController::class,  'BlogForm'])->name('BlogForm');
 
@@ -47,4 +47,9 @@ Route::get('/editsambutan/{id}', [Home::class,  'editsambutan'])->name('editsamb
 Route::post('/updatesambutan/{id}', [Home::class,  'updatesambutan']);
 
 /////////////Agenda//////////////////////////
-Route::get('/AgendaDesa', [AgendaDesa::class,  'AgendaDesa'])->name('viewAgendaDesa');
+Route::get('/Agenda', [AgendaDesa::class,  'AgendaDesa'])->name('viewAgendaDesa');
+Route::get('/tambahagendadesa', [AgendaDesa::class,  'tambahagendadesa'])->name('viewtambahagendadesa');
+Route::post('/insertkegiatan', [AgendaDesa::class,  'insertkegiatan']);
+Route::get('/editagenda/{id}', [AgendaDesa::class,  'editagenda'])->name('editagenda');
+Route::post('/updateagenda/{id}', [AgendaDesa::class,  'updateagenda']);
+Route::get('/deleteagenda/{id}', [AgendaDesa::class, 'delete'])->name('agenda.delete');

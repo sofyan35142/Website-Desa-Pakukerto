@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nama_agenda');
             $table->string('tanggal_agenda');
+            $table->string('waktu_agenda');
             $table->string('lokasi_agenda');
             $table->text('deskripsi_agenda');
             $table->string('poster_agenda');

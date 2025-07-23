@@ -50,6 +50,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="card-title">DATA SAMBUTAN KEPALA DESA</h4>
+                                    <a href="/tambahagendadesa"><button class="btn btn-primary"> Tambah Data Kegiatan</button></a>
                                     {{-- <p class="card-title-desc">DataTables has most features enabled by
                                         default, so all you need to do to use it with your own tables is to call
                                         the construction function: <code>$().DataTable();</code>. --}}
@@ -68,23 +69,25 @@
                                             </tr>
                                         </thead>
                                         <?php $no = 1; ?>
-                                        @foreach ($data as $sambutan)
+                                        @foreach ($data as $agenda)
                                             <tr>
                                                 <td>{{ $no }}</td>
-                                                <td>{{ $sambutan->nama }}</td>
-                                                <td>{{ $sambutan->nama }}</td>
-                                                <td style="word-break: break-all;">{!! $sambutan->sambutan !!}</td>
+                                                <td>{{ $agenda->nama_agenda }}</td>
+                                                <td>{{ $agenda->tanggal_agenda }}</td>
+                                                <td>{{ $agenda->lokasi_agenda }}</td>
+                                                <td>{{ $agenda->deskripsi_agenda }}</td>
+                                                {{-- <td style="word-break: break-all;">{!! $agenda->agenda !!}</td> --}}
                                                 <td>
-                                                    <img src="{{ asset('fotokades/' . $sambutan->foto) }}" alt=""
+                                                    <img src="{{ asset('AgendaDesa/' . $agenda->poster_agenda) }}" alt=""
                                                         style="width: 80px; height:80px;">
                                                 </td>
 
 
                                                 <td>
-                                                    <a href="/beranda/editsambutan/{{ $sambutan->id }}"
+                                                    <a href="/editagenda/{{ $agenda->id }}"
                                                         class="btn btn-warning"><i
                                                             class="fa-solid fa-pen-to-square"></i></a>
-                                                    {{-- <a href="#" class="btn btn-danger delete" data-id="{{ $sambutan->id }}" data-sambutan="{{ $sambutan->nama }}"><i class="fa-solid fa-trash"></i></a> --}}
+                                                    <a href="#" class="btn btn-danger btn-delete" data-id="{{ $agenda->id }}" ><i class="fa-solid fa-trash"></i></a>
                                                 </td>
                                             </tr>
 
@@ -256,21 +259,47 @@
     <div class="rightbar-overlay"></div>
 
     <!-- JAVASCRIPT -->
-    <script src="{{ asset('assetsAdmin/libs/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('assetsAdmin/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('assetsAdmin/libs/metismenu/metisMenu.min.js') }}"></script>
-    <script src="{{ asset('assetsAdmin/libs/simplebar/simplebar.min.js') }}"></script>
-    <script src="{{ asset('assetsAdmin/libs/node-waves/waves.min.js') }}"></script>
-    <script src="{{ asset('assetsAdmin/libs/waypoints/lib/jquery.waypoints.min.js') }}"></script>
-    <script src="{{ asset('assetsAdmin/libs/jquery.counterup/jquery.counterup.min.js') }}"></script>
+@include('Admin.LayoutAdmin.scripts')
 
-    <!-- apexcharts -->
-    <script src="{{ asset('assetsAdmin/libs/apexcharts/apexcharts.min.js') }}"></script>
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const swalWithBootstrapButtons = Swal.mixin({
+    customClass: {
+      confirmButton: "btn btn-success",
+      cancelButton: "btn btn-danger"
+    },
+    buttonsStyling: false
+  });
 
-    <script src="{{ asset('assetsAdmin/js/pages/dashboard.init.js') }}"></script>
+  document.querySelectorAll('.btn-delete').forEach(function (button) {
+    button.addEventListener('click', function () {
+      const id = this.getAttribute('data-id');
 
-    <!-- App js -->
-    <script src="{{ asset('assetsAdmin/js/app.js') }}"></script>
+      swalWithBootstrapButtons.fire({
+        title: "Yakin mau hapus?",
+        text: "Data yang dihapus tidak bisa dikembalikan!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Ya, hapus!",
+        cancelButtonText: "Batal",
+        reverseButtons: true
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Lakukan penghapusan, misalnya redirect ke route destroy
+          window.location.href = "/deleteagenda/" + id;
+        } else if (result.dismiss === Swal.DismissReason.cancel) {
+          swalWithBootstrapButtons.fire(
+            "Dibatalkan",
+            "Data tidak jadi dihapus :)",
+            "error"
+          );
+        }
+      });
+    });
+  });
+});
+</script>
+
 </body>
 
 </html>

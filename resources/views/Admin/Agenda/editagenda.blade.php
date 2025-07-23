@@ -31,7 +31,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-flex align-items-center justify-content-between">
-                                <h4 class="mb-0">Form Tambah Data Kegiatan</h4>
+                                <h4 class="mb-0">Form Tambah Data Blog</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
@@ -48,18 +48,19 @@
                             <div class="card">
                                 <div class="card-body">
 
-                                    <h4 class="card-title">Input Data Kegiatan Baru</h4> <br>
+                                    <h4 class="card-title">Input Data Kegiatan Baru</h4>
                                     {{-- <p class="card-title-desc">Isi semua kolom di bawah untuk menambahkan entri blog
                                         baru.</p> --}}
 
-                                    <form method="post" action="/insertkegiatan" enctype="multipart/form-data">
+                                    <form method="post" action="/updateagenda/{{ $data->id }}"  enctype="multipart/form-data">
                                         @csrf
                                         <div class="mb-3 row">
                                             <label for="blog-title-input" class="col-md-2 col-form-label">Judul
                                                 Kegiatan</label>
                                             <div class="col-md-10">
                                                 <input class="form-control" type="text" id="blog-title-input"
-                                                    placeholder="Masukkan judul Kegiatan" name="nama_agenda">
+                                                    placeholder="Masukkan judul Kegiatan" name="nama_agenda"
+                                                    value="{{ $data->nama_agenda }}">
                                             </div>
                                         </div>
                                         <div class="mb-3 row">
@@ -67,14 +68,17 @@
                                                 Kegiatan</label>
                                             <div class="col-md-10">
                                                 <input class="form-control" type="date" id="blog-title-input"
-                                                    placeholder="Masukkan judul Kegiatan" name="tanggal_agenda">
+                                                    placeholder="Masukkan judul Kegiatan" name="tanggal_agenda"
+                                                    value="{{ $data->tanggal_agenda }}">
                                             </div>
                                         </div>
-
                                         <div class="mb-3 row">
-                                            <label for="example-time-input" class="col-md-2 col-form-label">Waktu Kegiatan</label>
+                                            <label for="example-time-input" class="col-md-2 col-form-label">Waktu
+                                                Kegiatan</label>
                                             <div class="col-md-10">
-                                                <input class="form-control" type="time" placeholder="Masukkan Jam kegiatan" name="waktu_agenda" id="example-time-input">
+                                                <input class="form-control" type="time"
+                                                    placeholder="Masukkan Jam kegiatan" name="waktu_agenda"
+                                                    id="example-time-input" value="{{ $data->waktu_agenda }}">
                                             </div>
                                         </div>
 
@@ -83,13 +87,16 @@
                                                 Kegiatan</label>
                                             <div class="col-md-10">
                                                 <input class="form-control" type="text" id="blog-title-input"
-                                                    placeholder="Masukkan Lokasi Kegiatan" name="lokasi_agenda">
+                                                    placeholder="Masukkan Lokasi Kegiatan" name="lokasi_agenda"
+                                                    value="{{ $data->lokasi_agenda }}">
                                             </div>
                                         </div>
                                         <div class="mb-3 row">
-                                            <label for="blog-content-input" class="col-md-2 col-form-label">Deskripsi Kegiatan</label>
+                                            <label for="blog-content-input" class="col-md-2 col-form-label">Deskripsi
+                                                Kegiatan</label>
                                             <div class="col-md-10">
-                                                <textarea class="form-control" id="blog-content-input" rows="8" placeholder="Tulis deskripsi kegiatan di sini..." name="deskripsi_agenda"></textarea>
+                                                <textarea class="form-control" id="blog-content-input" rows="8" placeholder="Tulis deskripsi kegiatan di sini..."
+                                                    name="deskripsi_agenda"> {{ $data->deskripsi_agenda }} </textarea>
                                             </div>
                                         </div>
 
@@ -99,6 +106,11 @@
                                             <div class="col-md-10">
                                                 <input class="form-control" type="file" id="blog-image-input"
                                                     accept="image/*" name="poster_agenda">
+                                                @if ($data->poster_agenda)
+                                                    <p>Foto saat ini:</p>
+                                                    <img src="{{ asset('AgendaDesa/' . $data->poster_agenda) }}"
+                                                        alt="Poster Agenda" width="150">
+                                                @endif
                                                 <div class="form-text"> Unggah gambar poster kegiatan</div>
                                             </div>
                                         </div>
