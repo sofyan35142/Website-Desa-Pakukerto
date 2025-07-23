@@ -31,12 +31,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-flex align-items-center justify-content-between">
-                                <h4 class="mb-0">Datatables</h4>
+                                <h4 class="mb-0">Manajemen Blog</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Tables</a></li>
-                                        <li class="breadcrumb-item active">Datatables</li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Konten</a></li>
+                                        <li class="breadcrumb-item active">Blog</li>
                                     </ol>
                                 </div>
 
@@ -49,64 +49,53 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title">DATA BERITA PAKUKERTO</h4>
-                                    <p class="card-title-desc">DataTables has most features enabled by
-                                        default, so all you need to do to use it with your own tables is to call
-                                        the construction function: <code>$().DataTable();</code>.
+                                    <h4 class="card-title">DATA BLOG PAKUKERTO</h4>
+                                    <p class="card-title-desc">Kelola semua postingan blog yang ada di website Anda.
                                     </p>
+
+                                    @if(session('success'))
+                                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                            {{ session('success') }}
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        </div>
+                                    @endif
+
                                     <table id="datatable" class="table table-bordered dt-responsive nowrap"
                                         style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                         <thead>
                                             <tr>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Office</th>
-                                                <th>Age</th>
-                                                <th>Start date</th>
-                                                <th>Salary</th>
+                                                <th>No.</th>
+                                                <th>Nama Blog</th>
+                                                <th>Penulis</th>
+                                                <th>Gambar</th>
+                                                <th>Tanggal Publikasi</th>
+                                                <th>Aksi</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
-                                                <td>$320,800</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Garrett Winters</td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>63</td>
-                                                <td>2011/07/25</td>
-                                                <td>$170,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Ashton Cox</td>
-                                                <td>Junior Technical Author</td>
-                                                <td>San Francisco</td>
-                                                <td>66</td>
-                                                <td>2009/01/12</td>
-                                                <td>$86,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Cedric Kelly</td>
-                                                <td>Senior Javascript Developer</td>
-                                                <td>Edinburgh</td>
-                                                <td>22</td>
-                                                <td>2012/03/29</td>
-                                                <td>$433,060</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Airi Satou</td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>33</td>
-                                                <td>2008/11/28</td>
-                                                <td>$162,700</td>
-                                            </tr>
+                                            @forelse($blogs as $key => $blog)
+                                                <tr>
+                                                    <td>{{ $key + 1 }}</td>
+                                                    <td>{{ $blog->nama_blog }}</td>
+                                                    <td>{{ $blog->penulis }}</td>
+                                                    <td>
+                                                        @if($blog->gambar)
+                                                            <img src="{{ asset('storage/' . $blog->gambar) }}" alt="{{ $blog->nama_blog }}" class="img-thumbnail" style="width: 80px; height: auto; object-fit: cover;">
+                                                        @else
+                                                            Tidak ada gambar
+                                                        @endif
+                                                    </td>
+                                                    <td>{{ $blog->created_at->format('d M Y H:i') }}</td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-info btn-sm">Edit</a>
+                                                        <a href="#" class="btn btn-danger btn-sm">Hapus</a>
+                                                    </td>
+                                                </tr>
+                                            @empty
+                                                <tr>
+                                                    <td colspan="6" class="text-center">Belum ada data blog yang tersedia.</td>
+                                                </tr>
+                                            @endforelse
                                         </tbody>
                                     </table>
 
@@ -114,9 +103,6 @@
                             </div>
                         </div> <!-- end col -->
                     </div> <!-- end row -->
-
-
-
                 </div> <!-- container-fluid -->
             </div>
             <!-- End Page-content -->
@@ -272,21 +258,7 @@
     <div class="rightbar-overlay"></div>
 
     <!-- JAVASCRIPT -->
-    <script src="{{ asset('assetsAdmin/libs/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('assetsAdmin/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('assetsAdmin/libs/metismenu/metisMenu.min.js') }}"></script>
-    <script src="{{ asset('assetsAdmin/libs/simplebar/simplebar.min.js') }}"></script>
-    <script src="{{ asset('assetsAdmin/libs/node-waves/waves.min.js') }}"></script>
-    <script src="{{ asset('assetsAdmin/libs/waypoints/lib/jquery.waypoints.min.js') }}"></script>
-    <script src="{{ asset('assetsAdmin/libs/jquery.counterup/jquery.counterup.min.js') }}"></script>
-
-    <!-- apexcharts -->
-    <script src="{{ asset('assetsAdmin/libs/apexcharts/apexcharts.min.js') }}"></script>
-
-    <script src="{{ asset('assetsAdmin/js/pages/dashboard.init.js') }}"></script>
-
-    <!-- App js -->
-    <script src="{{ asset('assetsAdmin/js/app.js') }}"></script>
+    @include('Admin.LayoutAdmin.scripts')
 </body>
 
 </html>
