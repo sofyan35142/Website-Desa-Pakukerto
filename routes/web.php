@@ -36,5 +36,4 @@ Route::get('/event/eventdetail', [EventController::class,  'vieweventdetail'])->
 
 //admin
 Route::get('/blogviewadmin', [AdminBlogController::class,  'BlogView'])->name('blogviewadmin');
-
-
+Route::get('/blogform', [AdminBlogController::class,  'BlogForm'])->name('BlogForm');
