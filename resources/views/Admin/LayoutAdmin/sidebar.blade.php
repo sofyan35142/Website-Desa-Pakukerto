@@ -29,52 +29,69 @@
 
                     <!--- Sidemenu -->
                     <div id="sidebar-menu">
-                        <!-- Left Menu Start -->
                         <ul class="metismenu list-unstyled" id="side-menu">
                             <li class="menu-title">Menu</li>
 
                             <li>
-                                <a href="index.html">
-                                    <i class="uil-home-alt"></i><span class="badge rounded-pill bg-primary float-end">01</span>
-                                    <span>Dashboard</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/blogviewadmin">
-                                    <i class="uil-home-alt"></i><span class="badge rounded-pill bg-primary float-end"></span>
-                                    <span>Blog</span>
+                                <a href="{{ route('homeAdmin') }}" class="waves-effect">
+                                    <i class="fas fa-home"></i><span
+                                        class="badge rounded-pill bg-primary float-end"></span>
+                                    <span>Home</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <i class="uil-window-section"></i>
-                                    <span>Layouts</span>
+                                    <i class="fas fa-info-circle"></i>
+                                    <span>Profile</span>
+                                    <i class="fas fa-angle-down float-end"></i>
                                 </a>
-                                <ul class="sub-menu" aria-expanded="true">
-                                    <li>
-                                        <a href="javascript: void(0);" class="has-arrow">Vertical</a>
-                                        <ul class="sub-menu" aria-expanded="true">
-                                            <li><a href="layouts-dark-sidebar.html">Dark Sidebar</a></li>
-                                            <li><a href="layouts-compact-sidebar.html">Compact Sidebar</a></li>
-                                            <li><a href="layouts-icon-sidebar.html">Icon Sidebar</a></li>
-                                            <li><a href="layouts-boxed.html">Boxed Width</a></li>
-                                            <li><a href="layouts-preloader.html">Preloader</a></li>
-                                            <li><a href="layouts-colored-sidebar.html">Colored Sidebar</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="javascript: void(0);" class="has-arrow">Horizontal</a>
-                                        <ul class="sub-menu" aria-expanded="true">
-                                            <li><a href="layouts-horizontal.html">Horizontal</a></li>
-                                            <li><a href="layouts-hori-topbar-dark.html">Topbar Dark</a></li>
-                                            <li><a href="layouts-hori-boxed-width.html">Boxed Width</a></li>
-                                            <li><a href="layouts-hori-preloader.html">Preloader</a></li>
-                                        </ul>
-                                    </li>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="ecommerce-products.html">Sejarah Desa</a></li>
+                                    <li><a href="ecommerce-product-detail.html">Visi & Misi</a></li>
+                                    <li><a href="ecommerce-orders.html">Kelembagaan</a></li>
+                                    <li><a href="ecommerce-customers.html">Letak Geografis</a></li>
+                                    <li><a href="ecommerce-cart.html">Data Demografis</a></li>
+                                    <li><a href="ecommerce-checkout.html">Potensi Desa</a></li>
                                 </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="fas fa-store"></i>
+                                    <span class="badge rounded-pill bg-primary float-end"></span>
+                                    <span>UMKM</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span class="badge rounded-pill bg-primary float-end"></span>
+                                    <span>EVENT</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.blogs.view') }}" class="waves-effect">
+                                    <i class="fas fa-blog"></i>
+                                    <span class="badge rounded-pill bg-primary float-end"></span>
+                                    <span>Blog</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="fas fa-envelope"></i>
+                                    <span class="badge rounded-pill bg-primary float-end"></span>
+                                    <span>Hubungi kami</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="fas fa-file-alt"></i>
+                                    <span class="badge rounded-pill bg-primary float-end"></span>
+                                    <span>Administrasi Persuratan</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
+
                     <!-- Sidebar -->
                 </div>
             </div>
