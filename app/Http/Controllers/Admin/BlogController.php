@@ -11,7 +11,12 @@ class BlogController extends Controller
     public function BlogView()
     {
         $blogs = Blog::latest()->get();
-        return view('Admin.blog', compact('blogs'));
+        return view('Admin.blog.BlogView', compact('blogs'));
+    }
+
+    public function BlogForm()
+    {
+        return view('Admin.blog.BlogForm');
     }
 
     public function store(Request $request)
