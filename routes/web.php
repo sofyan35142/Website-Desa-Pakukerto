@@ -35,5 +35,9 @@ Route::get('/event/eventdetail', [EventController::class,  'vieweventdetail'])->
 
 
 //admin
-Route::get('/blogviewadmin', [AdminBlogController::class,  'BlogView'])->name('blogviewadmin');
-Route::get('/blogform', [AdminBlogController::class,  'BlogForm'])->name('BlogForm');
+Route::get('/blogviewadmin', [AdminBlogController::class,  'BlogView'])->name('admin.blogs.view');
+Route::get('/blogform', [AdminBlogController::class,  'BlogForm'])->name('admin.blogs.form');
+Route::post('/blogpost', [AdminBlogController::class,  'store'])->name('admin.blogs.store');
+Route::get('/blogs/{blog}/edit', [AdminBlogController::class, 'edit'])->name('admin.blogs.edit');
+Route::put('/blogs/{blog}', [AdminBlogController::class, 'update'])->name('admin.blogs.update');
+Route::delete('/blogs/{blog}', [AdminBlogController::class, 'destroy'])->name('admin.blogs.destroy');
