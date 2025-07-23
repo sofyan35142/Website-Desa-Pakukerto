@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\BlogController as AdminBlogController;
 use App\Http\Controllers\Admin\Home;
 use App\Http\Controllers\Landing\BlogController;
 use App\Http\Controllers\Landing\ContactController;
@@ -10,9 +11,6 @@ use App\Http\Controllers\Landing\PersuratanController;
 use App\Http\Controllers\Landing\UmkmController;
 use Illuminate\Support\Facades\Route;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
 Route::get('/admin', [Home::class,  'homeAdmin'])->name('homeAdmin');
 
@@ -31,11 +29,12 @@ Route::get('/umkm', [UmkmController::class,  'ViewUmkm'])->name('Viewumkm');
 Route::get('/umkm/detail', [UmkmController::class,  'ViewDetailUmkm'])->name('ViewUmkm');
 
 
-
-Route::get('/tes', function () {
-    return view('LandingPage.potensidesa');
-});
-
 Route::get('/persuratan', [PersuratanController::class,  'viewpersuratan'])->name('persuratan');
 Route::get('/event', [EventController::class,  'viewevent'])->name('event');
 Route::get('/event/eventdetail', [EventController::class,  'vieweventdetail'])->name('event');
+
+
+//admin
+Route::get('/blogviewadmin', [AdminBlogController::class,  'BlogView'])->name('blogviewadmin');
+
+

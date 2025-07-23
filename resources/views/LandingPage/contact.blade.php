@@ -31,7 +31,7 @@
     <!-- Breadcrumb end -->
 
     <!-- Contact start -->
-    <section class="contact-main pb-0">
+    <section class="contact-main">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12">
@@ -70,11 +70,11 @@
                     </div>
                 </div>
             </div>
-            <div class="contact-map">
+            {{-- <div class="contact-map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26069.26444533244!2d112.68584829536974!3d-7.722518030077664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d6d1cb7927af%3A0x2572fe71bc723997!2sPakukerto%2C%20Kec.%20Sukorejo%2C%20Pasuruan%2C%20Jawa%20Timur!5e1!3m2!1sid!2sid!4v1752473890035!5m2!1sid!2sid"
                     width="900" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+            </div> --}}
             {{-- <div class="contact-form">
                 <form class="m-auto text-center">
                     <!-- 2 column grid layout with text inputs for the first and last names -->
@@ -108,9 +108,6 @@
     </section>
     <!-- Contact end -->
 
-    <!--  Newsletter start -->
-
-    <!--  Newsletter end -->
 
     <!-- Footer starts -->
     @include('LandingPage.Layout.footer')
