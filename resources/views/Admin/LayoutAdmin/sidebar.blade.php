@@ -31,12 +31,12 @@
                     <div id="sidebar-menu">
                         <!-- Left Menu Start -->
                         <ul class="metismenu list-unstyled" id="side-menu">
-                            <li class="menu-title">Menu</li>
+                            <li class="menu-title">Beranda</li>
 
                             <li>
                                 <a href="index.html">
                                     <i class="uil-home-alt"></i><span class="badge rounded-pill bg-primary float-end">01</span>
-                                    <span>Dashboard</span>
+                                    <span>Sambutan Kades</span>
                                 </a>
                             </li>
                             <li>
