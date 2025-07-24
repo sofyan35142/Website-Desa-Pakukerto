@@ -12,9 +12,6 @@ use App\Http\Controllers\Landing\PersuratanController;
 use App\Http\Controllers\Landing\UmkmController;
 use Illuminate\Support\Facades\Route;
 
-
-Route::get('/admin', [Home::class,  'homeAdmin'])->name('homeAdmin');
-
 Route::get('/', [HomeController::class,  'home'])->name('home');
 Route::get('/blog', [BlogController::class,  'Blog'])->name('Blog');
 Route::get('/blog/blogdetail', [BlogController::class,  'blogdetail'])->name('blogdetail');
@@ -35,9 +32,16 @@ Route::get('/event', [EventController::class,  'viewevent'])->name('event');
 Route::get('/event/eventdetail', [EventController::class,  'vieweventdetail'])->name('event');
 
 
-//Blog Admin///////////////////////////////////////////
-Route::get('/blogviewadmin', [AdminBlogController::class,  'BlogView'])->name('blogviewadmin');
-Route::get('/blogform', [AdminBlogController::class,  'BlogForm'])->name('BlogForm');
+//admin
+Route::get('/admin', [Home::class,  'homeAdmin'])->name('homeAdmin');
+//adminBlog
+Route::get('/blogviewadmin', [AdminBlogController::class,  'BlogView'])->name('admin.blogs.view');
+Route::get('/blogform', [AdminBlogController::class,  'BlogForm'])->name('admin.blogs.form');
+Route::post('/blogpost', [AdminBlogController::class,  'store'])->name('admin.blogs.store');
+Route::get('/blogs/{blog}/edit', [AdminBlogController::class, 'edit'])->name('admin.blogs.edit');
+Route::put('/blogs/{blog}', [AdminBlogController::class, 'update'])->name('admin.blogs.update');
+Route::delete('/blogs/{blog}', [AdminBlogController::class, 'destroy'])->name('admin.blogs.destroy');
+
 
 ////////////////adminHOME/////////////////////////////////////////////
 

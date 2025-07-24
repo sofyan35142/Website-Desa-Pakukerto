@@ -14,9 +14,11 @@ return new class extends Migration
         Schema::create('blogs', function (Blueprint $table) {
             $table->id();
             $table->string('nama_blog');
-            $table->string('penulis');
+            $table->string('penulis')->default('Admin Desa');
             $table->string('gambar');
-            $table->timestamps(); 
+            $table->string('kategori');
+            $table->text('deskripsi'); // Menambahkan kolom deskripsi
+            $table->timestamps();
         });
     }
 
