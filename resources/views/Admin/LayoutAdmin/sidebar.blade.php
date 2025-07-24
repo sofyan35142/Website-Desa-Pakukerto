@@ -30,13 +30,12 @@
                     <!--- Sidemenu -->
                     <div id="sidebar-menu">
                         <ul class="metismenu list-unstyled" id="side-menu">
-                            <li class="menu-title">Menu</li>
+                            <li class="menu-title">Beranda</li>
 
                             <li>
-                                <a href="{{ route('homeAdmin') }}" class="waves-effect">
-                                    <i class="fas fa-home"></i><span
-                                        class="badge rounded-pill bg-primary float-end"></span>
-                                    <span>Home</span>
+                                <a href="index.html">
+                                    <i class="uil-home-alt"></i><span class="badge rounded-pill bg-primary float-end"></span>
+                                    <span>Sambutan Kades</span>
                                 </a>
                             </li>
                             <li>
