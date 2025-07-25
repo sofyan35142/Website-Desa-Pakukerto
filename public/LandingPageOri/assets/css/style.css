@@ -4109,6 +4109,7 @@ footer .footer-upper .copyright-main .copyright-text {
 }
 
 .form-shadow {
+    height: auto;
     color: #495057;
     background-color: #fff;
     border-color: #80bdff;
