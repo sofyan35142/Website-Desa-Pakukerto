@@ -28,12 +28,7 @@
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Konten</a></li>
                                         <li class="breadcrumb-item active">Blog</li>
                                     </ol>
-                                    {{-- Tombol Tambah Data --}}
-                                    <a href="{{ route('admin.blogs.form') }}" class="btn btn-primary btn-sm ms-3">
-                                        <i class="fas fa-plus me-1"></i> Tambah Data
-                                    </a>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -43,74 +38,71 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="card-title">DATA BLOG PAKUKERTO</h4>
+                                    <a href="{{route('admin.blogs.form')}}"><button class="btn btn-primary"> Tambah Data
+                                            Blog</button></a>
                                     <p class="card-title-desc">Kelola semua postingan blog yang ada di website Anda.</p>
-
-                                    @if (session('success'))
+                                    {{-- @if (session('success'))
                                         <div class="alert alert-success alert-dismissible fade show" role="alert">
                                             {{ session('success') }}
                                             <button type="button" class="btn-close" data-bs-dismiss="alert"
                                                 aria-label="Close"></button>
                                         </div>
-                                    @endif
-
-                                    {{-- Pesan jika tidak ada data, ditampilkan di luar tabel --}}
-                                    @if ($blogs->isEmpty())
+                                    @endif --}}
+                                    {{-- @if ($blogs->isEmpty())
                                         <div class="alert alert-info text-center" role="alert">
                                             Belum ada data blog yang tersedia.
                                         </div>
-                                    @else
-                                        <table id="datatable" class="table table-bordered dt-responsive nowrap"
-                                            style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                            <thead>
+                                    @else --}}
+                                    <table id="datatable" class="table table-bordered dt-responsive nowrap"
+                                        style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                        <thead>
+                                            <tr>
+                                                <th>No.</th>
+                                                <th>Nama Blog</th>
+                                                <th>Penulis</th>
+                                                <th>Deskripsi</th> {{-- Kolom Deskripsi --}}
+                                                <th>Kategori</th> {{-- Kolom Kategori --}}
+                                                <th>Gambar</th>
+                                                <th>Tanggal Publikasi</th>
+                                                <th>Aksi</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach ($blogs as $key => $blog)
                                                 <tr>
-                                                    <th>No.</th>
-                                                    <th>Nama Blog</th>
-                                                    <th>Penulis</th>
-                                                    <th>Deskripsi</th> {{-- Kolom Deskripsi --}}
-                                                    <th>Kategori</th> {{-- Kolom Kategori --}}
-                                                    <th>Gambar</th>
-                                                    <th>Tanggal Publikasi</th>
-                                                    <th>Aksi</th>
+                                                    <td>{{ $key + 1 }}</td>
+                                                    <td>{{ $blog->nama_blog }}</td>
+                                                    <td>{{ $blog->penulis }}</td>
+                                                    <td>{{ Str::limit($blog->deskripsi, 50) }}</td>
+                                                    {{-- Tampilkan deskripsi, batasi 50 karakter --}}
+                                                    <td>{{ $blog->kategori }}</td> {{-- Tampilkan kategori --}}
+                                                    <td>
+                                                        @if ($blog->gambar)
+                                                            <img src="{{ asset($blog->gambar) }}"
+                                                                alt="{{ $blog->nama_blog }}" class="img-thumbnail"
+                                                                style="width: 80px; height: auto; object-fit: cover;">
+                                                        @else
+                                                            Tidak ada gambar
+                                                        @endif
+                                                    </td>
+                                                    <td>{{ $blog->created_at->format('d M Y H:i') }}</td>
+                                                    <td>
+                                                        <a href="{{ route('admin.blogs.edit', $blog->id) }}"
+                                                            class="btn btn-info btn-sm">Edit</a>
+                                                        <form action="{{ route('admin.blogs.destroy', $blog->id) }}"
+                                                            method="POST" style="display:inline;"
+                                                            onsubmit="return confirm('Apakah Anda yakin ingin menghapus blog ini?');">
+                                                            @csrf
+                                                            @method('DELETE')
+                                                            <button type="submit"
+                                                                class="btn btn-danger btn-sm">Hapus</button>
+                                                        </form>
+                                                    </td>
                                                 </tr>
-                                            </thead>
-                                            <tbody>
-                                                @foreach ($blogs as $key => $blog)
-                                                    <tr>
-                                                        <td>{{ $key + 1 }}</td>
-                                                        <td>{{ $blog->nama_blog }}</td>
-                                                        <td>{{ $blog->penulis }}</td>
-                                                        <td>{{ Str::limit($blog->deskripsi, 50) }}</td>
-                                                        {{-- Tampilkan deskripsi, batasi 50 karakter --}}
-                                                        <td>{{ $blog->kategori }}</td> {{-- Tampilkan kategori --}}
-                                                        <td>
-                                                            @if ($blog->gambar)
-                                                                <img src="{{ asset($blog->gambar) }}"
-                                                                    alt="{{ $blog->nama_blog }}" class="img-thumbnail"
-                                                                    style="width: 80px; height: auto; object-fit: cover;">
-                                                            @else
-                                                                Tidak ada gambar
-                                                            @endif
-                                                        </td>
-                                                        <td>{{ $blog->created_at->format('d M Y H:i') }}</td>
-                                                        <td>
-                                                            <a href="{{ route('admin.blogs.edit', $blog->id) }}"
-                                                                class="btn btn-info btn-sm">Edit</a>
-                                                            <form
-                                                                action="{{ route('admin.blogs.destroy', $blog->id) }}"
-                                                                method="POST" style="display:inline;"
-                                                                onsubmit="return confirm('Apakah Anda yakin ingin menghapus blog ini?');">
-                                                                @csrf
-                                                                @method('DELETE')
-                                                                <button type="submit"
-                                                                    class="btn btn-danger btn-sm">Hapus</button>
-                                                            </form>
-                                                        </td>
-                                                    </tr>
-                                                @endforeach
-                                            </tbody>
-                                        </table>
-                                    @endif {{-- End if ($blogs->isEmpty()) --}}
-
+                                            @endforeach
+                                        </tbody>
+                                    </table>
+                                    {{-- @endif --}}
                                 </div>
                             </div>
                         </div>
