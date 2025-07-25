@@ -30,13 +30,38 @@
                     <!--- Sidemenu -->
                     <div id="sidebar-menu">
                         <ul class="metismenu list-unstyled" id="side-menu">
-                            <li class="menu-title">Beranda</li>
+                            {{-- <li class="menu-title">Beranda</li>
 
                             <li>
-                                <a href="index.html">
+                                <a href="/sambutanKades">
                                     <i class="uil-home-alt"></i><span class="badge rounded-pill bg-primary float-end"></span>
                                     <span>Sambutan Kades</span>
                                 </a>
+                            </li>
+                            <li>
+                                <a href="/Penduduk">
+                                    <i class="uil-home-alt"></i><span class="badge rounded-pill bg-primary float-end"></span>
+                                    <span>Penduduk</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/testimonial">
+                                    <i class="uil-home-alt"></i><span class="badge rounded-pill bg-primary float-end"></span>
+                                    <span>Testimonial</span>
+                                </a>
+                            </li> --}}
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="fa-solid fa-house"></i>
+                                    <span>Beranda</span>
+                                    <i class="fas fa-angle-down float-end"></i>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="/sambutanKades">Sambutan Kades</a></li>
+                                    <li><a href="/Penduduk">Penduduk</a></li>
+                                    <li><a href="#">Struktural Desa</a></li>
+                                    <li><a href="/testimonial">Testimonial</a></li>
+                                </ul>
                             </li>
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
@@ -45,12 +70,12 @@
                                     <i class="fas fa-angle-down float-end"></i>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="ecommerce-products.html">Sejarah Desa</a></li>
-                                    <li><a href="ecommerce-product-detail.html">Visi & Misi</a></li>
-                                    <li><a href="ecommerce-orders.html">Kelembagaan</a></li>
-                                    <li><a href="ecommerce-customers.html">Letak Geografis</a></li>
-                                    <li><a href="ecommerce-cart.html">Data Demografis</a></li>
-                                    <li><a href="ecommerce-checkout.html">Potensi Desa</a></li>
+                                    <li><a href="#">Sejarah Desa</a></li>
+                                    <li><a href="#">Visi & Misi</a></li>
+                                    <li><a href="#">Kelembagaan</a></li>
+                                    <li><a href="#">Letak Geografis</a></li>
+                                    <li><a href="#">Data Demografis</a></li>
+                                    <li><a href="#">Potensi Desa</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -61,7 +86,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript: void(0);" class="waves-effect">
+                                <a href="/Agenda" class="waves-effect">
                                     <i class="fas fa-calendar-alt"></i>
                                     <span class="badge rounded-pill bg-primary float-end"></span>
                                     <span>EVENT</span>
@@ -90,7 +115,6 @@
                             </li>
                         </ul>
                     </div>
-
                     <!-- Sidebar -->
                 </div>
             </div>

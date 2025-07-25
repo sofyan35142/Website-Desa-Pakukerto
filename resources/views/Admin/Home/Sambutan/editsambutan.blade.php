@@ -2,7 +2,8 @@
 <html lang="en">
 
 
-<!-- Mirrored from themesbrand.com/minible/layouts/form-editors.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Jun 2025 07:29:51 GMT -->
+<!-- Mirrored from themesbrand.com/minible/layouts/form-elements.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Jun 2025 07:29:48 GMT -->
+
 @include('Admin.LayoutAdmin.head')
 
 <body>
@@ -12,12 +13,11 @@
     <!-- Begin page -->
     <div id="layout-wrapper">
 
+
         @include('Admin.LayoutAdmin.header')
         <!-- ========== Left Sidebar Start ========== -->
         @include('Admin.LayoutAdmin.sidebar')
         <!-- Left Sidebar End -->
-
-
 
 
         <!-- ============================================================== -->
@@ -28,62 +28,77 @@
             <div class="page-content">
                 <div class="container-fluid">
 
-                    <!-- start page title -->
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-flex align-items-center justify-content-between">
-                                <h4 class="mb-0">Editors</h4>
+                                <h4 class="mb-0">Form Tambah Data Blog</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Forms</a></li>
-                                        <li class="breadcrumb-item active">Editors</li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Blog</a></li>
+                                        <li class="breadcrumb-item active">Tambah Data</li>
                                     </ol>
                                 </div>
 
                             </div>
                         </div>
                     </div>
-                    <!-- end page title -->
-
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Ckeditor Classic editor</h4>
-                                    <p class="card-title-desc">Example of Ckeditor Classic editor</p>
-                                    <div id="classic-editor"></div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
 
-                                    <h4 class="card-title">Tinymce wysihtml5</h4>
-                                    <p class="card-title-desc">Bootstrap-wysihtml5 is a javascript
-                                        plugin that makes it easy to create simple, beautiful wysiwyg editors
-                                        with the help of wysihtml5 and Twitter Bootstrap.</p>
+                                    <h4 class="card-title">Input Data Kegiatan Baru</h4>
+                                    {{-- <p class="card-title-desc">Isi semua kolom di bawah untuk menambahkan entri blog
+                                        baru.</p> --}}
 
-                                    <form method="post">
-                                        <!-- <textarea id="elm1" name="area"></textarea> -->
-                                        <textarea id="default-editor" style="height: 320px;">
-                                                <p class="card-title-desc"></p>
-                                              </textarea>
+                                    <form method="post" action="/updatesambutan/{{ $data->id }}"  enctype="multipart/form-data">
+                                        @csrf
+                                        <div class="mb-3 row">
+                                            <label for="blog-title-input" class="col-md-2 col-form-label">Nama Kepala Desa</label>
+                                            <div class="col-md-10">
+                                                <input class="form-control" type="text" id="blog-title-input"
+                                                    placeholder="Masukkan Nama Kepala Desa" name="nama"
+                                                    value="{{ $data->nama }}">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="blog-content-input" class="col-md-2 col-form-label">Sambutan Kepala Desa</label>
+                                            <div class="col-md-10">
+                                                <textarea class="form-control" id="blog-content-input" rows="8" placeholder="Tulis deskripsi kegiatan di sini..."
+                                                    name="sambutan"> {{ $data->sambutan }} </textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 row">
+                                            <label for="blog-image-input" class="col-md-2 col-form-label">Foto Kepala Desa</label>
+                                            <div class="col-md-10">
+                                                <input class="form-control" type="file" id="blog-image-input"
+                                                    accept="image/*" name="foto">
+                                                @if ($data->foto)
+                                                    <p>Foto saat ini:</p>
+                                                    <img src="{{ asset('Kades/' . $data->foto) }}"
+                                                        alt="Poster Agenda" width="150">
+                                                @endif
+                                                <div class="form-text"> Masukkan Foto Kepala Desa</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-wrap gap-3 mt-3">
+                                            <button type="submit"
+                                                class="btn btn-primary waves-effect waves-light w-md">Simpan
+                                                Sambutan</button>
+                                            <button type="reset"
+                                                class="btn btn-outline-secondary waves-effect waves-light w-md">Reset
+                                                Form</button>
+                                        </div>
                                     </form>
 
                                 </div>
                             </div>
-                        </div> <!-- end col -->
-                    </div> <!-- end row -->
-
-
-                </div> <!-- container-fluid -->
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- End Page-content -->
 
@@ -131,7 +146,8 @@
             <div class="p-4">
                 <h6 class="mb-3">Layout</h6>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout" id="layout-vertical" value="vertical">
+                    <input class="form-check-input" type="radio" name="layout" id="layout-vertical"
+                        value="vertical">
                     <label class="form-check-label" for="layout-vertical">Vertical</label>
                 </div>
                 <div class="form-check form-check-inline">
@@ -238,36 +254,8 @@
     <div class="rightbar-overlay"></div>
 
     <!-- JAVASCRIPT -->
-    <script src="assets/libs/jquery/jquery.min.js"></script>
-    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
-    <script src="assets/libs/simplebar/simplebar.min.js"></script>
-    <script src="assets/libs/node-waves/waves.min.js"></script>
-    <script src="assets/libs/waypoints/lib/jquery.waypoints.min.js"></script>
-    <script src="assets/libs/jquery.counterup/jquery.counterup.min.js"></script>
-
-    <!-- ckeditor -->
-    <script src="assets/libs/%40ckeditor/ckeditor5-build-classic/build/ckeditor.js"></script>
-
-    <!--tinymce js-->
-    <script src="assets/libs/tinymce/tinymce.min.js"></script>
-
-    <!-- init js -->
-    <script src="assets/js/pages/form-editor.init.js"></script>
-
-    <!-- App js -->
-    <script src="assets/js/app.js"></script>
-
-    <script>
-        ClassicEditor
-            .create(document.querySelector('#classic-editor'))
-            .catch(error => {
-                console.error(error);
-            });
-    </script>
+    @include('Admin.LayoutAdmin.scripts')
 
 </body>
-
-<!-- Mirrored from themesbrand.com/minible/layouts/form-editors.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Jun 2025 07:29:52 GMT -->
 
 </html>

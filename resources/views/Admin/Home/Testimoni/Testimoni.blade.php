@@ -49,9 +49,7 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title">Data Kegiatan Desa</h4>
-                                    <a href="/tambahagendadesa"><button class="btn btn-primary"> Tambah Data
-                                            Kegiatan</button></a>
+                                    <h4 class="card-title">DATA TESTIMONIAL TENTANG WEBSITE</h4>
                                     {{-- <p class="card-title-desc">DataTables has most features enabled by
                                         default, so all you need to do to use it with your own tables is to call
                                         the construction function: <code>$().DataTable();</code>. --}}
@@ -61,37 +59,44 @@
                                         <thead>
                                             <tr>
                                                 <th>NO</th>
-                                                <th>Nama Agenda</th>
-                                                <th>Tanggal Agenda</th>
-                                                <th>Jam Agenda</th>
-                                                <th>Lokasi</th>
-                                                <th>Deskripsi Kegiatan</th>
+                                                <th>Nama</th>
+                                                <th>Keterangan</th>
+                                                <th>Deskripsi Testimonial</th>
+                                                <th>Rating</th>
                                                 <th>Aksi</th>
                                             </tr>
                                         </thead>
                                         <?php $no = 1; ?>
-                                        @foreach ($data as $agenda)
+                                        @foreach ($data as $testimonial)
                                             <tr>
                                                 <td>{{ $no }}</td>
-                                                <td>{{ $agenda->nama_agenda }}</td>
-                                                <td>{{ $agenda->tanggal_agenda }}</td>
-                                                <td>{{ $agenda->lokasi_agenda }}</td>
-                                                <td>{{ $agenda->deskripsi_agenda }}</td>
-                                                {{-- <td style="word-break: break-all;">{!! $agenda->agenda !!}</td> --}}
-                                                <td>
-                                                    <img src="{{ asset('AgendaDesa/' . $agenda->poster_agenda) }}"
-                                                        alt="" style="width: 80px; height:80px;">
-                                                </td>
+                                                <td>{{ $testimonial->nama }}</td>
+                                                <td>{{ $testimonial->keterangan }}</td>
+                                                <td style="word-break: break-all;">{!! $testimonial->deskripsi_testimonial !!}</td>
+                                                < {{-- TAMPILAN BINTANG RATING --}} <td>
+                                                    @for ($i = 1; $i <= 5; $i++)
+                                                        @if ($i <= $testimonial->rating)
+                                                            <i class="bi bi-star-fill text-warning"></i>
+                                                        @else
+                                                            <i class="bi bi-star text-secondary"></i>
+                                                        @endif
+                                                    @endfor
+                                                    </td>
+                                                    <td>
+                                                        <img src="{{ asset('fototestimonial/' . $testimonial->foto_testimonial) }}"
+                                                            alt="" style="width: 80px; height:80px;">
+                                                    </td>
 
 
-                                                <td>
-                                                    <a href="/editagenda/{{ $agenda->id }}" class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger btn-delete"
-                                                        data-id="{{ $agenda->id }}"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                </td>
+                                                    <td>
+                                                        <a href="/edittestimonial/{{ $testimonial->id }}"
+                                                            class="btn btn-warning"><i
+                                                                class="fa-solid fa-pen-to-square"></i></a>
+                                                        {{-- <a href="#" class="btn btn-danger delete" data-id="{{ $sambutan->id }}" data-sambutan="{{ $sambutan->nama }}"><i class="fa-solid fa-trash"></i></a> --}}
+                                                    </td>
                                             </tr>
+
+
                                             </tbody>
                                             <?php $no++; ?>
                                         @endforeach
@@ -260,46 +265,6 @@
 
     <!-- JAVASCRIPT -->
     @include('Admin.LayoutAdmin.scripts')
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const swalWithBootstrapButtons = Swal.mixin({
-                customClass: {
-                    confirmButton: "btn btn-success",
-                    cancelButton: "btn btn-danger"
-                },
-                buttonsStyling: false
-            });
-
-            document.querySelectorAll('.btn-delete').forEach(function(button) {
-                button.addEventListener('click', function() {
-                    const id = this.getAttribute('data-id');
-
-                    swalWithBootstrapButtons.fire({
-                        title: "Yakin mau hapus?",
-                        text: "Data yang dihapus tidak bisa dikembalikan!",
-                        icon: "warning",
-                        showCancelButton: true,
-                        confirmButtonText: "Ya, hapus!",
-                        cancelButtonText: "Batal",
-                        reverseButtons: true
-                    }).then((result) => {
-                        if (result.isConfirmed) {
-                            // Lakukan penghapusan, misalnya redirect ke route destroy
-                            window.location.href = "/deleteagenda/" + id;
-                        } else if (result.dismiss === Swal.DismissReason.cancel) {
-                            swalWithBootstrapButtons.fire(
-                                "Dibatalkan",
-                                "Data tidak jadi dihapus :)",
-                                "error"
-                            );
-                        }
-                    });
-                });
-            });
-        });
-    </script>
-
 </body>
 
 </html>
