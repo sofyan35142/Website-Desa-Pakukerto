@@ -109,7 +109,7 @@
                 </div>
                 <div class="customize-ct">
                   <h4>
-                    <a href="event-detail.html">Kerja Bakti Bersama Warga Dusun Kemiri</a>
+                    <a href="/event/eventdetail">Kerja Bakti Bersama Warga Dusun Kemiri</a>
                   </h4>
                 </div>
                 <div class="customize-bottom">

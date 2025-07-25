@@ -1,13 +1,38 @@
 <!doctype html>
 <html lang="en">
 
-@include('Admin.LayoutAdmin.head')
 
+<!-- Mirrored from themesbrand.com/minible/layouts/form-elements.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Jun 2025 07:29:48 GMT -->
+
+@include('Admin.LayoutAdmin.head')
 
 <body>
 
     <!-- <body data-layout="horizontal" data-topbar="colored"> -->
+    <style>
+        .star-rating {
+            direction: rtl;
+            display: inline-flex;
+            font-size: 2rem;
+        }
 
+        .star-rating input[type="radio"] {
+            display: none;
+        }
+
+        .star-rating label {
+            color: #ccc;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .star-rating input[type="radio"]:checked~label,
+        .star-rating label:hover,
+        .star-rating label:hover~label {
+            color: #ffc107;
+            /* Bootstrap's warning color (gold) */
+        }
+    </style>
     <!-- Begin page -->
     <div id="layout-wrapper">
 
@@ -18,7 +43,6 @@
         <!-- Left Sidebar End -->
 
 
-
         <!-- ============================================================== -->
         <!-- Start right Content here -->
         <!-- ============================================================== -->
@@ -27,84 +51,103 @@
             <div class="page-content">
                 <div class="container-fluid">
 
-                    <!-- start page title -->
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-flex align-items-center justify-content-between">
-                                <h4 class="mb-0">Datatables</h4>
+                                <h4 class="mb-0">Form Tambah Data Kegiatan</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Tables</a></li>
-                                        <li class="breadcrumb-item active">Datatables</li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Blog</a></li>
+                                        <li class="breadcrumb-item active">Tambah Data</li>
                                     </ol>
                                 </div>
 
                             </div>
                         </div>
                     </div>
-                    <!-- end page title -->
-
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title">Data Kegiatan Desa</h4>
-                                    <a href="/tambahagendadesa"><button class="btn btn-primary"> Tambah Data
-                                            Kegiatan</button></a>
-                                    {{-- <p class="card-title-desc">DataTables has most features enabled by
-                                        default, so all you need to do to use it with your own tables is to call
-                                        the construction function: <code>$().DataTable();</code>. --}}
-                                    </p>
-                                    <table id="datatable" class="table table-bordered dt-responsive nowrap"
-                                        style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                        <thead>
-                                            <tr>
-                                                <th>NO</th>
-                                                <th>Nama Agenda</th>
-                                                <th>Tanggal Agenda</th>
-                                                <th>Jam Agenda</th>
-                                                <th>Lokasi</th>
-                                                <th>Deskripsi Kegiatan</th>
-                                                <th>Aksi</th>
-                                            </tr>
-                                        </thead>
-                                        <?php $no = 1; ?>
-                                        @foreach ($data as $agenda)
-                                            <tr>
-                                                <td>{{ $no }}</td>
-                                                <td>{{ $agenda->nama_agenda }}</td>
-                                                <td>{{ $agenda->tanggal_agenda }}</td>
-                                                <td>{{ $agenda->lokasi_agenda }}</td>
-                                                <td>{{ $agenda->deskripsi_agenda }}</td>
-                                                {{-- <td style="word-break: break-all;">{!! $agenda->agenda !!}</td> --}}
-                                                <td>
-                                                    <img src="{{ asset('AgendaDesa/' . $agenda->poster_agenda) }}"
-                                                        alt="" style="width: 80px; height:80px;">
-                                                </td>
 
+                                    <h4 class="card-title">Input Data Testimonial Baru</h4> <br>
+                                    {{-- <p class="card-title-desc">Isi semua kolom di bawah untuk menambahkan entri blog
+                                        baru.</p> --}}
 
-                                                <td>
-                                                    <a href="/editagenda/{{ $agenda->id }}" class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger btn-delete"
-                                                        data-id="{{ $agenda->id }}"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                            <?php $no++; ?>
-                                        @endforeach
-                                    </table>
+                                    <form method="post" action="/inserttestimoni" enctype="multipart/form-data">
+                                        @csrf
+                                        <div class="mb-3 row">
+                                            <label for="blog-title-input" class="col-md-2 col-form-label">Nama
+                                            </label>
+                                            <div class="col-md-10">
+                                                <input class="form-control" type="text" id="blog-title-input"
+                                                    placeholder="Masukkan judul Kegiatan" name="nama">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="blog-title-input" class="col-md-2 col-form-label">keterangan
+                                            </label>
+                                            <div class="col-md-10">
+                                                <input class="form-control" type="text" id="blog-title-input"
+                                                    placeholder="Masukkan judul Kegiatan" name="keterangan">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="blog-content-input" class="col-md-2 col-form-label">Deskripsi
+                                                Testimonial</label>
+                                            <div class="col-md-10">
+                                                <textarea class="form-control" id="blog-content-input" rows="8" placeholder="Tulis deskripsi kegiatan di sini..."
+                                                    name="deskripsi_testimonial"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-md-2 col-form-label">Rating</label>
+                                            <div class="col-md-10">
+                                                <div class="star-rating">
+                                                    <input type="radio" name="rating" id="star5" value="5">
+                                                    <label for="star5" class="form-label">★</label>
+
+                                                    <input type="radio" name="rating" id="star4" value="4">
+                                                    <label for="star4" class="form-label">★</label>
+
+                                                    <input type="radio" name="rating" id="star3" value="3">
+                                                    <label for="star3" class="form-label">★</label>
+
+                                                    <input type="radio" name="rating" id="star2" value="2">
+                                                    <label for="star2" class="form-label">★</label>
+
+                                                    <input type="radio" name="rating" id="star1" value="1">
+                                                    <label for="star1" class="form-label">★</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 row">
+                                            <label for="blog-image-input" class="col-md-2 col-form-label">Foto
+                                                Testimonial</label>
+                                            <div class="col-md-10">
+                                                <input class="form-control" type="file" id="blog-image-input"
+                                                    accept="image/*" name="foto_testimonial">
+                                                <div class="form-text"> Unggah gambar Testi</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-wrap gap-3 mt-3">
+                                            <button type="submit"
+                                                class="btn btn-primary waves-effect waves-light w-md">Simpan
+                                                Blog</button>
+                                            <button type="reset"
+                                                class="btn btn-outline-secondary waves-effect waves-light w-md">Reset
+                                                Form</button>
+                                        </div>
+                                    </form>
 
                                 </div>
                             </div>
-                        </div> <!-- end col -->
-                    </div> <!-- end row -->
-
-
-
-                </div> <!-- container-fluid -->
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- End Page-content -->
 
@@ -120,7 +163,8 @@
                         <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">
                                 Crafted with <i class="mdi mdi-heart text-danger"></i> by <a
-                                    href="https://themesbrand.com/" target="_blank" class="text-reset">Themesbrand</a>
+                                    href="https://themesbrand.com/" target="_blank"
+                                    class="text-reset">Themesbrand</a>
                             </div>
                         </div>
                     </div>
@@ -152,7 +196,8 @@
             <div class="p-4">
                 <h6 class="mb-3">Layout</h6>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout" id="layout-vertical" value="vertical">
+                    <input class="form-check-input" type="radio" name="layout" id="layout-vertical"
+                        value="vertical">
                     <label class="form-check-label" for="layout-vertical">Vertical</label>
                 </div>
                 <div class="form-check form-check-inline">
@@ -260,45 +305,6 @@
 
     <!-- JAVASCRIPT -->
     @include('Admin.LayoutAdmin.scripts')
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const swalWithBootstrapButtons = Swal.mixin({
-                customClass: {
-                    confirmButton: "btn btn-success",
-                    cancelButton: "btn btn-danger"
-                },
-                buttonsStyling: false
-            });
-
-            document.querySelectorAll('.btn-delete').forEach(function(button) {
-                button.addEventListener('click', function() {
-                    const id = this.getAttribute('data-id');
-
-                    swalWithBootstrapButtons.fire({
-                        title: "Yakin mau hapus?",
-                        text: "Data yang dihapus tidak bisa dikembalikan!",
-                        icon: "warning",
-                        showCancelButton: true,
-                        confirmButtonText: "Ya, hapus!",
-                        cancelButtonText: "Batal",
-                        reverseButtons: true
-                    }).then((result) => {
-                        if (result.isConfirmed) {
-                            // Lakukan penghapusan, misalnya redirect ke route destroy
-                            window.location.href = "/deleteagenda/" + id;
-                        } else if (result.dismiss === Swal.DismissReason.cancel) {
-                            swalWithBootstrapButtons.fire(
-                                "Dibatalkan",
-                                "Data tidak jadi dihapus :)",
-                                "error"
-                            );
-                        }
-                    });
-                });
-            });
-        });
-    </script>
 
 </body>
 

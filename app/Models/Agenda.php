@@ -10,7 +10,7 @@ class Agenda extends Model
     use HasFactory;
     // protected $primaryKey = "id";
     // protected $guarded = [];
-     protected $fillable = [
+    protected $fillable = [
         'nama_agenda',
         'tanggal_agenda',
         'waktu_agenda',

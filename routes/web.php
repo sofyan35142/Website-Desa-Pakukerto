@@ -33,7 +33,7 @@ Route::get('/event', [EventController::class,  'viewevent'])->name('event');
 Route::get('/event/eventdetail', [EventController::class,  'vieweventdetail'])->name('event');
 
 
-//admin
+//////////////////////////////////////////////////admin dari sini/////////////////////////////////////////////////////////////
 Route::get('/admin', [Home::class,  'homeAdmin'])->name('homeAdmin');
 
 Route::get('/viewSurat', [Persuratan::class,  'viewSurat'])->name('viewSuratAdmin');
@@ -49,12 +49,16 @@ Route::delete('/blogs/{blog}', [AdminBlogController::class, 'destroy'])->name('a
 Route::post('/submit-skck', [PersuratanController::class,  'submitSkck'])->name('submit.skck');
 
 
-////////////////adminHOME/////////////////////////////////////////////
+////////////////adminHOME///////////////////
 
 ////Sambutan Kades//////////////////////////
 Route::get('/sambutanKades', [Home::class,  'sambutanKades'])->name('viewsambutanKades');
 Route::get('/editsambutan/{id}', [Home::class,  'editsambutan'])->name('editsambutan');
 Route::post('/updatesambutan/{id}', [Home::class,  'updatesambutan']);
+////Total Penduduk//////////////////////////
+Route::get('/Penduduk', [Home::class,  'Penduduk'])->name('viewPenduduk');
+Route::get('/editpenduduk/{id}', [Home::class,  'editpenduduk'])->name('editpenduduk');
+Route::post('/updatependuduk/{id}', [Home::class,  'updatependuduk']);
 
 /////////////Agenda//////////////////////////
 Route::get('/Agenda', [AgendaDesa::class,  'AgendaDesa'])->name('viewAgendaDesa');
@@ -62,4 +66,11 @@ Route::get('/tambahagendadesa', [AgendaDesa::class,  'tambahagendadesa'])->name(
 Route::post('/insertkegiatan', [AgendaDesa::class,  'insertkegiatan']);
 Route::get('/editagenda/{id}', [AgendaDesa::class,  'editagenda'])->name('editagenda');
 Route::post('/updateagenda/{id}', [AgendaDesa::class,  'updateagenda']);
-Route::get('/deleteagenda/{id}', [AgendaDesa::class, 'delete'])->name('agenda.delete');
+Route::get('/deleteagenda/{id}', [AgendaDesa::class, 'delete'])->name('agendadelete');
+/////////////TESTIMONIAL//////////////////////////
+Route::get('/testimonial', [Home::class,  'testimonialDesa'])->name('viewtestimonialDesa');
+Route::get('/tambahtestimoni', [Home::class,  'tambahtestimoni'])->name('viewtambahtestimoni');
+Route::post('/inserttestimoni', [Home::class,  'inserttestimoni']);
+Route::get('/edittestimoni/{id}', [Home::class,  'edittestimoni'])->name('edittestimoni');
+Route::post('/updatetestimoni/{id}', [Home::class,  'updatetestimoni']);
+Route::get('/deletetestimoni/{id}', [Home::class, 'deletetestimoni']);

@@ -125,7 +125,6 @@
 
                                 Wassalamu’alaikum Warahmatullahi Wabarakatuh.
                             </p>
-                            <a href="about.html" class="btn">View Course</a>
                         </div>
                     </div>
                 </div>
@@ -137,27 +136,30 @@
 
     <!-- Counter main -->
     <section class="counter">
+
         <div class="container">
+            @foreach ($penduduk as $datapenduduk)
             <div class="counter-wrap wow fadeInUp">
                 <div class="content d-flex justify-content-between">
                     <div class="value-pin">
-                        <span class="countfect value" data-num="233"></span>
+                        <span class="countfect value" data-num="{{ $datapenduduk->total_penduduk }}"></span>
                         <h5>Penduduk</h5>
                     </div>
                     <div class="value-pin">
-                        <span class="countfect value" data-num="410"></span>
+                        <span class="countfect value" data-num="{{ $datapenduduk->total_dusun }}"></span>
                         <h5>Dusun</h5>
                     </div>
                     <div class="value-pin">
-                        <span class="countfect value" data-num="2299"></span>
+                        <span class="countfect value" data-num="{{ $datapenduduk->total_rt }}"></span>
                         <h5>RT</h5>
                     </div>
                     <div class="value-pin">
-                        <span class="countfect value" data-num="368"></span>
+                        <span class="countfect value" data-num="{{ $datapenduduk->total_rw }}"></span>
                         <h5>RW</h5>
                     </div>
                 </div>
             </div>
+            @endforeach
         </div>
     </section>
     <!-- End Counter main -->
@@ -426,7 +428,7 @@
                     <div class="ins-main-list">
                         <img src="{{ asset('LandingPageOri/assets/images/team/team-1.jpg') }}" alt="" />
                         <div class="ins-names">
-                            <h4>William Smith</h4>
+                            <h4>H. Surateman</h4>
                             <span class="cl-orange">Kepala Desa</span>
                         </div>
                     </div>
@@ -435,8 +437,8 @@
                     <div class="ins-main-list">
                         <img src="{{ asset('LandingPageOri/assets/images/team/team-2.jpg') }}" alt="" />
                         <div class="ins-names">
-                            <h4>H. Surateman</h4>
-                            <span class="cl-orange">Sekertaris Desa 1 </span>
+                            <h4>[nama sekertaris]</h4>
+                            <span class="cl-orange">Sekertaris Desa</span>
                         </div>
                     </div>
                 </div>
@@ -453,7 +455,7 @@
                     <div class="ins-main-list">
                         <img src="{{ asset('LandingPageOri/assets/images/team/team-4.jpg') }}" alt="" />
                         <div class="ins-names">
-                            <h4>Ketti Helson</h4>
+                            <h4>[Nama Bendahara]</h4>
                             <span class="cl-orange">Bendahara Desa</span>
                         </div>
                     </div>
@@ -634,9 +636,9 @@
                         desa akan tumbuh menjadi tempat yang lebih baik untuk semua. Mari bersama-sama mewujudkan desa
                         yang mandiri, bersih, ramah, dan membanggakan. Perubahan dimulai dari langkah kecil, dan langkah
                         itu bisa dimulai dari kamu.</p>
-                    <div class="mt-3">
+                    {{-- <div class="mt-3">
                         <a href="contact.html" class="btn">Join Now</a>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="call-image">
                     <img src="{{ asset('LandingPageOri/assets/images/shape/Education-13-Converted-01-1024x667.png') }}"

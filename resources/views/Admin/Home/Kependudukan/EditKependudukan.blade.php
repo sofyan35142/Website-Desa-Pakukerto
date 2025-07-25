@@ -1,8 +1,10 @@
 <!doctype html>
 <html lang="en">
 
-@include('Admin.LayoutAdmin.head')
 
+<!-- Mirrored from themesbrand.com/minible/layouts/form-elements.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Jun 2025 07:29:48 GMT -->
+
+@include('Admin.LayoutAdmin.head')
 
 <body>
 
@@ -18,7 +20,6 @@
         <!-- Left Sidebar End -->
 
 
-
         <!-- ============================================================== -->
         <!-- Start right Content here -->
         <!-- ============================================================== -->
@@ -27,84 +28,96 @@
             <div class="page-content">
                 <div class="container-fluid">
 
-                    <!-- start page title -->
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-flex align-items-center justify-content-between">
-                                <h4 class="mb-0">Datatables</h4>
+                                <h4 class="mb-0">Form Tambah Data Blog</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Tables</a></li>
-                                        <li class="breadcrumb-item active">Datatables</li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Blog</a></li>
+                                        <li class="breadcrumb-item active">Tambah Data</li>
                                     </ol>
                                 </div>
 
                             </div>
                         </div>
                     </div>
-                    <!-- end page title -->
-
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title">Data Kegiatan Desa</h4>
-                                    <a href="/tambahagendadesa"><button class="btn btn-primary"> Tambah Data
-                                            Kegiatan</button></a>
-                                    {{-- <p class="card-title-desc">DataTables has most features enabled by
-                                        default, so all you need to do to use it with your own tables is to call
-                                        the construction function: <code>$().DataTable();</code>. --}}
-                                    </p>
-                                    <table id="datatable" class="table table-bordered dt-responsive nowrap"
-                                        style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                        <thead>
-                                            <tr>
-                                                <th>NO</th>
-                                                <th>Nama Agenda</th>
-                                                <th>Tanggal Agenda</th>
-                                                <th>Jam Agenda</th>
-                                                <th>Lokasi</th>
-                                                <th>Deskripsi Kegiatan</th>
-                                                <th>Aksi</th>
-                                            </tr>
-                                        </thead>
-                                        <?php $no = 1; ?>
-                                        @foreach ($data as $agenda)
-                                            <tr>
-                                                <td>{{ $no }}</td>
-                                                <td>{{ $agenda->nama_agenda }}</td>
-                                                <td>{{ $agenda->tanggal_agenda }}</td>
-                                                <td>{{ $agenda->lokasi_agenda }}</td>
-                                                <td>{{ $agenda->deskripsi_agenda }}</td>
-                                                {{-- <td style="word-break: break-all;">{!! $agenda->agenda !!}</td> --}}
-                                                <td>
-                                                    <img src="{{ asset('AgendaDesa/' . $agenda->poster_agenda) }}"
-                                                        alt="" style="width: 80px; height:80px;">
-                                                </td>
 
+                                    <h4 class="card-title">Input Data Kependudukan DESA</h4>
+                                    {{-- <p class="card-title-desc">Isi semua kolom di bawah untuk menambahkan entri blog
+                                        baru.</p> --}}
 
-                                                <td>
-                                                    <a href="/editagenda/{{ $agenda->id }}" class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger btn-delete"
-                                                        data-id="{{ $agenda->id }}"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                            <?php $no++; ?>
-                                        @endforeach
-                                    </table>
+                                    <form method="post" action="/updatependuduk/{{ $datapenduduk->id }}"  enctype="multipart/form-data">
+                                        @csrf
+                                        <div class="mb-3 row">
+                                            <label for="blog-title-input" class="col-md-2 col-form-label">Total Dusun</label>
+                                            <div class="col-md-10">
+                                                <input class="form-control" type="text" id="blog-title-input"
+                                                    placeholder="Masukkan Total Dusun" name="total_dusun"
+                                                    value="{{ $datapenduduk->total_dusun }}">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="blog-title-input" class="col-md-2 col-form-label">Total rt</label>
+                                            <div class="col-md-10">
+                                                <input class="form-control" type="text" id="blog-title-input"
+                                                    placeholder="Masukkan Total rt" name="total_rt"
+                                                    value="{{ $datapenduduk->total_rt }}">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="blog-title-input" class="col-md-2 col-form-label">Total rw</label>
+                                            <div class="col-md-10">
+                                                <input class="form-control" type="text" id="blog-title-input"
+                                                    placeholder="Masukkan Total rw" name="total_rw"
+                                                    value="{{ $datapenduduk->total_rw }}">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="blog-title-input" class="col-md-2 col-form-label">Jumlah Laki-Laki</label>
+                                            <div class="col-md-10">
+                                                <input class="form-control" type="number" id="laki"
+                                                    placeholder="Masukkan Jumlah Laki-Laki" name="laki_laki"
+                                                    value="{{ $datapenduduk->laki_laki }}">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="blog-title-input" class="col-md-2 col-form-label">Perempuan</label>
+                                            <div class="col-md-10">
+                                                <input class="form-control" type="number" id="perempuan"
+                                                    placeholder="Masukkan Perempuan" name="perempuan"
+                                                    value="{{ $datapenduduk->perempuan }}">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="blog-title-input" class="col-md-2 col-form-label">Total penduduk</label>
+                                            <div class="col-md-10">
+                                                <input class="form-control" type="number" id="total" readonly       
+                                                    placeholder="Masukkan Total penduduk" name="total_penduduk"
+                                                    value="{{ $datapenduduk->total_penduduk }}">
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-wrap gap-3 mt-3">
+                                            <button type="submit"
+                                                class="btn btn-primary waves-effect waves-light w-md">Simpan
+                                                Data Penduduk</button>
+                                            <button type="reset"
+                                                class="btn btn-outline-secondary waves-effect waves-light w-md">Reset
+                                                Form</button>
+                                        </div>
+                                    </form>
 
                                 </div>
                             </div>
-                        </div> <!-- end col -->
-                    </div> <!-- end row -->
-
-
-
-                </div> <!-- container-fluid -->
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- End Page-content -->
 
@@ -152,7 +165,8 @@
             <div class="p-4">
                 <h6 class="mb-3">Layout</h6>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout" id="layout-vertical" value="vertical">
+                    <input class="form-check-input" type="radio" name="layout" id="layout-vertical"
+                        value="vertical">
                     <label class="form-check-label" for="layout-vertical">Vertical</label>
                 </div>
                 <div class="form-check form-check-inline">
@@ -260,44 +274,22 @@
 
     <!-- JAVASCRIPT -->
     @include('Admin.LayoutAdmin.scripts')
-
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const swalWithBootstrapButtons = Swal.mixin({
-                customClass: {
-                    confirmButton: "btn btn-success",
-                    cancelButton: "btn btn-danger"
-                },
-                buttonsStyling: false
-            });
+    const laki = document.getElementById('laki');
+    const perempuan = document.getElementById('perempuan');
+    const total = document.getElementById('total');
 
-            document.querySelectorAll('.btn-delete').forEach(function(button) {
-                button.addEventListener('click', function() {
-                    const id = this.getAttribute('data-id');
+    function updateTotal() {
+        const valLaki = parseInt(laki.value) || 0;
+        const valPerempuan = parseInt(perempuan.value) || 0;
+        total.value = valLaki + valPerempuan;
+    }
 
-                    swalWithBootstrapButtons.fire({
-                        title: "Yakin mau hapus?",
-                        text: "Data yang dihapus tidak bisa dikembalikan!",
-                        icon: "warning",
-                        showCancelButton: true,
-                        confirmButtonText: "Ya, hapus!",
-                        cancelButtonText: "Batal",
-                        reverseButtons: true
-                    }).then((result) => {
-                        if (result.isConfirmed) {
-                            // Lakukan penghapusan, misalnya redirect ke route destroy
-                            window.location.href = "/deleteagenda/" + id;
-                        } else if (result.dismiss === Swal.DismissReason.cancel) {
-                            swalWithBootstrapButtons.fire(
-                                "Dibatalkan",
-                                "Data tidak jadi dihapus :)",
-                                "error"
-                            );
-                        }
-                    });
-                });
-            });
-        });
+    laki.addEventListener('input', updateTotal);
+    perempuan.addEventListener('input', updateTotal);
+
+    // Inisialisasi saat halaman dimuat
+    window.addEventListener('DOMContentLoaded', updateTotal);
     </script>
 
 </body>

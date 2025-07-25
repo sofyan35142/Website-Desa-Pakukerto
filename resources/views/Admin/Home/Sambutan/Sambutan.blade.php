@@ -72,13 +72,13 @@
                                                 <td>{{ $sambutan->nama }}</td>
                                                 <td style="word-break: break-all;">{!! $sambutan->sambutan !!}</td>
                                                 <td>
-                                                    <img src="{{ asset('fotokades/' . $sambutan->foto) }}" alt=""
+                                                    <img src="{{ asset('kades/' . $sambutan->foto) }}" alt=""
                                                         style="width: 80px; height:80px;">
                                                 </td>
 
 
                                                 <td>
-                                                    <a href="/beranda/editsambutan/{{ $sambutan->id }}"
+                                                    <a href="/editsambutan/{{ $sambutan->id }}"
                                                         class="btn btn-warning"><i
                                                             class="fa-solid fa-pen-to-square"></i></a>
                                                     {{-- <a href="#" class="btn btn-danger delete" data-id="{{ $sambutan->id }}" data-sambutan="{{ $sambutan->nama }}"><i class="fa-solid fa-trash"></i></a> --}}
